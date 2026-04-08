@@ -1,0 +1,5 @@
+# robots.txt for http://willingoxjin.cn/ and sites http://*.willingoxjin.cn/
+# Indiscriminate automated downloads from this site are not permitted
+
+User-agent: *
+Disallow: /

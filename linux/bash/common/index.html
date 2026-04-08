@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Linux 入门命令 | willingoxjin&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.9.5">
+    <link rel="icon" href="/img/favicon.ico">
+    <meta name="description" content="。">
+    <meta name="keywords" content="willingoxjin,个人技术博客,前端,大数据,web前端,Java,SpringBoot,学习,面试,JavaScript,ES6,vue,python,css3,html5,git,github,markdown">
+    <meta name="theme-color" content="#11a8cd">
+    
+    <link rel="preload" href="/assets/css/0.styles.b6d109e9.css" as="style"><link rel="preload" href="/assets/js/app.89e5ded6.js" as="script"><link rel="preload" href="/assets/js/2.2d0494eb.js" as="script"><link rel="preload" href="/assets/js/12.07b3c24a.js" as="script"><link rel="preload" href="/assets/js/226.fb1f6bcb.js" as="script"><link rel="prefetch" href="/assets/js/10.56322456.js"><link rel="prefetch" href="/assets/js/100.990d4ffc.js"><link rel="prefetch" href="/assets/js/101.16c89efc.js"><link rel="prefetch" href="/assets/js/102.92cac5cb.js"><link rel="prefetch" href="/assets/js/103.d9d7449d.js"><link rel="prefetch" href="/assets/js/104.ff7fc672.js"><link rel="prefetch" href="/assets/js/105.2bbb7afa.js"><link rel="prefetch" href="/assets/js/106.3880bce7.js"><link rel="prefetch" href="/assets/js/107.e1acbe2c.js"><link rel="prefetch" href="/assets/js/108.1e5decd4.js"><link rel="prefetch" href="/assets/js/109.c0cbaff5.js"><link rel="prefetch" href="/assets/js/11.9810d8e6.js"><link rel="prefetch" href="/assets/js/110.f819aed4.js"><link rel="prefetch" href="/assets/js/111.09d1a88b.js"><link rel="prefetch" href="/assets/js/112.bc1119b6.js"><link rel="prefetch" href="/assets/js/113.1d4abb8d.js"><link rel="prefetch" href="/assets/js/114.a3c5f23c.js"><link rel="prefetch" href="/assets/js/115.9e7b8a09.js"><link rel="prefetch" href="/assets/js/116.d442c101.js"><link rel="prefetch" href="/assets/js/117.4754812b.js"><link rel="prefetch" href="/assets/js/118.9d852fa1.js"><link rel="prefetch" href="/assets/js/119.d115c1d0.js"><link rel="prefetch" href="/assets/js/120.c2728aa3.js"><link rel="prefetch" href="/assets/js/121.83ab31ad.js"><link rel="prefetch" href="/assets/js/122.379cf603.js"><link rel="prefetch" href="/assets/js/123.625e6f26.js"><link rel="prefetch" href="/assets/js/124.d32e9094.js"><link rel="prefetch" href="/assets/js/125.b86403c4.js"><link rel="prefetch" href="/assets/js/126.d1933338.js"><link rel="prefetch" href="/assets/js/127.f0358c9c.js"><link rel="prefetch" href="/assets/js/128.419b964c.js"><link rel="prefetch" href="/assets/js/129.70b012a2.js"><link rel="prefetch" href="/assets/js/13.a6ef3d7b.js"><link rel="prefetch" href="/assets/js/130.ef56fada.js"><link rel="prefetch" href="/assets/js/131.46084a98.js"><link rel="prefetch" href="/assets/js/132.834e54fc.js"><link rel="prefetch" href="/assets/js/133.142ed605.js"><link rel="prefetch" href="/assets/js/134.a826ae8e.js"><link rel="prefetch" href="/assets/js/135.40f662f8.js"><link rel="prefetch" href="/assets/js/136.912410ad.js"><link rel="prefetch" href="/assets/js/137.3bb06c92.js"><link rel="prefetch" href="/assets/js/138.8a3a293e.js"><link rel="prefetch" href="/assets/js/139.f7e75d55.js"><link rel="prefetch" href="/assets/js/14.d58bb21f.js"><link rel="prefetch" href="/assets/js/140.04914f84.js"><link rel="prefetch" href="/assets/js/141.fe764f35.js"><link rel="prefetch" href="/assets/js/142.d6bf05fc.js"><link rel="prefetch" href="/assets/js/143.511c7453.js"><link rel="prefetch" href="/assets/js/144.c68fd49d.js"><link rel="prefetch" href="/assets/js/145.c8cb3cc2.js"><link rel="prefetch" href="/assets/js/146.7d71155f.js"><link rel="prefetch" href="/assets/js/147.bf4a5c53.js"><link rel="prefetch" href="/assets/js/148.a4586538.js"><link rel="prefetch" href="/assets/js/149.ad693bbb.js"><link rel="prefetch" href="/assets/js/15.91e80158.js"><link rel="prefetch" href="/assets/js/150.932def84.js"><link rel="prefetch" href="/assets/js/151.817bf081.js"><link rel="prefetch" href="/assets/js/152.cf55bdf2.js"><link rel="prefetch" href="/assets/js/153.e78cd816.js"><link rel="prefetch" href="/assets/js/154.b80c43fa.js"><link rel="prefetch" href="/assets/js/155.68cdaddc.js"><link rel="prefetch" href="/assets/js/156.a469fa52.js"><link rel="prefetch" href="/assets/js/157.bfdfcb38.js"><link rel="prefetch" href="/assets/js/158.53cb7c35.js"><link rel="prefetch" href="/assets/js/159.8eec3bcf.js"><link rel="prefetch" href="/assets/js/16.e042a073.js"><link rel="prefetch" href="/assets/js/160.44d9a23b.js"><link rel="prefetch" href="/assets/js/161.55fb171e.js"><link rel="prefetch" href="/assets/js/162.c3432da9.js"><link rel="prefetch" href="/assets/js/163.518f6059.js"><link rel="prefetch" href="/assets/js/164.bca5bd46.js"><link rel="prefetch" href="/assets/js/165.ee30c5cf.js"><link rel="prefetch" href="/assets/js/166.a9a7d5e2.js"><link rel="prefetch" href="/assets/js/167.d4910b7c.js"><link rel="prefetch" href="/assets/js/168.4d310365.js"><link rel="prefetch" href="/assets/js/169.dc49768c.js"><link rel="prefetch" href="/assets/js/17.08ef3a58.js"><link rel="prefetch" href="/assets/js/170.83eef840.js"><link rel="prefetch" href="/assets/js/171.5e427144.js"><link rel="prefetch" href="/assets/js/172.f600a6b0.js"><link rel="prefetch" href="/assets/js/173.b9fe16bb.js"><link rel="prefetch" href="/assets/js/174.5d1b9991.js"><link rel="prefetch" href="/assets/js/175.c2845e77.js"><link rel="prefetch" href="/assets/js/176.0ba53d88.js"><link rel="prefetch" href="/assets/js/177.7119cb79.js"><link rel="prefetch" href="/assets/js/178.192ce09d.js"><link rel="prefetch" href="/assets/js/179.0730161e.js"><link rel="prefetch" href="/assets/js/18.83466344.js"><link rel="prefetch" href="/assets/js/180.06a89846.js"><link rel="prefetch" href="/assets/js/181.1a0a1d23.js"><link rel="prefetch" href="/assets/js/182.d31eb3c5.js"><link rel="prefetch" href="/assets/js/183.ce10554e.js"><link rel="prefetch" href="/assets/js/184.8d077034.js"><link rel="prefetch" href="/assets/js/185.dd451011.js"><link rel="prefetch" href="/assets/js/186.da118208.js"><link rel="prefetch" href="/assets/js/187.5db16e6b.js"><link rel="prefetch" href="/assets/js/188.3e04e67f.js"><link rel="prefetch" href="/assets/js/189.da47452c.js"><link rel="prefetch" href="/assets/js/19.db4380a9.js"><link rel="prefetch" href="/assets/js/190.90b842a8.js"><link rel="prefetch" href="/assets/js/191.030d985e.js"><link rel="prefetch" href="/assets/js/192.2862905c.js"><link rel="prefetch" href="/assets/js/193.91339a7b.js"><link rel="prefetch" href="/assets/js/194.6683373d.js"><link rel="prefetch" href="/assets/js/195.2db546dd.js"><link rel="prefetch" href="/assets/js/196.4610bf34.js"><link rel="prefetch" href="/assets/js/197.ef5a795f.js"><link rel="prefetch" href="/assets/js/198.bd4bbf85.js"><link rel="prefetch" href="/assets/js/199.7f6ffc65.js"><link rel="prefetch" href="/assets/js/20.019b8dda.js"><link rel="prefetch" href="/assets/js/200.221b7f68.js"><link rel="prefetch" href="/assets/js/201.b39a04f1.js"><link rel="prefetch" href="/assets/js/202.84670983.js"><link rel="prefetch" href="/assets/js/203.0232cec1.js"><link rel="prefetch" href="/assets/js/204.3095e3e2.js"><link rel="prefetch" href="/assets/js/205.86b2c0cf.js"><link rel="prefetch" href="/assets/js/206.cd2c0c2f.js"><link rel="prefetch" href="/assets/js/207.6ee507d7.js"><link rel="prefetch" href="/assets/js/208.8177fa62.js"><link rel="prefetch" href="/assets/js/209.2053648d.js"><link rel="prefetch" href="/assets/js/21.1b1e96c3.js"><link rel="prefetch" href="/assets/js/210.19635a47.js"><link rel="prefetch" href="/assets/js/211.c818ed3e.js"><link rel="prefetch" href="/assets/js/212.64180fc4.js"><link rel="prefetch" href="/assets/js/213.23542a26.js"><link rel="prefetch" href="/assets/js/214.d4909424.js"><link rel="prefetch" href="/assets/js/215.86029c87.js"><link rel="prefetch" href="/assets/js/216.6ba2ff74.js"><link rel="prefetch" href="/assets/js/217.2c937765.js"><link rel="prefetch" href="/assets/js/218.390bdd12.js"><link rel="prefetch" href="/assets/js/219.ffa8c2f1.js"><link rel="prefetch" href="/assets/js/22.3b307273.js"><link rel="prefetch" href="/assets/js/220.8c083b6b.js"><link rel="prefetch" href="/assets/js/221.d9f09e68.js"><link rel="prefetch" href="/assets/js/222.002d32f4.js"><link rel="prefetch" href="/assets/js/223.a79f6090.js"><link rel="prefetch" href="/assets/js/224.8d83365d.js"><link rel="prefetch" href="/assets/js/225.1a23cda2.js"><link rel="prefetch" href="/assets/js/227.d9b01667.js"><link rel="prefetch" href="/assets/js/228.04bac547.js"><link rel="prefetch" href="/assets/js/229.09039436.js"><link rel="prefetch" href="/assets/js/23.626ae5a5.js"><link rel="prefetch" href="/assets/js/230.6cbd8ba0.js"><link rel="prefetch" href="/assets/js/231.6c068b40.js"><link rel="prefetch" href="/assets/js/232.7fc4edfd.js"><link rel="prefetch" href="/assets/js/233.f7d165e5.js"><link rel="prefetch" href="/assets/js/234.d628fdb4.js"><link rel="prefetch" href="/assets/js/235.d79ff42c.js"><link rel="prefetch" href="/assets/js/236.33e5bcf0.js"><link rel="prefetch" href="/assets/js/237.f35ff466.js"><link rel="prefetch" href="/assets/js/238.6150d6c5.js"><link rel="prefetch" href="/assets/js/239.0421cb82.js"><link rel="prefetch" href="/assets/js/24.7fdd991b.js"><link rel="prefetch" href="/assets/js/240.1b080968.js"><link rel="prefetch" href="/assets/js/241.9a57703f.js"><link rel="prefetch" href="/assets/js/242.0fa4e218.js"><link rel="prefetch" href="/assets/js/243.16f89e68.js"><link rel="prefetch" href="/assets/js/244.5abb6b31.js"><link rel="prefetch" href="/assets/js/245.a32b3bd9.js"><link rel="prefetch" href="/assets/js/246.466f423e.js"><link rel="prefetch" href="/assets/js/247.bf6efe78.js"><link rel="prefetch" href="/assets/js/248.98a458f3.js"><link rel="prefetch" href="/assets/js/249.f6324936.js"><link rel="prefetch" href="/assets/js/25.d7e3e6dc.js"><link rel="prefetch" href="/assets/js/250.66606c42.js"><link rel="prefetch" href="/assets/js/251.8f9f0431.js"><link rel="prefetch" href="/assets/js/252.0ffe3d15.js"><link rel="prefetch" href="/assets/js/253.dc166fe3.js"><link rel="prefetch" href="/assets/js/254.35856d11.js"><link rel="prefetch" href="/assets/js/255.712946a3.js"><link rel="prefetch" href="/assets/js/256.8f730cbe.js"><link rel="prefetch" href="/assets/js/257.a714ad48.js"><link rel="prefetch" href="/assets/js/258.d4898f39.js"><link rel="prefetch" href="/assets/js/259.c54b4540.js"><link rel="prefetch" href="/assets/js/26.bbba9fef.js"><link rel="prefetch" href="/assets/js/260.3dfd186a.js"><link rel="prefetch" href="/assets/js/261.e51e03b4.js"><link rel="prefetch" href="/assets/js/262.ee5bb93d.js"><link rel="prefetch" href="/assets/js/263.b1e7af56.js"><link rel="prefetch" href="/assets/js/264.cdbff4c1.js"><link rel="prefetch" href="/assets/js/265.d3ccfd29.js"><link rel="prefetch" href="/assets/js/266.3b690de4.js"><link rel="prefetch" href="/assets/js/267.7571b35c.js"><link rel="prefetch" href="/assets/js/268.497ac797.js"><link rel="prefetch" href="/assets/js/269.b222cdd4.js"><link rel="prefetch" href="/assets/js/27.81c5c9d2.js"><link rel="prefetch" href="/assets/js/270.5f7f91bf.js"><link rel="prefetch" href="/assets/js/271.ec298f24.js"><link rel="prefetch" href="/assets/js/272.33149340.js"><link rel="prefetch" href="/assets/js/273.036753ca.js"><link rel="prefetch" href="/assets/js/274.5aae6795.js"><link rel="prefetch" href="/assets/js/275.893acaad.js"><link rel="prefetch" href="/assets/js/276.b2cc851c.js"><link rel="prefetch" href="/assets/js/277.c71f5654.js"><link rel="prefetch" href="/assets/js/278.1e068a18.js"><link rel="prefetch" href="/assets/js/279.28db05a3.js"><link rel="prefetch" href="/assets/js/28.3b245058.js"><link rel="prefetch" href="/assets/js/280.5d1027b9.js"><link rel="prefetch" href="/assets/js/281.de2662b4.js"><link rel="prefetch" href="/assets/js/282.12b71d99.js"><link rel="prefetch" href="/assets/js/283.08bc6007.js"><link rel="prefetch" href="/assets/js/284.69b4e502.js"><link rel="prefetch" href="/assets/js/285.9cf62d7b.js"><link rel="prefetch" href="/assets/js/286.c38efca6.js"><link rel="prefetch" href="/assets/js/287.e4bd30a1.js"><link rel="prefetch" href="/assets/js/288.90a708c3.js"><link rel="prefetch" href="/assets/js/289.7a604a72.js"><link rel="prefetch" href="/assets/js/29.a68ede14.js"><link rel="prefetch" href="/assets/js/290.1cf1ce40.js"><link rel="prefetch" href="/assets/js/291.01736ad0.js"><link rel="prefetch" href="/assets/js/292.d5bbd31b.js"><link rel="prefetch" href="/assets/js/3.c132a87c.js"><link rel="prefetch" href="/assets/js/30.7c7fe9e8.js"><link rel="prefetch" href="/assets/js/31.bdaece07.js"><link rel="prefetch" href="/assets/js/32.de3807e5.js"><link rel="prefetch" href="/assets/js/33.c63aa30a.js"><link rel="prefetch" href="/assets/js/34.b2ce47e3.js"><link rel="prefetch" href="/assets/js/35.39763777.js"><link rel="prefetch" href="/assets/js/36.49f0cede.js"><link rel="prefetch" href="/assets/js/37.110d3195.js"><link rel="prefetch" href="/assets/js/38.73f5320b.js"><link rel="prefetch" href="/assets/js/39.c4a73374.js"><link rel="prefetch" href="/assets/js/4.46619c11.js"><link rel="prefetch" href="/assets/js/40.5e1c2473.js"><link rel="prefetch" href="/assets/js/41.f43abb3d.js"><link rel="prefetch" href="/assets/js/42.3ebb7d3d.js"><link rel="prefetch" href="/assets/js/43.baf904f3.js"><link rel="prefetch" href="/assets/js/44.33c7fe48.js"><link rel="prefetch" href="/assets/js/45.b4cb7760.js"><link rel="prefetch" href="/assets/js/46.011e5377.js"><link rel="prefetch" href="/assets/js/47.3b36b25b.js"><link rel="prefetch" href="/assets/js/48.903704f2.js"><link rel="prefetch" href="/assets/js/49.632edc9d.js"><link rel="prefetch" href="/assets/js/5.637bfcd3.js"><link rel="prefetch" href="/assets/js/50.4f56cdc3.js"><link rel="prefetch" href="/assets/js/51.c33de2cb.js"><link rel="prefetch" href="/assets/js/52.e3e07adf.js"><link rel="prefetch" href="/assets/js/53.cacb1466.js"><link rel="prefetch" href="/assets/js/54.bf8a31c4.js"><link rel="prefetch" href="/assets/js/55.ea07a25a.js"><link rel="prefetch" href="/assets/js/56.d82d686b.js"><link rel="prefetch" href="/assets/js/57.7f9bfbd0.js"><link rel="prefetch" href="/assets/js/58.2471d274.js"><link rel="prefetch" href="/assets/js/59.9c0c6e85.js"><link rel="prefetch" href="/assets/js/6.134c7c0f.js"><link rel="prefetch" href="/assets/js/60.33e6d7ca.js"><link rel="prefetch" href="/assets/js/61.5d613d86.js"><link rel="prefetch" href="/assets/js/62.4650c42c.js"><link rel="prefetch" href="/assets/js/63.230d5ea1.js"><link rel="prefetch" href="/assets/js/64.d408a866.js"><link rel="prefetch" href="/assets/js/65.043a515d.js"><link rel="prefetch" href="/assets/js/66.b5627c0d.js"><link rel="prefetch" href="/assets/js/67.d3fc6fc4.js"><link rel="prefetch" href="/assets/js/68.cf72b60c.js"><link rel="prefetch" href="/assets/js/69.469b23e0.js"><link rel="prefetch" href="/assets/js/7.08d93cc1.js"><link rel="prefetch" href="/assets/js/70.41922ead.js"><link rel="prefetch" href="/assets/js/71.c4d4719c.js"><link rel="prefetch" href="/assets/js/72.1349370e.js"><link rel="prefetch" href="/assets/js/73.4b0dda46.js"><link rel="prefetch" href="/assets/js/74.6bca0627.js"><link rel="prefetch" href="/assets/js/75.4d8ecf8a.js"><link rel="prefetch" href="/assets/js/76.a6d7f617.js"><link rel="prefetch" href="/assets/js/77.39b4b5bd.js"><link rel="prefetch" href="/assets/js/78.30ea7828.js"><link rel="prefetch" href="/assets/js/79.70093a38.js"><link rel="prefetch" href="/assets/js/8.e243d73e.js"><link rel="prefetch" href="/assets/js/80.a5a94d3a.js"><link rel="prefetch" href="/assets/js/81.fb04b653.js"><link rel="prefetch" href="/assets/js/82.9a1b39e7.js"><link rel="prefetch" href="/assets/js/83.541d1dfd.js"><link rel="prefetch" href="/assets/js/84.ebcdae6d.js"><link rel="prefetch" href="/assets/js/85.6c4e1649.js"><link rel="prefetch" href="/assets/js/86.fa468e8a.js"><link rel="prefetch" href="/assets/js/87.958d3251.js"><link rel="prefetch" href="/assets/js/88.422f50f1.js"><link rel="prefetch" href="/assets/js/89.2d7732e3.js"><link rel="prefetch" href="/assets/js/9.ed005fa6.js"><link rel="prefetch" href="/assets/js/90.55fd94bb.js"><link rel="prefetch" href="/assets/js/91.f7979a48.js"><link rel="prefetch" href="/assets/js/92.39b5b620.js"><link rel="prefetch" href="/assets/js/93.8a19a013.js"><link rel="prefetch" href="/assets/js/94.ff760181.js"><link rel="prefetch" href="/assets/js/95.d2114ad2.js"><link rel="prefetch" href="/assets/js/96.b3f629e0.js"><link rel="prefetch" href="/assets/js/97.07a85239.js"><link rel="prefetch" href="/assets/js/98.f8223232.js"><link rel="prefetch" href="/assets/js/99.e7053972.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b6d109e9.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/logo.png" alt="willingoxjin's blog" class="logo"> <span class="site-name can-hide">willingoxjin's blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/design-pattern/#%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F" class="nav-link">设计模式</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分布式应用" class="dropdown-title"><a href="/distributed/" class="link-title">分布式应用</a> <span class="title" style="display:none;">分布式应用</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/distributed-service/app-architecture/" class="nav-link">单体架构到高可用分布式系统</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/distributed-session-sso/" class="nav-link">分布式session及单点登录</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/distributed-id/" class="nav-link">分布式ID</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/distributed-lock/" class="nav-link">分布式锁</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/distributed-scheduled-task/" class="nav-link">分布式定时任务</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/read-write-separation-library-table/" class="nav-link">读写分离、分库分表</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/distributed-transaction-consistent/" class="nav-link">分布式事务</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/interface-idempotency/" class="nav-link">接口幂等性</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/current-limiting/" class="nav-link">限流</a></li></ul></div></div><div class="nav-item"><a href="/micro-service/" class="nav-link">微服务</a></div><div class="nav-item"><a href="/big-data/" class="nav-link">大数据</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><a href="/categories/?category=%E5%89%8D%E7%AB%AF" class="link-title">前端</a> <span class="title" style="display:none;">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/?category=react-native.html" class="nav-link">React Native</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="/img/avatar.pic.jpg"> <div class="blogger-info"><h3>willingoxjin</h3> <span>爱干饭的Java程序员一枚</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/design-pattern/#%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F" class="nav-link">设计模式</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分布式应用" class="dropdown-title"><a href="/distributed/" class="link-title">分布式应用</a> <span class="title" style="display:none;">分布式应用</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/distributed-service/app-architecture/" class="nav-link">单体架构到高可用分布式系统</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/distributed-session-sso/" class="nav-link">分布式session及单点登录</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/distributed-id/" class="nav-link">分布式ID</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/distributed-lock/" class="nav-link">分布式锁</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/distributed-scheduled-task/" class="nav-link">分布式定时任务</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/read-write-separation-library-table/" class="nav-link">读写分离、分库分表</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/distributed-transaction-consistent/" class="nav-link">分布式事务</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/interface-idempotency/" class="nav-link">接口幂等性</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/current-limiting/" class="nav-link">限流</a></li></ul></div></div><div class="nav-item"><a href="/micro-service/" class="nav-link">微服务</a></div><div class="nav-item"><a href="/big-data/" class="nav-link">大数据</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><a href="/categories/?category=%E5%89%8D%E7%AB%AF" class="link-title">前端</a> <span class="title" style="display:none;">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/?category=react-native.html" class="nav-link">React Native</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>centos7及shell</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>生产服务器常用配置</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>kali</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>常用bash</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/linux/bash/common/" aria-current="page" class="active sidebar-link">Linux 入门命令</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/linux/bash/common/#一、入门命令" class="sidebar-link">一、入门命令</a></li><li class="sidebar-sub-header"><a href="/linux/bash/common/#二、系统" class="sidebar-link">二、系统</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/linux/bash/common/#查看操作系统发行版本" class="sidebar-link">查看操作系统发行版本</a></li><li class="sidebar-sub-header"><a href="/linux/bash/common/#uname" class="sidebar-link">uname</a></li><li class="sidebar-sub-header"><a href="/linux/bash/common/#uptime" class="sidebar-link">uptime</a></li></ul></li><li class="sidebar-sub-header"><a href="/linux/bash/common/#三、用户" class="sidebar-link">三、用户</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/linux/bash/common/#id" class="sidebar-link">id</a></li><li class="sidebar-sub-header"><a href="/linux/bash/common/#w" class="sidebar-link">w</a></li><li class="sidebar-sub-header"><a href="/linux/bash/common/#who" class="sidebar-link">who</a></li><li class="sidebar-sub-header"><a href="/linux/bash/common/#whoami" class="sidebar-link">whoami</a></li><li class="sidebar-sub-header"><a href="/linux/bash/common/#last" class="sidebar-link">last</a></li></ul></li><li class="sidebar-sub-header"><a href="/linux/bash/common/#四、cpu" class="sidebar-link">四、CPU</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/linux/bash/common/#cpuinfo" class="sidebar-link">cpuinfo</a></li><li class="sidebar-sub-header"><a href="/linux/bash/common/#top" class="sidebar-link">top</a></li></ul></li><li class="sidebar-sub-header"><a href="/linux/bash/common/#五、进程" class="sidebar-link">五、进程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/linux/bash/common/#_1-ps" class="sidebar-link">1.ps</a></li><li class="sidebar-sub-header"><a href="/linux/bash/common/#jobs" class="sidebar-link">jobs</a></li><li class="sidebar-sub-header"><a href="/linux/bash/common/#pgrep" class="sidebar-link">pgrep</a></li></ul></li><li class="sidebar-sub-header"><a href="/linux/bash/common/#六、内存" class="sidebar-link">六、内存</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/linux/bash/common/#meminfo" class="sidebar-link">meminfo</a></li><li class="sidebar-sub-header"><a href="/linux/bash/common/#free" class="sidebar-link">free</a></li><li class="sidebar-sub-header"><a href="/linux/bash/common/#vmstat" class="sidebar-link">vmstat</a></li></ul></li><li class="sidebar-sub-header"><a href="/linux/bash/common/#七、磁盘" class="sidebar-link">七、磁盘</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/linux/bash/common/#df" class="sidebar-link">df</a></li><li class="sidebar-sub-header"><a href="/linux/bash/common/#du" class="sidebar-link">du</a></li></ul></li><li class="sidebar-sub-header"><a href="/linux/bash/common/#八、网络" class="sidebar-link">八、网络</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/linux/bash/common/#netstat" class="sidebar-link">netstat</a></li><li class="sidebar-sub-header"><a href="/linux/bash/common/#route" class="sidebar-link">route</a></li><li class="sidebar-sub-header"><a href="/linux/bash/common/#lsof" class="sidebar-link">lsof</a></li></ul></li><li class="sidebar-sub-header"><a href="/linux/bash/common/#end" class="sidebar-link">END</a></li></ul></li><li><a href="/linux/bash/monitoring/" class="sidebar-link">监控bash</a></li></ul></section></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-d5e9d2e6><div class="articleInfo" data-v-d5e9d2e6><ul class="breadcrumbs" data-v-d5e9d2e6><li data-v-d5e9d2e6><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-d5e9d2e6></a></li> <li data-v-d5e9d2e6><a href="/operating-system/#操作系统" data-v-d5e9d2e6>操作系统</a></li><li data-v-d5e9d2e6><a href="/operating-system/#常用bash" data-v-d5e9d2e6>常用bash</a></li></ul> <div class="info" data-v-d5e9d2e6><div title="作者" class="author iconfont icon-touxiang" data-v-d5e9d2e6><a href="/" target="_blank" title="作者" class="beLink" data-v-d5e9d2e6>willingoxjin</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-d5e9d2e6><a href="javascript:;" data-v-d5e9d2e6>2023-03-07</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABGpJREFUSA3tVVtoXFUU3fvOI53UlmCaKIFmwEhsE7QK0ipFEdHEKpXaZGrp15SINsXUWvBDpBgQRKi0+KKoFeJHfZA+ED9KKoIU2gYD9UejTW4rVIzm0VSTziPzuNu1z507dibTTjL4U/DAzLn3nL3X2o91ziX6f9wMFdh6Jvbm9nNSV0msViVO6tN1Rm7NMu2OpeJ9lWBUTDxrJbYTS0hInuwciu9eLHlFxCLCZEk3MegsJmZ5K/JD6t7FkFdEvGUo1g7qJoG3MHImqRIn8/nzY1K9UPKKiJmtnUqHVE3Gbuay6vJE/N2FEmuxFjW2nUuE0yQXRRxLiTUAzs36zhZvOXJPdX850EVnnLZkB8prodQoM5JGj7Xk2mvC7JB8tG04Ef5PiXtG0UtxupRQSfTnBoCy554x18yJHI6I+G5Eru4LHmPJZEQsrvPUbMiA8G/WgMK7w7I+ez7++o2ANfbrjvaOl1tFMs+htG3IrZH9/hDX1Pr8Tc0UvH8tcX29KzAgIGcEkINyW5BF9x891hw6VYqgJHEk0huccS7vh3C6gTiODL+26huuBtbct8eZnqLML8PkxGYpuPZBqtqwkSjgc4mB5gbgig5i+y0UDK35LMxXisn9xQtK+nd26gTIHsHe/oblK/b29fUmN/8Y+9jAQrnBp56m1LcDlDp9irKTExSKduXJVWSqdBMA08pEJnEIOB3FPPMybu/oeV8zFeYN3xx576Q6RH+VmplE4ncQV5v+5rzSoyOU7PuEAg8g803PwBJ0CExno/jcMbN8tONYeOmHiuUNryvm3fRUy4tMPVLdAGkUhNWuggGrJcXPv+ouCjz0MKUHz1J2/E8IC9nqTabcxgaBYM0hPhD5Y65FsbxRQKxCQrDjDctW7PUM3HuZunFyifSAqEfuzCp48Il24luWUWZoyJCaPR82jE0+kFA643wRFVni4RYSq3ohJO2pZ7B5dO4xkDWbEpossJPLSrPjYID8rS2UHTlvyNxqIGsg674XJJ7vnh5L7PNwC4hh2sjCI96mzszOTpxLF0T7l88Yz7lAuK6OnL8gXLOnTvpzSb22YG8W7us3jSebFHeeqnXRG1vt+MoUM84LQIBmMsCTAcOauTh0T0l0neQK7m2bLMt2mGxU3HYssS0J2cdv5wljlPsrIuZLAG/2DOZIXgCYT8uMGZN+e2kSirfxZOPCsC0f24nTZzspnVn9VePS1Z5vubmAGGXG8ZFno9Hel0yfA5ZPhF7Dh972BQJ2qCpgH67lmWtBYbvk6sz02wjky2vXyz0XErP/kFB619js1BtwfOV4OPRqOQBjy3Qbk18vigUPPSD5ceHnwck7W9bhAqZdd7SuG7w4/P2F/GaJh8c7e9qgow+Q7cGBo+98WsLkuktFqiZabtXuQTu/Y5ETbR0v7tNSFnvrmu6pjdoan2KjMu8q/Hmj1EfCO2ZGfEIbIXKUlw8qaX9/b2oeSJmFksSeT/Fn0V3nSypChh4Gjh74ybO9aeZ/AN2dwciu2/MhAAAAAElFTkSuQmCC">Linux 入门命令<!----></h1>  <div class="theme-vdoing-content content__default"><blockquote><p>环境：CentOS 7</p></blockquote> <h2 id="一、入门命令"><a href="#一、入门命令" class="header-anchor">#</a> 一、入门命令</h2> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 切换目录</span>
+<span class="token builtin class-name">cd</span>
+<span class="token comment"># 示例</span>
+<span class="token comment"># 切换到上一层目录</span>
+<span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>
+<span class="token comment"># 切换到/opt/software</span>
+<span class="token builtin class-name">cd</span> /opt/software
+
+
+<span class="token comment"># 显示工作目录</span>
+<span class="token builtin class-name">pwd</span>
+
+<span class="token comment"># 显示指定工作目录下之内容</span>
+<span class="token function">ls</span>
+<span class="token comment"># 示例</span>
+<span class="token comment"># 列出当前目录中文件及目录的详情</span>
+<span class="token function">ls</span> <span class="token parameter variable">-l</span>
+<span class="token comment"># 列出当前目录及其子目录中文件及目录的详情</span>
+<span class="token function">ls</span> <span class="token parameter variable">-lR</span>
+
+
+<span class="token comment"># 创建目录</span>
+<span class="token function">mkdir</span>
+<span class="token comment"># 示例</span>
+<span class="token comment"># 创建目录aaa</span>
+<span class="token function">mkdir</span> aaa
+<span class="token comment"># 在bbb目录下创建目录aaa，如果bbb目录不存在，就创建一个</span>
+<span class="token function">mkdir</span> <span class="token parameter variable">-p</span> bbb/aaa
+
+
+<span class="token comment"># 删除目录</span>
+<span class="token function">rmdir</span>
+<span class="token comment"># 示例</span>
+<span class="token comment"># 删除目录aaa</span>
+<span class="token function">rmdir</span> aaa
+<span class="token comment"># 删除bbb目录下的aaa目录，如果aaa删除后，bbb目录为成为空目录，则将bbb也删除</span>
+<span class="token function">rmdir</span> <span class="token parameter variable">-p</span> bbb/aaa
+
+
+<span class="token comment"># 将指定文件的访问时间及修改时间设为当前时间，若文件不存在，则会自动创建该文件</span>
+<span class="token function">touch</span>
+<span class="token comment"># 示例</span>
+<span class="token comment"># 将aaa文件的访问时间及修改时间设为当前时间，如果aaa不存在，则会自动创建该文件</span>
+<span class="token function">touch</span> aaa
+
+
+<span class="token comment"># 删除文件或目录(一旦通过rm命令删除，将无法恢复，务必小心使用)</span>
+<span class="token function">rm</span>
+<span class="token comment"># 示例</span>
+<span class="token comment"># 删除test.txt(此格式只能rm 文件；如果使用了rm 目录，则会提示是目录，无法删除)</span>
+<span class="token function">rm</span>  test.txt 
+<span class="token comment"># 递归删除test_dir目录及其内容</span>
+<span class="token function">rm</span>  <span class="token parameter variable">-r</span> test_dir
+
+
+<span class="token comment"># 为文件或目录改名、或将文件或目录移入其它位置</span>
+<span class="token function">mv</span>
+<span class="token comment"># 示例</span>
+<span class="token comment"># 将test.txt改名为damu.txt</span>
+<span class="token function">mv</span> test.txt damu.txt
+<span class="token comment"># 将aaa目录放入bbb目录中；如果bbb目录不存在，则将aaa改名为bbb</span>
+<span class="token function">mv</span> aaa bbb
+
+
+<span class="token comment"># 以树状图列出目录的内容</span>
+tree
+
+
+<span class="token comment"># 杀死进程</span>
+<span class="token function">kill</span>
+<span class="token comment"># 示例</span>
+<span class="token comment"># 杀死9999这个进程</span>
+<span class="token function">kill</span> <span class="token number">9999</span>
+<span class="token comment"># 查看信号</span>
+<span class="token function">kill</span> <span class="token parameter variable">-l</span>
+<span class="token comment"># 发送SIGHUP信号杀死9999这个进程</span>
+<span class="token function">kill</span> <span class="token parameter variable">-HUP</span> <span class="token number">9999</span>
+<span class="token comment"># 使用SIGKILL信号杀死9999这个进程</span>
+<span class="token function">kill</span> <span class="token parameter variable">-9</span> <span class="token number">9999</span>
+
+
+<span class="token comment"># 将所有行程以树状图显</span>
+pstree
+<span class="token comment"># 示例</span>
+<span class="token comment"># 展示该进程的完整指令及参数</span>
+pstree <span class="token parameter variable">-a</span>
+
+
+<span class="token comment"># 关机</span>
+<span class="token comment"># 示例：</span>
+<span class="token function">shutdown</span>
+<span class="token comment"># 立即关机</span>
+<span class="token function">shutdown</span> <span class="token parameter variable">-h</span> now
+<span class="token comment"># 10分钟后关机</span>
+<span class="token function">shutdown</span> <span class="token parameter variable">-h</span> <span class="token number">10</span>
+<span class="token comment"># 立即重启</span>
+<span class="token function">shutdown</span> <span class="token parameter variable">-r</span> now
+
+
+<span class="token comment"># 重启</span>
+<span class="token function">reboot</span>
+
+
+<span class="token comment"># 设置或显示环境变量</span>
+<span class="token builtin class-name">export</span>
+<span class="token comment"># 示例</span>
+<span class="token comment"># 列出当前的环境变量</span>
+<span class="token builtin class-name">export</span> <span class="token parameter variable">-p</span>
+<span class="token comment"># 设置环境变量JAVA_HOME=xxx</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">JAVA_HOME</span><span class="token operator">=</span>/Library/Java/JavaVirtualMachines/jdk1.8.0_362.jdk/Contents/Home
+
+
+<span class="token comment"># 设定权限</span>
+<span class="token comment"># u 表示该文件的拥有者，g 表示与该文件的拥有者属于同一个群体(group)者，o 表示其他以外的人，a 表示这三者皆是。</span>
+<span class="token comment"># + 表示增加权限、- 表示取消权限、= 表示唯一设定权限。</span>
+<span class="token comment"># r 表示可读取，w 表示可写入，x 表示可执行，X 表示只有当该文件是个子目录或者该文件已经被设定过为可执行。</span>
+<span class="token function">chmod</span> 
+<span class="token comment"># 示例</span>
+<span class="token comment"># 将test.txt设为所有人皆可读取</span>
+<span class="token function">chmod</span> a+r test.txt
+<span class="token comment"># 将文件test1.txt与test2.txt设为该文件拥有者，与其所属同一个群体者可写入，但其他以外的人则不可写入</span>
+<span class="token function">chmod</span> ug+w,o-w test1.txt test2.txt
+<span class="token comment"># 使用数字形式设置权限，语法是chmod abc file。其中a,b,c各为一个数字，分别表示User、Group、及Other的权限。</span>
+<span class="token comment"># r=4，w=2，x=1</span>
+<span class="token comment"># 若要rwx属性则4+2+1=7；</span>
+<span class="token comment"># 若要rw-属性则4+2=6；</span>
+<span class="token comment"># 若要r-x属性则4+1=5</span>
+<span class="token function">chmod</span> <span class="token number">777</span> <span class="token function">file</span>
+
+
+<span class="token comment"># 将指定文件或目录的拥有者改为指定的用户或组</span>
+<span class="token function">chown</span>
+<span class="token comment"># 示例</span>
+<span class="token comment"># 将的拥有者设为nginx，群体的使用者nginx</span>
+<span class="token function">chown</span> nginx:nginx nginx.conf
+<span class="token comment"># 递归将当前目录下的所有文件与子目录的拥有者皆设为nginx，群体的使用者为nginx</span>
+<span class="token function">chown</span> <span class="token parameter variable">-R</span> nginx:nginx *
+
+
+<span class="token comment"># 查找文件里符合条件的字符串</span>
+<span class="token function">grep</span>
+<span class="token comment"># 示例</span>
+<span class="token comment"># 在当前目录中，查找后缀为txt的文件中，包含test字符串的文件，并打印字符串所属的行</span>
+<span class="token function">grep</span> <span class="token builtin class-name">test</span> *txt
+<span class="token comment"># 递归查找/opt目录中，包含test字符串的文件，并打印字符串所属的行</span>
+<span class="token function">grep</span> <span class="token parameter variable">-r</span> <span class="token builtin class-name">test</span> /opt
+<span class="token comment"># 查找1.txt中不包含test的行</span>
+<span class="token function">grep</span> <span class="token parameter variable">-v</span> <span class="token builtin class-name">test</span> <span class="token number">1</span>.txt
+
+
+<span class="token comment"># 打开文件并输出</span>
+<span class="token comment"># 示例</span>
+<span class="token comment"># 打开1.txt</span>
+<span class="token function">cat</span> <span class="token number">1</span>.txt
+<span class="token comment"># 为1.txt添加行号，并输出到2.txt中</span>
+<span class="token function">cat</span> <span class="token parameter variable">-n</span> <span class="token number">1</span>.txt <span class="token operator">&gt;</span> <span class="token number">2</span>.txt
+
+
+<span class="token comment"># 查找指定目录下的文件</span>
+<span class="token function">find</span>
+<span class="token comment"># 查找当前目录下的所有txt文件</span>
+<span class="token function">find</span> <span class="token builtin class-name">.</span> <span class="token parameter variable">-name</span> *.txt
+<span class="token comment"># 查找机器中所有大于50M的文件</span>
+<span class="token function">find</span> / <span class="token parameter variable">-type</span> f <span class="token parameter variable">-size</span> +50M
+<span class="token comment"># 查找机器中所有小于50M的文件，并用du -h展示出来</span>
+<span class="token function">find</span> / <span class="token parameter variable">-type</span> f <span class="token parameter variable">-size</span> +50M <span class="token parameter variable">-exec</span> <span class="token function">du</span> <span class="token parameter variable">-h</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token punctuation">;</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br></div></div><h2 id="二、系统"><a href="#二、系统" class="header-anchor">#</a> 二、系统</h2> <h3 id="查看操作系统发行版本"><a href="#查看操作系统发行版本" class="header-anchor">#</a> 查看操作系统发行版本</h3> <p>不同的Linux发行版（例如CentOS与Debain）、以及不同版本（例如CentOS 6.x与CentOS 7.x）查看版本的方式不同，下面罗列了笔者知道的所有方式，总有一款能适用于你的环境。</p> <ul><li>方法1：通过 <code>/etc</code> 目录下的文件查看
+<ul><li>/etc/os-release</li> <li>/etc/system-release</li> <li>/etc/redhat-release</li> <li>/etc/centos-release</li> <li>/etc/issue</li></ul></li> <li>方法2：执行 <code>lsb_release -a</code></li></ul> <h3 id="uname"><a href="#uname" class="header-anchor">#</a> uname</h3> <p>作用：显示系统信息</p> <p>语法：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>Usage: <span class="token function">uname</span> <span class="token punctuation">[</span>OPTION<span class="token punctuation">]</span><span class="token punctuation">..</span>. Print certain system information.  With no OPTION, same as -s. 
+  -a, <span class="token parameter variable">--all</span>                打印所有信息
+   -s, --kernel-name        打印内核名称
+   -n, <span class="token parameter variable">--nodename</span>           打印网络节点主机名
+   -r, --kernel-release     打印内核版本
+   -v, --kernel-version     打印内核版本
+   -m, <span class="token parameter variable">--machine</span>            打印硬件名称
+   -p, <span class="token parameter variable">--processor</span>          打印处理器类型
+   -i, --hardware-platform  打印硬件平台
+   -o, --operating-system   打印操作系统
+       <span class="token parameter variable">--help</span>     帮助
+       <span class="token parameter variable">--version</span>  显示版本
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>示例：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">uname</span> <span class="token parameter variable">-a</span>
+Linux willingoxjinjin-01 <span class="token number">3.10</span>.0-1160.42.2.el7.x86_64 <span class="token comment">#1 SMP Tue Sep 7 14:49:57 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>Linux：内核名称</li> <li>willingoxjinjin-01：主机名</li> <li>3.10.0-1160.42.2.el7.x86_64：内核版本</li> <li>#1 SMP Tue Sep 7 14:49:57 UTC 2021：内核版本</li> <li>x86_64：硬件名称</li> <li>x86_64：处理器类型</li> <li>x86_64：硬件平台</li> <li>GNU/Linux：操作系统</li></ul> <h3 id="uptime"><a href="#uptime" class="header-anchor">#</a> uptime</h3> <p>作用：展示系统启动运行了多久</p> <p>语法：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>Usage:  <span class="token function">uptime</span> <span class="token punctuation">[</span>options<span class="token punctuation">]</span> 
+Options:
+  -p, <span class="token parameter variable">--pretty</span>   对输出结果格式化
+  -h, <span class="token parameter variable">--help</span>     展示帮助
+  -s, <span class="token parameter variable">--since</span>    展示操作系统的启动时间
+  -V, <span class="token parameter variable">--version</span>  展示版本
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>示例：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>~ <span class="token function">uptime</span>
+<span class="token number">23</span>:34:52 up <span class="token number">482</span> days,  <span class="token number">1</span>:25,  <span class="token number">2</span> user,  load average: <span class="token number">0.00</span>, <span class="token number">0.01</span>, <span class="token number">0.05</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>23:34:52：当前时间</li> <li>up 482 days,  1:25：启动了48 天, 1:25</li> <li>2 users：当前登录了2个用户</li> <li>load average: 0.00, 0.01, 0.05：平局负载，后面的数字分别是最近1分钟、5分钟、15分钟的平均负载</li></ul> <h2 id="三、用户"><a href="#三、用户" class="header-anchor">#</a> 三、用户</h2> <h3 id="id"><a href="#id" class="header-anchor">#</a> id</h3> <p>作用：展示用户的ID、以及所属群组的ID</p> <p>语法：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>Usage: <span class="token function">id</span> <span class="token punctuation">[</span>OPTION<span class="token punctuation">]</span><span class="token punctuation">..</span>. <span class="token punctuation">[</span><span class="token environment constant">USER</span><span class="token punctuation">]</span>
+Print user and group information <span class="token keyword">for</span> the specified <span class="token environment constant">USER</span>,
+or <span class="token punctuation">(</span>when <span class="token environment constant">USER</span> omitted<span class="token punctuation">)</span> <span class="token keyword">for</span> the current user.
+
+  <span class="token parameter variable">-a</span>             忽略，只是为了和其他版本兼容
+  -Z, <span class="token parameter variable">--context</span>  只打印当前用户的安全上下文
+  -g, <span class="token parameter variable">--group</span>    只打印有效的group ID
+  -G, <span class="token parameter variable">--groups</span>   打印所有group ID
+  -n, <span class="token parameter variable">--name</span>     打印名称而不是号码，和-u/-g/-G配合使用
+  -r, <span class="token parameter variable">--real</span>     打印真实ID而非有效ID，和-u/-g/-G配合使用
+  -u, <span class="token parameter variable">--user</span>     只打印有效的用户ID
+  -z, <span class="token parameter variable">--zero</span>     以NULL而非空格分隔结果
+      <span class="token parameter variable">--help</span>     帮助
+      <span class="token parameter variable">--version</span>  展示版本
+
+Without any OPTION, print some useful <span class="token builtin class-name">set</span> of identified information.
+
+GNU coreutils online help: <span class="token operator">&lt;</span>http://www.gnu.org/software/coreutils/<span class="token operator">&gt;</span>
+For complete documentation, run: info coreutils <span class="token string">'id invocation'</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><p>示例：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>~ <span class="token function">id</span>
+<span class="token assign-left variable">uid</span><span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">(</span>root<span class="token punctuation">)</span> <span class="token assign-left variable">gid</span><span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">(</span>root<span class="token punctuation">)</span> <span class="token assign-left variable">group</span><span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">(</span>root<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>uid：用户id及名称</li> <li>gid：用户当前所使用的组的id及名称</li> <li>groups：用户拥有的所有组的id及名称</li></ul> <p>常见用法：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 查看当前用户相关信息</span>
+<span class="token function">id</span>
+
+<span class="token comment"># 查看用户mysql的相关信息</span>
+<span class="token function">id</span> mysql
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="w"><a href="#w" class="header-anchor">#</a> w</h3> <p>作用：展示当前登录系统的用户信息</p> <p>语法：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>Usage:  w <span class="token punctuation">[</span>options<span class="token punctuation">]</span> 
+Options:
+  -h, --no-header     <span class="token keyword">do</span> not print header
+  -u, --no-current    ignore current process username
+  -s, <span class="token parameter variable">--short</span>         short <span class="token function">format</span>
+  -f, <span class="token parameter variable">--from</span>          show remote <span class="token function">hostname</span> field
+  -o, --old-style     old style output
+  -i, --ip-addr       display IP address instead of <span class="token function">hostname</span> <span class="token punctuation">(</span>if possible<span class="token punctuation">)</span>
+
+ 
+     <span class="token parameter variable">--help</span>     display this <span class="token builtin class-name">help</span> and <span class="token builtin class-name">exit</span>
+  -V, <span class="token parameter variable">--version</span>  output version information and <span class="token builtin class-name">exit</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>示例：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>~ w
+ <span class="token number">23</span>:40:39 up <span class="token number">482</span> days,  <span class="token number">1</span>:31,  <span class="token number">1</span> user,  load average: <span class="token number">0.00</span>, <span class="token number">0.01</span>, <span class="token number">0.05</span>
+<span class="token environment constant">USER</span>     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+root     pts/0    <span class="token number">113.246</span>.xxx.xxx  <span class="token number">23</span>:32    <span class="token number">7</span>.00s  <span class="token number">0</span>.00s  <span class="token number">0</span>.00s w
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li>第一行：类似uptime</li> <li>USER：当前登录的用户有哪些</li> <li>TTY：虚拟终端的别名，可以认为是一个会话的名称</li> <li>FROM：你从那台机器登录进来的</li> <li>LOGIN：什么时候登录的</li> <li>IDLE：空闲时间</li> <li>JCPU：是指连接上这个TTY的所有进程所占用的时间，不包括过去的后台作业时间；</li> <li>PCPU：当前进程所占用的时间</li> <li>WHAT：这个用户当前运行的进程是什么</li></ul> <h3 id="who"><a href="#who" class="header-anchor">#</a> who</h3> <p>作用：展示当前登录用户的信息</p> <p>语法：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>Usage: <span class="token function">who</span> <span class="token punctuation">[</span>OPTION<span class="token punctuation">]</span><span class="token punctuation">..</span>. <span class="token punctuation">[</span> FILE <span class="token operator">|</span> ARG1 ARG2 <span class="token punctuation">]</span> Print information about <span class="token function">users</span> <span class="token function">who</span> are currently logged in. 
+  -a, <span class="token parameter variable">--all</span>         等价于-b <span class="token parameter variable">-d</span> <span class="token parameter variable">--login</span> <span class="token parameter variable">-p</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-t</span> <span class="token parameter variable">-T</span> <span class="token parameter variable">-u</span>
+   -b, <span class="token parameter variable">--boot</span>        系统启动时间
+   -d, <span class="token parameter variable">--dead</span>        打印死亡的进程
+   -H, <span class="token parameter variable">--heading</span>     打印标题
+   -l, <span class="token parameter variable">--login</span>       打印系统登录过程
+       <span class="token parameter variable">--lookup</span>      尝试通过DNS规范化主机名
+   <span class="token parameter variable">-m</span>                相当于who am i
+   -p, <span class="token parameter variable">--process</span>     打印由init产生的活动进程
+   -q, <span class="token parameter variable">--count</span>       显示登入系统的用户名和总人数
+   -r, <span class="token parameter variable">--runlevel</span>    打印当前运行级别
+   -s, <span class="token parameter variable">--short</span>       仅打印name, line, time（默认）
+   -t, <span class="token parameter variable">--time</span>        打印最近的系统时钟修改
+   -T, -w, <span class="token parameter variable">--mesg</span>    将用户的消息状态添加为+，-或?
+   -u, <span class="token parameter variable">--users</span>       列出登录的用户
+       <span class="token parameter variable">--message</span>     和-T相同
+       <span class="token parameter variable">--writable</span>    和-T相同
+       <span class="token parameter variable">--help</span>     帮助
+       <span class="token parameter variable">--version</span>  版本
+
+ 
+If FILE is not specified, use /var/run/utmp.  /var/log/wtmp as FILE is common.
+ If ARG1 ARG2 given, <span class="token parameter variable">-m</span> presumed: <span class="token string">'am i'</span> or <span class="token string">'mom likes'</span> are usual.
+
+ 
+GNU coreutils online help: <span class="token operator">&lt;</span>http://www.gnu.org/software/coreutils/<span class="token operator">&gt;</span>
+ For complete documentation, run: info coreutils <span class="token string">'who invocation'</span>
+ 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><p>示例：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>~ <span class="token function">who</span>
+root     pts/0        <span class="token number">2023</span>-03-08 <span class="token number">23</span>:32 <span class="token punctuation">(</span><span class="token number">113.246</span>.xxx.xxx<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>root：登录的用户是谁</li> <li>pts/0：虚拟终端别名</li> <li>2023-03-08 23:32 (113.246.xxx.xxx)：登录时间与远程IP</li></ul> <p>常用示例：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 显示当前登录系统的用户</span>
+<span class="token function">who</span>
+
+<span class="token comment"># 展示详情，相当于who -b -d --login -p -r -t -T -u</span>
+<span class="token function">who</span> <span class="token parameter variable">-a</span>
+
+<span class="token comment"># 显示自己的信息</span>
+<span class="token function">who</span> am i
+
+<span class="token comment"># 打印标题</span>
+<span class="token function">who</span> <span class="token parameter variable">-H</span>
+
+<span class="token comment"># 显示登入系统的用户名和总人数</span>
+<span class="token function">who</span> <span class="token parameter variable">-q</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h3 id="whoami"><a href="#whoami" class="header-anchor">#</a> whoami</h3> <p>作用：显示自身用户名称</p> <p>语法：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>Usage: <span class="token function">whoami</span> <span class="token punctuation">[</span>OPTION<span class="token punctuation">]</span><span class="token punctuation">..</span>. Print the user name associated with the current effective user ID. Same as <span class="token function">id</span> -un.       <span class="token parameter variable">--help</span>     帮助
+       <span class="token parameter variable">--version</span>  版本 GNU coreutils online help: <span class="token operator">&lt;</span>http://www.gnu.org/software/coreutils/<span class="token operator">&gt;</span>
+ For complete documentation, run: info coreutils <span class="token string">'whoami invocation'</span>
+ 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>示例：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">whoami</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="last"><a href="#last" class="header-anchor">#</a> last</h3> <p>显示用户最近登录信息</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>Usage: last <span class="token punctuation">[</span>-num <span class="token operator">|</span> <span class="token parameter variable">-n</span> num<span class="token punctuation">]</span> <span class="token punctuation">[</span>-f file<span class="token punctuation">]</span> <span class="token punctuation">[</span>-t YYYYMMDDHHMMSS<span class="token punctuation">]</span> <span class="token punctuation">[</span>-R<span class="token punctuation">]</span> <span class="token punctuation">[</span>-adioxFw<span class="token punctuation">]</span> <span class="token punctuation">[</span>username<span class="token punctuation">..</span><span class="token punctuation">]</span> <span class="token punctuation">[</span>tty<span class="token punctuation">..</span><span class="token punctuation">]</span> 
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>常用参数：</p> <ul><li>-R：结果省略从哪里登录的一栏</li> <li>-num/-n/num：展示前num条</li> <li>username：展示指定用户的登录信息</li> <li>tty：只显示指定虚拟终端的登录信息</li></ul> <blockquote><p>更多参数可使用  <code>man last</code> 查看</p></blockquote> <p>示例：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>~ last
+root     pts/0        <span class="token number">113.246</span>.xxx.xxx  Wed Mar  <span class="token number">8</span> <span class="token number">23</span>:32   still logged <span class="token keyword">in</span>
+root     pts/0        <span class="token number">220.202</span>.xxx.xxx   Tue Feb <span class="token number">28</span> <span class="token number">10</span>:00 - <span class="token number">22</span>:52  <span class="token punctuation">(</span><span class="token number">12</span>:51<span class="token punctuation">)</span>
+root     pts/0        <span class="token number">220.202</span>.xxx.xxx   Fri Feb <span class="token number">17</span> <span class="token number">15</span>:55 - <span class="token number">15</span>:55  <span class="token punctuation">(</span>00:00<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li>root：谁登陆的</li> <li>pts/1：虚拟终端的别名，可以认为是一个会话的名称</li> <li>220.202.xxx.xxx：展示登录机器的主机名，表示从哪里登陆的</li> <li>Wed Mar  8 23:32 still：登录的起止时间</li> <li>logged in：持续了多久</li></ul> <p>常见用法：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 只显示2条</span>
+last <span class="token parameter variable">-2</span>
+
+<span class="token comment"># 展示root用户的登录信息</span>
+last username root
+
+<span class="token comment"># 显示虚拟终端别名为pts/1的登录信息</span>
+last <span class="token function">tty</span> pts/1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="四、cpu"><a href="#四、cpu" class="header-anchor">#</a> 四、CPU</h2> <h3 id="cpuinfo"><a href="#cpuinfo" class="header-anchor">#</a> cpuinfo</h3> <p>作用：查看CPU信息</p> <p>使用：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">cat</span> /proc/cpuinfo
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>返回内容：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 概念：</span>
+<span class="token number">1</span>. 物理CPU数：主板上实际插入的cpu数量
+<span class="token number">2</span>. CPU核心数：单块CPU上面能处理数据的芯片组的数量，如双核、四核等
+<span class="token number">3</span>. 逻辑CPU数：一般来说：
+   逻辑CPU<span class="token operator">=</span>物理CPU个数×每颗核数     　　<span class="token comment"># 不支持超线程技术或未开启此技术</span>
+   逻辑CPU<span class="token operator">=</span>物理CPU个数×每颗核数 *2  　  <span class="token comment"># 表示服务器的CPU支持超线程技术（简单来说，它可使处理器中的1 颗内核如2 颗内核那样在操作系统中发挥作用。这样一来，操作系统可使用的执行资源扩大了一倍，提高了系统的整体性能）</span>
+
+
+<span class="token comment"># 逻辑处理核心数的编号，从0开始排序</span>
+processor       <span class="token builtin class-name">:</span> <span class="token number">0</span>
+<span class="token comment"># CPU厂商</span>
+vendor_id       <span class="token builtin class-name">:</span> GenuineIntel
+<span class="token comment"># CPU产品系列代号</span>
+cpu family      <span class="token builtin class-name">:</span> <span class="token number">6</span>
+<span class="token comment"># CPU属于其系列中的哪一代的代号</span>
+model           <span class="token builtin class-name">:</span> <span class="token number">85</span>
+<span class="token comment"># CPU的型号、主频</span>
+model name      <span class="token builtin class-name">:</span> Intel<span class="token punctuation">(</span>R<span class="token punctuation">)</span> Xeon<span class="token punctuation">(</span>R<span class="token punctuation">)</span> Platinum <span class="token number">8163</span> CPU @ <span class="token number">2</span>.50GHz
+<span class="token comment"># CPU所属制作更新版本</span>
+stepping        <span class="token builtin class-name">:</span> <span class="token number">7</span>
+<span class="token comment"># 微代码</span>
+microcode       <span class="token builtin class-name">:</span> 0x1
+<span class="token comment"># CPU当前所使用的主频</span>
+cpu MHz         <span class="token builtin class-name">:</span> <span class="token number">2499.992</span>
+<span class="token comment"># 二级缓存大小</span>
+cache size      <span class="token builtin class-name">:</span> <span class="token number">33792</span> KB
+<span class="token comment"># 物理id</span>
+physical <span class="token function">id</span>     <span class="token builtin class-name">:</span> <span class="token number">0</span>
+<span class="token comment"># 单个物理CPU的逻辑CPU数</span>
+siblings        <span class="token builtin class-name">:</span> <span class="token number">1</span>
+<span class="token comment"># 当前物理核在其所处CPU中的编号，这个编号不一定连续</span>
+core <span class="token function">id</span>         <span class="token builtin class-name">:</span> <span class="token number">0</span>
+<span class="token comment"># CPU核心数</span>
+cpu cores       <span class="token builtin class-name">:</span> <span class="token number">8</span>
+<span class="token comment"># 用来区分不同逻辑核的编号，系统中每个逻辑核的此编号必然不同，此编号不一定连续</span>
+apicid          <span class="token builtin class-name">:</span> <span class="token number">0</span>
+<span class="token comment"># 初始的apicid</span>
+initial apicid  <span class="token builtin class-name">:</span> <span class="token number">0</span>
+<span class="token comment"># 是否具有浮点运算单元（Floating Point Unit）</span>
+fpu             <span class="token builtin class-name">:</span> <span class="token function">yes</span>
+<span class="token comment"># 是否支持浮点计算异常</span>
+fpu_exception   <span class="token builtin class-name">:</span> <span class="token function">yes</span>
+<span class="token comment"># 执行cpuid指令前，eax寄存器中的值，根据不同的值cpuid指令会返回不同的内容</span>
+cpuid level     <span class="token builtin class-name">:</span> <span class="token number">22</span>
+<span class="token comment"># 表明当前CPU是否在内核态支持对用户空间的写保护（Write Protection）</span>
+wp              <span class="token builtin class-name">:</span> <span class="token function">yes</span>
+<span class="token comment"># 当前CPU支持的功能</span>
+flags           <span class="token builtin class-name">:</span> fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx lm constant_tsc rep_good nopl eagerfpu pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 popcnt aes xsave avx hypervisor lahf_lm xsaveopt
+<span class="token comment"># 在系统内核启动时粗略测算的CPU速度（Million Instructions Per Second）</span>
+bogomips        <span class="token builtin class-name">:</span> <span class="token number">4999.98</span>
+<span class="token comment"># 每次刷新缓存的大小单位</span>
+clflush size    <span class="token builtin class-name">:</span> <span class="token number">64</span>
+<span class="token comment"># 缓存地址对齐单位</span>
+cache_alignment <span class="token builtin class-name">:</span> <span class="token number">64</span>
+<span class="token comment"># 可访问地址空间位数</span>
+address sizes   <span class="token builtin class-name">:</span> <span class="token number">46</span> bits physical, <span class="token number">48</span> bits virtual
+<span class="token comment"># 对能源管理的支持</span>
+power management:
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br></div></div><p>常用命令：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 查询系统有几颗物理CPU(结果有几行说明有几个物理CPU)</span>
+<span class="token function">cat</span> /proc/cpuinfo <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">&quot;physical id&quot;</span> <span class="token operator">|</span><span class="token function">sort</span> <span class="token operator">|</span><span class="token function">uniq</span>
+
+<span class="token comment"># 查询系统每颗物理CPU的核心数</span>
+<span class="token function">cat</span> /proc/cpuinfo <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">&quot;cpu cores&quot;</span> <span class="token operator">|</span> <span class="token function">uniq</span>
+
+<span class="token comment"># 每颗物理CPU核心是否启用超线程技术。如果启用此技术那么，每个物理核心又可分为两个逻辑处理器</span>
+<span class="token function">cat</span> /proc/cpuinfo <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;cpu cores&quot;</span>  <span class="token parameter variable">-e</span> <span class="token string">&quot;siblings&quot;</span> <span class="token operator">|</span> <span class="token function">sort</span> <span class="token operator">|</span> <span class="token function">uniq</span>
+
+<span class="token comment"># 查询系统具有多少个逻辑CPU</span>
+<span class="token function">cat</span> /proc/cpuinfo <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">&quot;processor&quot;</span> <span class="token operator">|</span> <span class="token function">wc</span> <span class="token parameter variable">-l</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="top"><a href="#top" class="header-anchor">#</a> top</h3> <p>作用：显示、管理执行中的程序</p> <p>语法：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>Usage:   <span class="token function">top</span> <span class="token parameter variable">-hv</span> <span class="token operator">|</span> <span class="token parameter variable">-bcHiOSs</span> <span class="token parameter variable">-d</span> secs <span class="token parameter variable">-n</span> max -u<span class="token operator">|</span>U user <span class="token parameter variable">-p</span> pid<span class="token punctuation">(</span>s<span class="token punctuation">)</span> <span class="token parameter variable">-o</span> field <span class="token parameter variable">-w</span> <span class="token punctuation">[</span>cols<span class="token punctuation">]</span> 
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>常用参数：</p> <ul><li>d : 改变显示的更新速度，或是在交谈式指令列( interactive command)按 s</li> <li>q : 没有任何延迟的显示速度，如果使用者是有 superuser 的权限，则 top 将会以最高的优先序执行</li> <li>c : 切换显示模式，共有两种模式，一是只显示执行档的名称，另一种是显示完整的路径与名称S : 累积模式，会将己完成或消失的子行程 ( dead child process ) 的 CPU time 累积起来</li> <li>s : 安全模式，将交谈式指令取消, 避免潜在的危机</li> <li>i : 不显示任何闲置 (idle) 或无用 (zombie) 的行程</li> <li>n : 更新的次数，完成后将会退出 top</li> <li>b : 批次档模式，搭配 “n” 参数一起使用，可以用来将 top 的结果输出到档案内</li></ul> <p>使用：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">top</span> - 00:02:34 up <span class="token number">545</span> days,  <span class="token number">7</span>:04,  <span class="token number">1</span> user,  load average: <span class="token number">2.34</span>, <span class="token number">2.77</span>, <span class="token number">2.43</span>
+Tasks: <span class="token number">291</span> total,   <span class="token number">1</span> running, <span class="token number">290</span> sleeping,   <span class="token number">0</span> stopped,   <span class="token number">0</span> zombie
+%Cpu<span class="token punctuation">(</span>s<span class="token punctuation">)</span>:  <span class="token number">1.5</span> us,  <span class="token number">0.2</span> sy,  <span class="token number">0.0</span> ni, <span class="token number">95.9</span> id,  <span class="token number">2.5</span> wa,  <span class="token number">0.0</span> hi,  <span class="token number">0.0</span> si,  <span class="token number">0.0</span> st
+KiB Mem <span class="token builtin class-name">:</span> <span class="token number">32245912</span> total,   <span class="token number">618184</span> free, <span class="token number">12448832</span> used, <span class="token number">19178896</span> buff/cache
+KiB Swap:        <span class="token number">0</span> total,        <span class="token number">0</span> free,        <span class="token number">0</span> used. <span class="token number">19361528</span> avail Mem
+
+  PID <span class="token environment constant">USER</span>      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+  <span class="token number">666</span> root      <span class="token number">20</span>   <span class="token number">0</span> <span class="token number">1815144</span>  <span class="token number">50540</span>  <span class="token number">11544</span> S   <span class="token number">1.0</span>  <span class="token number">0.2</span>   <span class="token number">6592</span>:47 kubelet
+<span class="token number">10554</span> root      <span class="token number">20</span>   <span class="token number">0</span>   <span class="token number">17</span>.0g  <span class="token number">52724</span>   <span class="token number">1316</span> S   <span class="token number">0.7</span>  <span class="token number">0.2</span>   <span class="token number">1739</span>:30 redis-server
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>结果解读：</p> <ul><li>第一行：展示了系统运行的时间、有几个用户，平均负载等信息。这个结果和 uptime 一样</li> <li>第二行：展示了任务的相关信息，包括总共有多少任务、多少任务在任务在运行；多少在睡眠、多少停止了，多少个僵尸状态的任务等</li> <li>第三行：CPU状态
+<ul><li>us(user)：运行用户进程的CPU时间</li> <li>sy(system)：运行内核进程的CPU时间</li> <li>ni(niced)：运行已调整优先级的用户进程的CPU时间</li> <li>id(idle)：空闲时间</li> <li>wa(IO wait)：用于等待IO完成的CPU时间</li> <li>hi：处理硬件中断的CPU时间</li> <li>si：处理软件中断的CPU时间</li> <li>st：被hypervisor偷去的CPU时间</li></ul></li> <li>第四行：内存状态，包括全部可用内存、已使用内存、空闲内存、缓冲内存</li> <li>第七行开始：各个进程任务的的状态监控
+<ul><li>PID：进程号
+<ul><li>USER:运行这个进程的用户是谁</li> <li>PR：展示进程的实时优先级，取值0-99，越大则会持有更多的CPU时间片。</li> <li>NI：展示进程的nice值，值越小，优先级越高。意味着越高的优先级</li> <li>VIRT：virtual memory usage，进程使用的虚拟内存。VIRT = SWAP + RES</li> <li>RES：resident memory usage，常驻内存，驻留内存是进程使用的非交换物理内存。RES = CODE + DATA</li> <li>SHR：shared memory，共享内存</li> <li>S：进程状态，取值如下：
+<ul><li>D：不可中断的睡眠态。</li> <li>R：运行态</li> <li>S：睡眠态</li> <li>T：被跟踪或已停止</li> <li>Z：僵尸态</li></ul></li> <li>CPU：自从上一次更新时到现在任务所使用的CPU时间百分比</li> <li>MEM：进程使用的可用物理内存百分比</li> <li>TIME：进程使用的总CPU时间，精确到0.01秒</li> <li>COMMAND：进程所使用的命令</li></ul></li></ul></li></ul> <p>常用命令：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 展示完整命令（COMMAND）</span>
+<span class="token function">top</span> <span class="token parameter variable">-c</span>
+
+<span class="token comment"># 设置更新次数（更新2次后就退出）</span>
+<span class="token function">top</span> <span class="token parameter variable">-n</span> <span class="token number">2</span>
+
+<span class="token comment"># 指定更新周期（每隔3秒刷新一次）</span>
+<span class="token function">top</span> <span class="token parameter variable">-d</span> <span class="token number">3</span>
+
+<span class="token comment"># 查看指定进程的信息</span>
+<span class="token function">top</span> <span class="token parameter variable">-p</span> <span class="token number">2344</span>
+
+<span class="token comment"># 显示指定进程中线程的运行信息</span>
+<span class="token function">top</span> <span class="token parameter variable">-Hp</span> <span class="token number">2344</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h2 id="五、进程"><a href="#五、进程" class="header-anchor">#</a> 五、进程</h2> <h3 id="_1-ps"><a href="#_1-ps" class="header-anchor">#</a> 1.ps</h3> <p>作用：展示程序运行情况</p> <p>语法：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>Usage:  <span class="token function">ps</span> <span class="token punctuation">[</span>options<span class="token punctuation">]</span> 
+Basic options:
+  -A, <span class="token parameter variable">-e</span>               all processes
+  <span class="token parameter variable">-a</span>                   all with tty, except session leaders
+   a                   all with tty, including other <span class="token function">users</span>
+  <span class="token parameter variable">-d</span>                   all except session leaders
+  -N, <span class="token parameter variable">--deselect</span>       negate selection
+   r                   only running processes
+   T                   all processes on this terminal
+   x                   processes without controlling ttys
+
+ 
+Selection by list:
+  <span class="token parameter variable">-C</span> <span class="token operator">&lt;</span>command<span class="token operator">&gt;</span>         <span class="token builtin class-name">command</span> name
+  -G, <span class="token parameter variable">--Group</span> <span class="token operator">&lt;</span>GID<span class="token operator">&gt;</span>    real group <span class="token function">id</span> or name
+  -g, <span class="token parameter variable">--group</span> <span class="token operator">&lt;</span>group<span class="token operator">&gt;</span>  session or effective group name
+  -p, p, <span class="token parameter variable">--pid</span> <span class="token operator">&lt;</span>PID<span class="token operator">&gt;</span>   process <span class="token function">id</span>
+         <span class="token parameter variable">--ppid</span> <span class="token operator">&lt;</span>PID<span class="token operator">&gt;</span>  parent process <span class="token function">id</span>
+  -q, q, --quick-pid <span class="token operator">&lt;</span>PID<span class="token operator">&gt;</span>
+                       process <span class="token function">id</span> <span class="token punctuation">(</span>quick mode<span class="token punctuation">)</span>
+  -s, <span class="token parameter variable">--sid</span> <span class="token operator">&lt;</span>session<span class="token operator">&gt;</span>  session <span class="token function">id</span>
+  -t, t, <span class="token parameter variable">--tty</span> <span class="token operator">&lt;</span>tty<span class="token operator">&gt;</span>   terminal
+  -u, U, <span class="token parameter variable">--user</span> <span class="token operator">&lt;</span><span class="token environment constant">UID</span><span class="token operator">&gt;</span>  effective user <span class="token function">id</span> or name
+  -U, <span class="token parameter variable">--User</span> <span class="token operator">&lt;</span><span class="token environment constant">UID</span><span class="token operator">&gt;</span>     real user <span class="token function">id</span> or name
+
+ 
+  The selection options take as their argument either:
+     a comma-separated list e.g. <span class="token string">'-u root,nobody'</span> or
+     a blank-separated list e.g. <span class="token string">'-p 123 4567'</span>
+
+ 
+Output formats:
+  <span class="token parameter variable">-F</span>                   extra full
+  <span class="token parameter variable">-f</span>                   full-format, including <span class="token builtin class-name">command</span> lines
+   f, <span class="token parameter variable">--forest</span>         ascii art process tree
+  <span class="token parameter variable">-H</span>                   show process hierarchy
+  <span class="token parameter variable">-j</span>                   <span class="token function">jobs</span> <span class="token function">format</span>
+   j                   BSD job control <span class="token function">format</span>
+  <span class="token parameter variable">-l</span>                   long <span class="token function">format</span>
+   l                   BSD long <span class="token function">format</span>
+  -M, Z                <span class="token function">add</span> security data <span class="token punctuation">(</span>for SELinux<span class="token punctuation">)</span>
+  <span class="token parameter variable">-O</span> <span class="token operator">&lt;</span>format<span class="token operator">&gt;</span>          preloaded with default columns
+   O <span class="token operator">&lt;</span>format<span class="token operator">&gt;</span>          as -O, with BSD personality
+  -o, o, <span class="token parameter variable">--format</span> <span class="token operator">&lt;</span>format<span class="token operator">&gt;</span>
+                       user-defined <span class="token function">format</span>
+   s                   signal <span class="token function">format</span>
+   u                   user-oriented <span class="token function">format</span>
+   <span class="token function">v</span>                   virtual memory <span class="token function">format</span>
+   X                   register <span class="token function">format</span>
+  <span class="token parameter variable">-y</span>                   <span class="token keyword">do</span> not show flags, show rss vs. addr <span class="token punctuation">(</span>used with -l<span class="token punctuation">)</span>
+      <span class="token parameter variable">--context</span>        display security context <span class="token punctuation">(</span>for SELinux<span class="token punctuation">)</span>
+      <span class="token parameter variable">--headers</span>        repeat header lines, one per page
+      --no-headers     <span class="token keyword">do</span> not print header at all
+      --cols, --columns, <span class="token parameter variable">--width</span> <span class="token operator">&lt;</span>num<span class="token operator">&gt;</span>
+                       <span class="token builtin class-name">set</span> <span class="token function">screen</span> width
+      --rows, <span class="token parameter variable">--lines</span> <span class="token operator">&lt;</span>num<span class="token operator">&gt;</span>
+                       <span class="token builtin class-name">set</span> <span class="token function">screen</span> height
+
+ 
+Show threads:
+   H                   as <span class="token keyword">if</span> they were processes
+  <span class="token parameter variable">-L</span>                   possibly with LWP and NLWP columns
+  -m, m                after processes
+  <span class="token parameter variable">-T</span>                   possibly with SPID <span class="token function">column</span>
+
+ 
+Miscellaneous options:
+  <span class="token parameter variable">-c</span>                   show scheduling class with <span class="token parameter variable">-l</span> option
+   c                   show <span class="token boolean">true</span> <span class="token builtin class-name">command</span> name
+   e                   show the environment after <span class="token builtin class-name">command</span>
+   k,    <span class="token parameter variable">--sort</span>        specify <span class="token function">sort</span> order as: <span class="token punctuation">[</span>+<span class="token operator">|</span>-<span class="token punctuation">]</span>key<span class="token punctuation">[</span>,<span class="token punctuation">[</span>+<span class="token operator">|</span>-<span class="token punctuation">]</span>key<span class="token punctuation">[</span>,<span class="token punctuation">..</span>.<span class="token punctuation">]</span><span class="token punctuation">]</span>
+   L                   show <span class="token function">format</span> specifiers
+   n                   display numeric uid and wchan
+   S,    <span class="token parameter variable">--cumulative</span>  include some dead child process data
+  <span class="token parameter variable">-y</span>                   <span class="token keyword">do</span> not show flags, show rss <span class="token punctuation">(</span>only with -l<span class="token punctuation">)</span>
+  -V, V, <span class="token parameter variable">--version</span>     display version information and <span class="token builtin class-name">exit</span>
+  -w, w                unlimited output width
+
+ 
+        <span class="token parameter variable">--help</span> <span class="token operator">&lt;</span>simple<span class="token operator">|</span>list<span class="token operator">|</span>output<span class="token operator">|</span>threads<span class="token operator">|</span>misc<span class="token operator">|</span>all<span class="token operator">&gt;</span>
+                       display <span class="token builtin class-name">help</span> and <span class="token builtin class-name">exit</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br></div></div><p>常用参数：</p> <ul><li>-A或e：列出所有的行程</li> <li>-w：显示加宽可以显示较多的资讯</li> <li>-f：“全格式”展示，返回的字段较多</li> <li>a：展示当前运行的所有程序，包括其他用户的程序</li> <li>…其他的大家自己看下help吧，没动力翻译了……</li></ul> <p>示例：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 全格式展示所有进程</span>
+<span class="token function">ps</span> <span class="token parameter variable">-ef</span>
+
+<span class="token function">ps</span> <span class="token parameter variable">-ef</span> <span class="token operator">|</span> <span class="token function">grep</span> mysql
+
+<span class="token comment"># 显示较详细的信息，比如进程占用的CPU、内存等</span>
+<span class="token function">ps</span> <span class="token parameter variable">-au</span>
+
+<span class="token comment"># 显示所有包含其他使用者的行程</span>
+<span class="token function">ps</span> <span class="token parameter variable">-aux</span>
+
+<span class="token function">ps</span> <span class="token parameter variable">-aux</span> <span class="token operator">|</span> <span class="token function">grep</span> nginx
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="jobs"><a href="#jobs" class="header-anchor">#</a> jobs</h3> <p>作用：显示 Linux 中的任务列表及任务状态</p> <blockquote><ul><li>按<strong>Ctrl+Z</strong>组合键将当前进程挂起（调入后台并停止运行），这种操作在需要暂停当前进程并进行其他操作时特别有用。</li> <li>任务号是以普通用户的角度进行的，而进程号则是从系统管理员的角度来看的。一个任务可以对应于一个或者多个进程号</li></ul></blockquote> <p>语法：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">jobs</span> <span class="token punctuation">[</span>-lnprs<span class="token punctuation">]</span> <span class="token punctuation">[</span> jobspec <span class="token punctuation">..</span>. <span class="token punctuation">]</span> <span class="token function">jobs</span> <span class="token parameter variable">-x</span> <span class="token builtin class-name">command</span> <span class="token punctuation">[</span> args <span class="token punctuation">..</span>. <span class="token punctuation">]</span> 
+第一种格式列出活动的任务，选项含义如下：
+
+<span class="token parameter variable">-l</span>	除常规信息外，还列出进程号
+
+<span class="token parameter variable">-n</span>	仅显示有关自从上次通知用户状态以来，更改状态的任务信息
+
+<span class="token parameter variable">-p</span>	只显示任务的进程组leader的进程id
+
+<span class="token parameter variable">-r</span>	只显示正在运行的任务
+
+<span class="token parameter variable">-s</span>	只显示已停止的任务
+
+如果指定了jobspec，则只展示jobspec的相关信息
+
+ 
+如果指定了-x选项，则job会替换在command或args中找到的所有jobspec与相应的进程组id，并将其传递给command
+ 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p>示例：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">jobs</span> <span class="token parameter variable">-l</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="pgrep"><a href="#pgrep" class="header-anchor">#</a> pgrep</h3> <p>作用：根据特定条件查询进程PID信息</p> <p>语法：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>Usage:  pgrep <span class="token punctuation">[</span>options<span class="token punctuation">]</span> <span class="token operator">&lt;</span>pattern<span class="token operator">&gt;</span> 
+Options:
+  -d, <span class="token parameter variable">--delimiter</span> <span class="token operator">&lt;</span>string<span class="token operator">&gt;</span>  指定分隔符
+  -l, --list-name           列出PID和进程名称
+  -a, --list-full           列出PID和完整命令行
+  -v, <span class="token parameter variable">--inverse</span>             反向匹配，展示不匹配条件的结果
+  -w, <span class="token parameter variable">--lightweight</span>         列出所有TID
+  -c, <span class="token parameter variable">--count</span>               展示匹配的进程个数
+  -f, <span class="token parameter variable">--full</span>                使用完整进程名进行匹配
+  -g, <span class="token parameter variable">--pgroup</span> <span class="token operator">&lt;</span>PGID,<span class="token punctuation">..</span>.<span class="token operator">&gt;</span>   展示匹配的进程组id
+  -G, <span class="token parameter variable">--group</span> <span class="token operator">&lt;</span>GID,<span class="token punctuation">..</span>.<span class="token operator">&gt;</span>     展示匹配的GID
+  -n, <span class="token parameter variable">--newest</span>              展示最近启动的进程
+  -o, <span class="token parameter variable">--oldest</span>              展示启动的进程
+  -P, <span class="token parameter variable">--parent</span> <span class="token operator">&lt;</span><span class="token environment constant">PPID</span>,<span class="token punctuation">..</span>.<span class="token operator">&gt;</span>   只匹配指定<span class="token environment constant">PPID</span>的子进程
+  -s, <span class="token parameter variable">--session</span> <span class="token operator">&lt;</span>SID,<span class="token punctuation">..</span>.<span class="token operator">&gt;</span>   匹配SID
+  -t, <span class="token parameter variable">--terminal</span> <span class="token operator">&lt;</span>tty,<span class="token punctuation">..</span>.<span class="token operator">&gt;</span>  匹配tty
+  -u, <span class="token parameter variable">--euid</span> <span class="token operator">&lt;</span>ID,<span class="token punctuation">..</span>.<span class="token operator">&gt;</span>       匹配有效用户id
+  -U, <span class="token parameter variable">--uid</span> <span class="token operator">&lt;</span>ID,<span class="token punctuation">..</span>.<span class="token operator">&gt;</span>        匹配真实id
+  -x, <span class="token parameter variable">--exact</span>               与命令名称完全匹配
+  -F, <span class="token parameter variable">--pidfile</span> <span class="token operator">&lt;</span>file<span class="token operator">&gt;</span>      从文件中读取PID
+  -L, <span class="token parameter variable">--logpidfile</span>          如果未锁定PID文件则失败
+  <span class="token parameter variable">--ns</span> <span class="token operator">&lt;</span>PID<span class="token operator">&gt;</span>                匹配和PID属于指定namespace的进程
+  <span class="token parameter variable">--nslist</span> <span class="token operator">&lt;</span>ns,<span class="token punctuation">..</span>.<span class="token operator">&gt;</span>         列出指定的namespace的信息。可选那么space：ipc, mnt, net, pid, user, uts
+
+ 
+ -h, <span class="token parameter variable">--help</span>     帮助
+ -V, <span class="token parameter variable">--version</span>  版本
+ 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><p>示例：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 展示命令行为java的进程的进程号</span>
+pgrep <span class="token function">java</span>
+
+<span class="token comment"># 查找命令行为java的进程，并列出完整命令行</span>
+pgrep <span class="token parameter variable">-a</span> <span class="token function">java</span>
+
+<span class="token comment"># 查看root用户运行的所有进程</span>
+pgrep <span class="token parameter variable">-U</span> root
+
+<span class="token comment"># 组合使用</span>
+pgrep <span class="token parameter variable">-a</span> <span class="token function">java</span> <span class="token parameter variable">-U</span> root
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h2 id="六、内存"><a href="#六、内存" class="header-anchor">#</a> 六、内存</h2> <h3 id="meminfo"><a href="#meminfo" class="header-anchor">#</a> meminfo</h3> <p>作用：查看内存信息</p> <p>使用：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">cat</span> /proc/meminfo
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>输出解释：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 总内存</span>
+MemTotal:        <span class="token number">1881820</span> kB
+<span class="token comment"># 空闲内存</span>
+MemFree:          <span class="token number">101552</span> kB
+<span class="token comment"># 可用内存</span>
+MemAvailable:    <span class="token number">1312316</span> kB
+<span class="token comment"># Buffer使用的大小</span>
+Buffers:          <span class="token number">141536</span> kB
+<span class="token comment"># Cache使用的大小</span>
+Cached:          <span class="token number">1148044</span> kB
+<span class="token comment"># 被高速缓冲存储用的交换空间大小</span>
+SwapCached:            <span class="token number">0</span> kB
+<span class="token comment"># 活跃中的高速缓冲存储器页面文件大小</span>
+Active:          <span class="token number">1059148</span> kB
+<span class="token comment"># 不活跃的高速缓冲存储器页面文件大小</span>
+Inactive:         <span class="token number">506972</span> kB
+Active<span class="token punctuation">(</span>anon<span class="token punctuation">)</span>:     <span class="token number">276836</span> kB
+Inactive<span class="token punctuation">(</span>anon<span class="token punctuation">)</span>:      <span class="token number">488</span> kB
+Active<span class="token punctuation">(</span>file<span class="token punctuation">)</span>:     <span class="token number">782312</span> kB
+Inactive<span class="token punctuation">(</span>file<span class="token punctuation">)</span>:   <span class="token number">506484</span> kB
+Unevictable:           <span class="token number">0</span> kB
+Mlocked:               <span class="token number">0</span> kB
+<span class="token comment"># 交换区总大小</span>
+SwapTotal:             <span class="token number">0</span> kB
+<span class="token comment"># 空闲交换区大小</span>
+SwapFree:              <span class="token number">0</span> kB
+<span class="token comment"># 等待被写回到磁盘的大小</span>
+Dirty:                <span class="token number">20</span> kB
+<span class="token comment"># 正在被写回的大小</span>
+Writeback:             <span class="token number">0</span> kB
+<span class="token comment"># 未映射的页的大小</span>
+AnonPages:        <span class="token number">276560</span> kB
+<span class="token comment"># 设备和文件映射的大小</span>
+Mapped:            <span class="token number">67156</span> kB
+Shmem:               <span class="token number">784</span> kB
+<span class="token comment"># 内核数据结构缓存的大小，可减少申请和释放内存带来的消耗</span>
+Slab:             <span class="token number">133876</span> kB
+<span class="token comment"># 可收回slab的大小</span>
+SReclaimable:     <span class="token number">106260</span> kB
+<span class="token comment"># 不可收回的slab的大小</span>
+SUnreclaim:        <span class="token number">27616</span> kB
+KernelStack:        <span class="token number">4224</span> kB
+<span class="token comment"># 管理内存分页的索引表的大小</span>
+PageTables:        <span class="token number">16172</span> kB
+<span class="token comment"># 已经发给NFS服务器，但尚未被确认（committed）写入到稳定存储的页表</span>
+NFS_Unstable:          <span class="token number">0</span> kB
+Bounce:                <span class="token number">0</span> kB
+WritebackTmp:          <span class="token number">0</span> kB
+CommitLimit:      <span class="token number">940908</span> kB
+Committed_AS:    <span class="token number">1024596</span> kB
+<span class="token comment"># 虚拟内存大小</span>
+VmallocTotal:   <span class="token number">34359738367</span> kB
+<span class="token comment"># 已使用的虚拟内存大小</span>
+VmallocUsed:        <span class="token number">9104</span> kB
+<span class="token comment"># 在vmalloc区域中可用的最大的连续内存块的大小</span>
+VmallocChunk:   <span class="token number">34359724540</span> kB
+Percpu:              <span class="token number">352</span> kB
+HardwareCorrupted:     <span class="token number">0</span> kB
+AnonHugePages:     <span class="token number">10240</span> kB
+CmaTotal:              <span class="token number">0</span> kB
+CmaFree:               <span class="token number">0</span> kB
+<span class="token comment"># 大页面的分配</span>
+HugePages_Total:       <span class="token number">0</span>
+HugePages_Free:        <span class="token number">0</span>
+HugePages_Rsvd:        <span class="token number">0</span>
+HugePages_Surp:        <span class="token number">0</span>
+Hugepagesize:       <span class="token number">2048</span> kB
+DirectMap4k:       <span class="token number">71552</span> kB
+DirectMap2M:     <span class="token number">2025472</span> kB
+DirectMap1G:           <span class="token number">0</span> kB
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br></div></div><blockquote><ul><li>Linux文档：https://github.com/torvalds/linux/blob/master/Documentation/filesystems/proc.rst</li></ul></blockquote> <h3 id="free"><a href="#free" class="header-anchor">#</a> free</h3> <p>作用：查看内存运行情况</p> <p>语法：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>Usage:  <span class="token function">free</span> <span class="token punctuation">[</span>options<span class="token punctuation">]</span> 
+Options:
+  -b, <span class="token parameter variable">--bytes</span>         以Byte为单位显示内存使用情况
+  -k, <span class="token parameter variable">--kilo</span>          以KB为单位显示内存使用情况
+  -m, <span class="token parameter variable">--mega</span>          以MB为单位显示内存使用情况
+  -g, <span class="token parameter variable">--giga</span>          以GB为单位显示内存使用情况
+      <span class="token parameter variable">--tera</span>          以TB为单位显示内存使用情况
+  -h, <span class="token parameter variable">--human</span>         自动以合适的单位显示内存使用情况
+      <span class="token parameter variable">--si</span>            以1000为底而非1024
+  -l, <span class="token parameter variable">--lohi</span>          展示最低/最高内存的统计信息
+  -t, <span class="token parameter variable">--total</span>         显示内存总和<span class="token punctuation">(</span>RAM + swap<span class="token punctuation">)</span>
+  <span class="token parameter variable">-s</span> N, <span class="token parameter variable">--seconds</span> N   每隔N秒刷新
+  <span class="token parameter variable">-c</span> N, <span class="token parameter variable">--count</span> N     打印N次后退出
+  -w, <span class="token parameter variable">--wide</span>          宽屏模式打印，将buff和cache分开显示
+
+ 
+      <span class="token parameter variable">--help</span>     帮助
+  -V, <span class="token parameter variable">--version</span>  展示版本
+
+ 
+For <span class="token function">more</span> details see free<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>.
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p>示例：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>~ <span class="token function">free</span>
+              total        used        <span class="token function">free</span>      shared  buff/cache   available
+Mem:        <span class="token number">1881820</span>      <span class="token number">384324</span>      <span class="token number">101552</span>         <span class="token number">784</span>     <span class="token number">1395944</span>     <span class="token number">1312420</span>
+Swap:             <span class="token number">0</span>           <span class="token number">0</span>           <span class="token number">0</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li>total：物理内存总量</li> <li>used：已使用的内存，used = total - free - buffers - cache</li> <li>free：空闲的内存数</li> <li>shared：多个进程共享的内存</li> <li>buff/cache：代表的是 buff(对应/proc/meminfo里的Buffers)和cache的内存(对应/proc/meminfo 里的Cached and Slab)。</li> <li>available：在CentOS 7中，available是真正可用内存。available包括了buff/cache中一些可以被释放的内存，当物理内存不够用的时候，内核会把非活跃的数据清空。</li></ul> <p>常用命令：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 显示内存使用情况，以MB为单位</span>
+<span class="token function">free</span> <span class="token parameter variable">-m</span>
+
+<span class="token comment"># 显示内存使用情况，以GB为单位</span>
+<span class="token function">free</span> <span class="token parameter variable">-g</span>
+
+<span class="token comment"># 自动以合适的单位显示内存使用情况</span>
+<span class="token function">free</span> <span class="token parameter variable">-h</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="vmstat"><a href="#vmstat" class="header-anchor">#</a> vmstat</h3> <p>全称：Virtual Meomory Statistics（虚拟内存统计）。</p> <p>作用：可对操作系统的虚拟内存、进程、IO读写、CPU活动等进行监视</p> <p>语法：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>Usage:  <span class="token function">vmstat</span> <span class="token punctuation">[</span>options<span class="token punctuation">]</span> <span class="token punctuation">[</span>delay <span class="token punctuation">[</span>count<span class="token punctuation">]</span><span class="token punctuation">]</span> 
+Options:
+  -a, <span class="token parameter variable">--active</span>           展示active/inactive的内存
+  -f, <span class="token parameter variable">--forks</span>            显示此系统启动以来的forks的总数，包括fork、vfork和clone system calls
+  -m, <span class="token parameter variable">--slabs</span>            展示slabinfo信息
+  -n, --one-header       只展示1次header，而非周期展示
+  -s, <span class="token parameter variable">--stats</span>            显示各种事件计数器和内存统计<span class="token punctuation">(</span>只显示1次<span class="token punctuation">)</span>
+  -d, <span class="token parameter variable">--disk</span>             展示磁盘信息
+  -D, --disk-sum         显示磁盘统计数据
+  -p, <span class="token parameter variable">--partition</span> <span class="token operator">&lt;</span>dev<span class="token operator">&gt;</span>  展示分区详情
+  -S, <span class="token parameter variable">--unit</span> <span class="token operator">&lt;</span>char<span class="token operator">&gt;</span>      控制输出的单位，k<span class="token punctuation">(</span><span class="token number">1000</span>字节<span class="token punctuation">)</span> K<span class="token punctuation">(</span><span class="token number">1024</span>字节<span class="token punctuation">)</span> 或 M<span class="token punctuation">(</span><span class="token number">1048576</span>字节<span class="token punctuation">)</span>，默认为K
+  -w, <span class="token parameter variable">--wide</span>             宽屏输出模式
+  -t, <span class="token parameter variable">--timestamp</span>        打印时间戳
+
+ 
+ -h, <span class="token parameter variable">--help</span>     帮助
+  -V, <span class="token parameter variable">--version</span>  版本
+
+ 
+For <span class="token function">more</span> details see vmstat<span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">)</span>.
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><p>使用：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>~ <span class="token function">vmstat</span>
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   <span class="token function">free</span>   buff  cache   si   so    bi    bo   <span class="token keyword">in</span>   cs us sy <span class="token function">id</span> wa st
+ <span class="token number">5</span>  <span class="token number">0</span>      <span class="token number">0</span> <span class="token number">107632</span> <span class="token number">141536</span> <span class="token number">1246956</span>    <span class="token number">0</span>    <span class="token number">0</span>     <span class="token number">0</span>     <span class="token number">4</span>    <span class="token number">1</span>    <span class="token number">0</span>  <span class="token number">1</span>  <span class="token number">1</span> <span class="token number">99</span>  <span class="token number">0</span>  <span class="token number">0</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li>procs
+<ul><li>r：可运行的进程数（runnable processes），包括了running的进程和等待运行的进程（running or waiting for run time）。如果此值过大，则意味着CPU非常繁忙。<strong>如果此参数长期 &gt;= 逻辑CPU个数，则表示CPU可能存在瓶颈</strong>，考虑增加CPU</li> <li>处在非终端睡眠（uninterruptible sleep）状态的进程数。此值表示被阻塞的进程数。主要是指被资源阻塞的进程对列数（比如IO资源、页面调度等）</li></ul></li> <li>memory
+<ul><li>swpd：已使用的虚拟内存大小</li> <li>free：空闲内存大小</li> <li>buff：用做buffer的内存大小</li> <li>cache：用来做cache的内存大小</li> <li>inact：inactive的内存总量(-a)</li> <li>active：active的内存总量(-a)</li></ul></li> <li>swap
+<ul><li>si：每秒从磁盘交换到内存的大小，单位：KB/秒</li> <li>so：每秒从内存交换到磁盘的大小，单位：KB/秒</li> <li>当内存够用时，这两个值都是0。如果这两个值长期大于0，则会影响系统性能，磁盘IO和CPU资源都会被消耗。 当看到空闲内存（free）很少的或接近于0时，就认为内存不够用了，是不正确的。不能光看这一点，还要结合si和so。如果free很少，但是si和so也很少（大多时候是0），可以不用担心。此时，系统性能不会受到影响的。</li></ul></li> <li>io
+<ul><li>bi：每秒从块存储设备接收到的块数</li> <li>bo：每秒发送到块存储设备的块数</li> <li>随机磁盘读写的时候，这2个值越大（如超出1024k)，能看到CPU在IO等待的值也会越大</li></ul></li> <li>system
+<ul><li>in：每秒中断数，包括时钟中断</li> <li>cs：每秒上下文切换数</li> <li>这两个值越小越好</li></ul></li> <li>cpu
+<ul><li>us：用户CPU时间（非内核进程占用时间）百分比</li> <li>sy：系统使用的CPU时间百分比</li> <li>id：空闲CPU时间百分比</li> <li>wa：等待IO的CPU时间百分比</li> <li>st：被虚拟机偷去的CPU时间百分比</li></ul></li></ul> <p>常用命令：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 每隔一秒展示一次</span>
+<span class="token function">vmstat</span> <span class="token number">1</span>
+
+<span class="token comment"># 展示active/inactive的内存</span>
+<span class="token function">vmstat</span> <span class="token parameter variable">-a</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><hr> <h2 id="七、磁盘"><a href="#七、磁盘" class="header-anchor">#</a> 七、磁盘</h2> <h3 id="df"><a href="#df" class="header-anchor">#</a> df</h3> <p>作用：展示磁盘使用情况</p> <p>语法：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>Usage: <span class="token function">df</span> <span class="token punctuation">[</span>OPTION<span class="token punctuation">]</span><span class="token punctuation">..</span>. <span class="token punctuation">[</span>FILE<span class="token punctuation">]</span><span class="token punctuation">..</span>. 
+Mandatory arguments to long options are mandatory <span class="token keyword">for</span> short options too.
+   -a, <span class="token parameter variable">--all</span>             包含具有0Blocks的文件系统
+   -B, --block-size<span class="token operator">=</span>SIZE  指定打印单位，可用单位： K, M, G, T, P, E, Z, Y <span class="token punctuation">(</span>以1024为底<span class="token punctuation">)</span> ；也可用KB, MB, <span class="token punctuation">..</span>. <span class="token punctuation">(</span>以1000为底<span class="token punctuation">)</span>。例如-BM表示以MB为单位打印
+       <span class="token parameter variable">--direct</span>          显示文件的统计信息而不是挂载点
+       <span class="token parameter variable">--total</span>           在末尾产生一个汇总行
+   -h, --human-readable  自动以合适的单位显示磁盘使用情况
+   -H, <span class="token parameter variable">--si</span>              以1000为底而非1024
+   -i, <span class="token parameter variable">--inodes</span>          列出inode的信息，而非block的使用信息
+   <span class="token parameter variable">-k</span>                    相当于--block-size<span class="token operator">=</span>1K
+   -l, <span class="token parameter variable">--local</span>           将列表限制为本地文件系统
+       --no-sync         在获取使用情况信息之前不调用同步（默认）
+       --output<span class="token punctuation">[</span><span class="token operator">=</span>FIELD_LIST<span class="token punctuation">]</span>  使用FIELD_LIST定义的打印格式，如果省略FIELD_LIST则打印所有字段。FIELD_LIST是一个以逗号分隔的字段列表，可选的字段有：<span class="token string">'source'</span>, <span class="token string">'fstype'</span>, <span class="token string">'itotal'</span>, <span class="token string">'iused'</span>, <span class="token string">'iavail'</span>, <span class="token string">'ipcent'</span>, <span class="token string">'size'</span>, <span class="token string">'used'</span>, <span class="token string">'avail'</span>, <span class="token string">'pcent'</span>, <span class="token string">'file'</span>,<span class="token string">'target'</span>      
+   -P, <span class="token parameter variable">--portability</span>     使用POSIX输出格式
+       <span class="token parameter variable">--sync</span>            在获取使用情况信息之前调用同步
+   -t, <span class="token parameter variable">--type</span><span class="token operator">=</span>TYPE       将列表限制为TYPE类型的文件系统。
+   -T, --print-type      在结果中，多出来一个Type列，其中打印文件系统类型
+   -x, --exclude-type<span class="token operator">=</span>TYPE   将列表限制为非TYPE类型的文件系统
+   <span class="token parameter variable">-v</span>                    <span class="token punctuation">(</span>忽略<span class="token punctuation">)</span>
+       <span class="token parameter variable">--help</span>     帮助
+       <span class="token parameter variable">--version</span>  显示版本
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p>示例：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>~ <span class="token function">df</span>
+文件系统          1K-块     已用     可用 已用% 挂载点
+devtmpfs         <span class="token number">930360</span>        <span class="token number">0</span>   <span class="token number">930360</span>    <span class="token number">0</span>% /dev
+tmpfs            <span class="token number">940908</span>        <span class="token number">0</span>   <span class="token number">940908</span>    <span class="token number">0</span>% /dev/shm
+tmpfs            <span class="token number">940908</span>      <span class="token number">488</span>   <span class="token number">940420</span>    <span class="token number">1</span>% /run
+tmpfs            <span class="token number">940908</span>        <span class="token number">0</span>   <span class="token number">940908</span>    <span class="token number">0</span>% /sys/fs/cgroup
+/dev/vda1      <span class="token number">41152812</span> <span class="token number">14342200</span> <span class="token number">24906904</span>   <span class="token number">37</span>% /
+tmpfs            <span class="token number">188184</span>        <span class="token number">0</span>   <span class="token number">188184</span>    <span class="token number">0</span>% /run/user/0
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><ul><li>Filesystem：文件系统的名称</li> <li>1K-blocks：占用多少个1K-block，相当于展示占用了多少Kb的磁盘</li> <li>Used：使用了多少磁盘</li> <li>Avail：可用磁盘</li> <li>Use：使用的百分比</li> <li>Mounted on：挂载点</li></ul> <p>常用命令：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 自动以合适的单位显示磁盘使用情况</span>
+<span class="token function">df</span> <span class="token parameter variable">-h</span>
+
+<span class="token comment"># 查看gc.log这个文件所属的文件系统信息</span>
+<span class="token function">df</span> gc.log
+
+<span class="token comment"># 指定输出格式</span>
+<span class="token function">df</span> <span class="token parameter variable">--output</span><span class="token operator">=</span>source,fstype,itotal,iused,iavail,ipcent,size,used,avail,pcent,file,target
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="du"><a href="#du" class="header-anchor">#</a> du</h3> <p>作用：显示目录或文件的大小</p> <p>语法：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>Usage: <span class="token function">du</span> <span class="token punctuation">[</span>OPTION<span class="token punctuation">]</span><span class="token punctuation">..</span>. <span class="token punctuation">[</span>FILE<span class="token punctuation">]</span><span class="token punctuation">..</span>.   or: <span class="token function">du</span> <span class="token punctuation">[</span>OPTION<span class="token punctuation">]</span><span class="token punctuation">..</span>. --files0-from<span class="token operator">=</span>F 
+Mandatory arguments to long options are mandatory <span class="token keyword">for</span> short options too.
+   -0, <span class="token parameter variable">--null</span>            以0字节而不是换行符结束每条输出<span class="token punctuation">(</span>即：直接输出下一行，不换行<span class="token punctuation">)</span>
+   -a, <span class="token parameter variable">--all</span>             显示所有文件大小，不限于目录
+       --apparent-size   打印“apparent size”，而非磁盘占用情况
+   -B, --block-size<span class="token operator">=</span>SIZE  指定打印单位，可用单位： K, M, G, T, P, E, Z, Y <span class="token punctuation">(</span>以1024为底<span class="token punctuation">)</span> ；也可用KB, MB, <span class="token punctuation">..</span>. <span class="token punctuation">(</span>以1000为底<span class="token punctuation">)</span>。例如-BM表示以MB为单位打印
+   -b, <span class="token parameter variable">--bytes</span>           相当于<span class="token string">'--apparent-size --block-size = 1'</span>
+   -c, <span class="token parameter variable">--total</span>           在末尾产生一个汇总行
+   -D, --dereference-args  取消引用命令行上列出的符号链接
+   -d, --max-depth<span class="token operator">=</span>N     指定要展示的最大深度，--max-depth<span class="token operator">=</span><span class="token number">0</span>相当于--summarize
+       --files0-from<span class="token operator">=</span>F   总结文件F中指定的NUL终止文件名的磁盘使用情况；如果F为-，则从标准输入中读取名称
+   <span class="token parameter variable">-H</span>                    等价于--dereference-args <span class="token punctuation">(</span>-D<span class="token punctuation">)</span>
+   -h, --human-readable  自动以合适的单位显示磁盘使用情况
+       <span class="token parameter variable">--inodes</span>          列出inode的信息，而非block的使用信息
+   <span class="token parameter variable">-k</span>                    相当于--block-size<span class="token operator">=</span>1K
+   -L, <span class="token parameter variable">--dereference</span>     取消引用所有符号链接
+   -l, --count-links     如果是硬链接，则计数很多次
+   <span class="token parameter variable">-m</span>                    相当于--block-size<span class="token operator">=</span>1M
+   -P, --no-dereference  不遵循任何符号链接（这是默认设置）
+   -S, --separate-dirs   不统计子目录的大小
+       <span class="token parameter variable">--si</span>              类似于-h，但以1000为底而非1024
+   -s, <span class="token parameter variable">--summarize</span>       只展示每个参数的统计信息
+   -t, <span class="token parameter variable">--threshold</span><span class="token operator">=</span>SIZE  如果SIZE为正，则排除小于SIZE的条目；如果为负，则排除大于SIZE的条目
+       <span class="token parameter variable">--time</span>            展示文件的修改时间
+       <span class="token parameter variable">--time</span><span class="token operator">=</span>WORD       在time字段展示WORD字段而非修改时间，WORD取值：atime, access, use, ctime or status
+       --time-style<span class="token operator">=</span>STYLE  指定时间的显示格式，取值：full-iso, long-iso, iso, 或+FORMAT，FORMAT的解释类似于“date”
+   -X, --exclude-from<span class="token operator">=</span>FILE  排除匹配FILE中的正则的文件
+       <span class="token parameter variable">--exclude</span><span class="token operator">=</span>PATTERN    排除匹配正则的文件
+   -x, --one-file-system    跳过不同文件系统上的目录
+       <span class="token parameter variable">--help</span>     帮助
+       <span class="token parameter variable">--version</span>  版本
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br></div></div><p>常用命令：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 当前目录及子目录的大小，以及大小汇总</span>
+<span class="token function">du</span> 
+
+<span class="token comment"># 展示1.txt文件的大小</span>
+<span class="token function">du</span> <span class="token number">1</span>.txt
+
+<span class="token comment"># 自动以合适的单位显示目录的大小</span>
+<span class="token function">du</span> <span class="token parameter variable">-h</span> some_dir
+
+<span class="token comment"># 排除 &lt; 1000m的文件，展示当前目录及子目录的大小，以及大小汇总</span>
+<span class="token function">du</span> <span class="token parameter variable">-t</span> 1000m
+
+<span class="token comment"># 以合适的单位展示指定目录的大小</span>
+<span class="token function">du</span> <span class="token parameter variable">-sh</span> some_dir
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><hr> <h2 id="八、网络"><a href="#八、网络" class="header-anchor">#</a> 八、网络</h2> <h3 id="netstat"><a href="#netstat" class="header-anchor">#</a> netstat</h3> <p>作用：展示网络状态</p> <p>语法：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>usage: <span class="token function">netstat</span> <span class="token punctuation">[</span>-vWeenNcCF<span class="token punctuation">]</span> <span class="token punctuation">[</span><span class="token operator">&lt;</span>Af<span class="token operator">&gt;</span><span class="token punctuation">]</span> <span class="token parameter variable">-r</span>         <span class="token function">netstat</span> <span class="token punctuation">{</span>-V<span class="token operator">|</span>--version<span class="token operator">|</span>-h<span class="token operator">|</span>--help<span class="token punctuation">}</span>        <span class="token function">netstat</span> <span class="token punctuation">[</span>-vWnNcaeol<span class="token punctuation">]</span> <span class="token punctuation">[</span><span class="token operator">&lt;</span>Socket<span class="token operator">&gt;</span> <span class="token punctuation">..</span>.<span class="token punctuation">]</span>        <span class="token function">netstat</span> <span class="token punctuation">{</span> <span class="token punctuation">[</span>-vWeenNac<span class="token punctuation">]</span> -I<span class="token punctuation">[</span><span class="token operator">&lt;</span>Iface<span class="token operator">&gt;</span><span class="token punctuation">]</span> <span class="token operator">|</span> <span class="token punctuation">[</span>-veenNac<span class="token punctuation">]</span> <span class="token parameter variable">-i</span> <span class="token operator">|</span> <span class="token punctuation">[</span>-cnNe<span class="token punctuation">]</span> <span class="token parameter variable">-M</span> <span class="token operator">|</span> <span class="token parameter variable">-s</span> <span class="token punctuation">[</span>-6tuw<span class="token punctuation">]</span> <span class="token punctuation">}</span> <span class="token punctuation">[</span>delay<span class="token punctuation">]</span> 
+        -r, <span class="token parameter variable">--route</span>              展示路由表
+         -I, <span class="token parameter variable">--interfaces</span><span class="token operator">=</span><span class="token operator">&lt;</span>Iface<span class="token operator">&gt;</span> 展示网卡Iface的信息
+         -i, <span class="token parameter variable">--interfaces</span>         展示网卡信息列表
+         -g, <span class="token parameter variable">--groups</span>             显示多播组的成员信息
+         -s, <span class="token parameter variable">--statistics</span>         展示网卡网络统计信息
+         -M, <span class="token parameter variable">--masquerade</span>         显示伪装的网络连接（masqueraded connections）
+
+ 
+        -v, <span class="token parameter variable">--verbose</span>            展示更多详情信息
+         -W, <span class="token parameter variable">--wide</span>               不截断IP地址
+         -n, <span class="token parameter variable">--numeric</span>            不解析名称
+         --numeric-hosts          不解析主机名
+         --numeric-ports          不解析端口
+         --numeric-users          不解析
+         -N, <span class="token parameter variable">--symbolic</span>           解析硬件名称
+         -e, <span class="token parameter variable">--extend</span>             展示更多信息
+         -p, <span class="token parameter variable">--programs</span>           为socket展示PID或程序名称
+         -o, <span class="token parameter variable">--timers</span>             在结果中显示Timer列
+         -c, <span class="token parameter variable">--continuous</span>         持续列出结果
+
+ 
+        -l, <span class="token parameter variable">--listening</span>          展示监听的服务器socket
+         -a, <span class="token parameter variable">--all</span>                展示所有的socket（默认connected，指定-a则会展示监听/为监听的socket）
+         -F, <span class="token parameter variable">--fib</span>                展示转发信息库（Forwarding Information Base）（default）
+         -C, <span class="token parameter variable">--cache</span>              展示路由缓存而非FIB
+         -Z, <span class="token parameter variable">--context</span>            为socket展示SELinux安全上下文
+         
+
+  <span class="token operator">&lt;</span>Socket<span class="token operator">&gt;=</span><span class="token punctuation">{</span>-t<span class="token operator">|</span>--tcp<span class="token punctuation">}</span> <span class="token punctuation">{</span>-u<span class="token operator">|</span>--udp<span class="token punctuation">}</span> <span class="token punctuation">{</span>-U<span class="token operator">|</span>--udplite<span class="token punctuation">}</span> <span class="token punctuation">{</span>-S<span class="token operator">|</span>--sctp<span class="token punctuation">}</span> <span class="token punctuation">{</span>-w<span class="token operator">|</span>--raw<span class="token punctuation">}</span>
+           <span class="token punctuation">{</span>-x<span class="token operator">|</span>--unix<span class="token punctuation">}</span> <span class="token parameter variable">--ax25</span> <span class="token parameter variable">--ipx</span> <span class="token parameter variable">--netrom</span>
+  <span class="token operator">&lt;</span>AF<span class="token operator">&gt;=</span>Use <span class="token string">'-6|-4'</span> or <span class="token string">'-A &lt;af&gt;'</span> or <span class="token string">'--&lt;af&gt;'</span><span class="token punctuation">;</span> default: inet
+  List of possible address families <span class="token punctuation">(</span>which support routing<span class="token punctuation">)</span>:
+    inet <span class="token punctuation">(</span>DARPA Internet<span class="token punctuation">)</span> inet6 <span class="token punctuation">(</span>IPv6<span class="token punctuation">)</span> ax25 <span class="token punctuation">(</span>AMPR AX.25<span class="token punctuation">)</span>
+    netrom <span class="token punctuation">(</span>AMPR NET/ROM<span class="token punctuation">)</span> ipx <span class="token punctuation">(</span>Novell IPX<span class="token punctuation">)</span> ddp <span class="token punctuation">(</span>Appletalk DDP<span class="token punctuation">)</span>
+    x25 <span class="token punctuation">(</span>CCITT X.25<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br></div></div><p>常用命令</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 查看全部的socket</span>
+<span class="token function">netstat</span> <span class="token parameter variable">-a</span>
+
+<span class="token comment"># 查看使用tcp协议的网络信息</span>
+<span class="token function">netstat</span> <span class="token parameter variable">-t</span>
+
+<span class="token comment"># 查看使用udp协议的网络信息</span>
+<span class="token function">netstat</span> <span class="token parameter variable">-u</span>
+
+<span class="token comment"># 展示所有所有状态的tcp监听，并打印程序名称</span>
+<span class="token function">netstat</span> <span class="token parameter variable">-antp</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="route"><a href="#route" class="header-anchor">#</a> route</h3> <p>作用：显示和操作路由表</p> <p>语法：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>Usage: route <span class="token punctuation">[</span>-nNvee<span class="token punctuation">]</span> <span class="token punctuation">[</span>-FC<span class="token punctuation">]</span> <span class="token punctuation">[</span><span class="token operator">&lt;</span>AF<span class="token operator">&gt;</span><span class="token punctuation">]</span>           列出内核路由表
+       route <span class="token punctuation">[</span>-v<span class="token punctuation">]</span> <span class="token punctuation">[</span>-FC<span class="token punctuation">]</span> <span class="token punctuation">{</span>add<span class="token operator">|</span>del<span class="token operator">|</span>flush<span class="token punctuation">}</span> <span class="token punctuation">..</span>.  Modify routing table <span class="token keyword">for</span> AF.
+
+       route <span class="token punctuation">{</span>-h<span class="token operator">|</span>--help<span class="token punctuation">}</span> <span class="token punctuation">[</span><span class="token operator">&lt;</span>AF<span class="token operator">&gt;</span><span class="token punctuation">]</span>              修改AF的路由表
+       route <span class="token punctuation">{</span>-V<span class="token operator">|</span>--version<span class="token punctuation">}</span>                  展示版本
+
+        -v, <span class="token parameter variable">--verbose</span>            展示更多详情信息
+        -n, <span class="token parameter variable">--numeric</span>            不解析名称
+        -e, <span class="token parameter variable">--extend</span>             展示更多信息
+        -F, <span class="token parameter variable">--fib</span>                展示转发信息库（Forwarding Information Base）（default）
+        -C, <span class="token parameter variable">--cache</span>              展示路由缓存而非FIB
+
+  <span class="token operator">&lt;</span>AF<span class="token operator">&gt;=</span>Use -4, -6, <span class="token string">'-A &lt;af&gt;'</span> or <span class="token string">'--&lt;af&gt;'</span><span class="token punctuation">;</span> default: inet
+  List of possible address families <span class="token punctuation">(</span>which support routing<span class="token punctuation">)</span>:
+    inet <span class="token punctuation">(</span>DARPA Internet<span class="token punctuation">)</span> inet6 <span class="token punctuation">(</span>IPv6<span class="token punctuation">)</span> ax25 <span class="token punctuation">(</span>AMPR AX.25<span class="token punctuation">)</span> 
+    netrom <span class="token punctuation">(</span>AMPR NET/ROM<span class="token punctuation">)</span> ipx <span class="token punctuation">(</span>Novell IPX<span class="token punctuation">)</span> ddp <span class="token punctuation">(</span>Appletalk DDP<span class="token punctuation">)</span> 
+    x25 <span class="token punctuation">(</span>CCITT X.25<span class="token punctuation">)</span> 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h3 id="lsof"><a href="#lsof" class="header-anchor">#</a> lsof</h3> <p>作用：列出当前系统当前打开的文件</p> <p>语法：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code> usage: <span class="token punctuation">[</span>-?abhKlnNoOPRtUvVX<span class="token punctuation">]</span> <span class="token punctuation">[</span>+<span class="token operator">|</span>-c c<span class="token punctuation">]</span> <span class="token punctuation">[</span>+<span class="token operator">|</span>-d s<span class="token punctuation">]</span> <span class="token punctuation">[</span>+D D<span class="token punctuation">]</span> <span class="token punctuation">[</span>+<span class="token operator">|</span>-f<span class="token punctuation">[</span>gG<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token punctuation">[</span>+<span class="token operator">|</span>-e s<span class="token punctuation">]</span>
+ <span class="token punctuation">[</span>-F <span class="token punctuation">[</span>f<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token punctuation">[</span>-g <span class="token punctuation">[</span>s<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token punctuation">[</span>-i <span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token punctuation">[</span>+<span class="token operator">|</span>-L <span class="token punctuation">[</span>l<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token punctuation">[</span>+m <span class="token punctuation">[</span>m<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token punctuation">[</span>+<span class="token operator">|</span>-M<span class="token punctuation">]</span> <span class="token punctuation">[</span>-o <span class="token punctuation">[</span>o<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token punctuation">[</span>-p s<span class="token punctuation">]</span>
+<span class="token punctuation">[</span>+<span class="token operator">|</span>-r <span class="token punctuation">[</span>t<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token punctuation">[</span>-s <span class="token punctuation">[</span>p:s<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token punctuation">[</span>-S <span class="token punctuation">[</span>t<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token punctuation">[</span>-T <span class="token punctuation">[</span>t<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token punctuation">[</span>-u s<span class="token punctuation">]</span> <span class="token punctuation">[</span>+<span class="token operator">|</span>-w<span class="token punctuation">]</span> <span class="token punctuation">[</span>-x <span class="token punctuation">[</span>fl<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token punctuation">[</span>--<span class="token punctuation">]</span> <span class="token punctuation">[</span>names<span class="token punctuation">]</span>
+Defaults <span class="token keyword">in</span> parentheses<span class="token punctuation">;</span> comma-separated <span class="token builtin class-name">set</span> <span class="token punctuation">(</span>s<span class="token punctuation">)</span> items<span class="token punctuation">;</span> dash-separated ranges.
+  -?<span class="token operator">|</span>-h list <span class="token builtin class-name">help</span>          <span class="token parameter variable">-a</span> AND selections <span class="token punctuation">(</span>OR<span class="token punctuation">)</span>     <span class="token parameter variable">-b</span> avoid kernel blocks
+  <span class="token parameter variable">-c</span> c  cmd c ^c /c/<span class="token punctuation">[</span>bix<span class="token punctuation">]</span>  +c w  COMMAND width <span class="token punctuation">(</span><span class="token number">9</span><span class="token punctuation">)</span>    +d s  <span class="token function">dir</span> s files
+  <span class="token parameter variable">-d</span> s  <span class="token keyword">select</span> by FD <span class="token builtin class-name">set</span>   +D D  <span class="token function">dir</span> D tree *SLOW?*   +<span class="token operator">|</span>-e s  exempt s *RISKY*
+  <span class="token parameter variable">-i</span> <span class="token keyword">select</span> IPv<span class="token punctuation">[</span><span class="token number">46</span><span class="token punctuation">]</span> files  <span class="token parameter variable">-K</span> list tasKs <span class="token punctuation">(</span>threads<span class="token punctuation">)</span>    <span class="token parameter variable">-l</span> list <span class="token environment constant">UID</span> numbers
+  <span class="token parameter variable">-n</span> no <span class="token function">host</span> names         <span class="token parameter variable">-N</span> <span class="token keyword">select</span> NFS files        <span class="token parameter variable">-o</span> list <span class="token function">file</span> offset
+  <span class="token parameter variable">-O</span> no overhead *RISKY*   <span class="token parameter variable">-P</span> no port names           <span class="token parameter variable">-R</span> list paRent PID
+  <span class="token parameter variable">-s</span> list <span class="token function">file</span> size        <span class="token parameter variable">-t</span> terse listing           <span class="token parameter variable">-T</span> disable TCP/TPI info
+  <span class="token parameter variable">-U</span> <span class="token keyword">select</span> Unix socket    <span class="token parameter variable">-v</span> list version info       <span class="token parameter variable">-V</span> verbose search
+  +<span class="token operator">|</span>-w  Warnings <span class="token punctuation">(</span>+<span class="token punctuation">)</span>       <span class="token parameter variable">-X</span> skip TCP<span class="token operator">&amp;</span>UDP* files     <span class="token parameter variable">-Z</span> Z  context <span class="token punctuation">[</span>Z<span class="token punctuation">]</span>
+  -- end option scan     
+  +f<span class="token operator">|</span>-f  +filesystem or <span class="token parameter variable">-file</span> names     +<span class="token operator">|</span>-f<span class="token punctuation">[</span>gG<span class="token punctuation">]</span> flaGs 
+  <span class="token parameter variable">-F</span> <span class="token punctuation">[</span>f<span class="token punctuation">]</span> <span class="token keyword">select</span> fields<span class="token punctuation">;</span> -F? <span class="token keyword">for</span> <span class="token builtin class-name">help</span>  
+  +<span class="token operator">|</span>-L <span class="token punctuation">[</span>l<span class="token punctuation">]</span> list <span class="token punctuation">(</span>+<span class="token punctuation">)</span> suppress <span class="token punctuation">(</span>-<span class="token punctuation">)</span> <span class="token function">link</span> counts <span class="token operator">&lt;</span> l <span class="token punctuation">(</span><span class="token number">0</span> <span class="token operator">=</span> all<span class="token punctuation">;</span> default <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+                                        +m <span class="token punctuation">[</span>m<span class="token punctuation">]</span> use<span class="token operator">|</span>create <span class="token function">mount</span> supplement
+  +<span class="token operator">|</span>-M   portMap registration <span class="token punctuation">(</span>-<span class="token punctuation">)</span>       <span class="token parameter variable">-o</span> o   o 0t offset digits <span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">)</span>
+  <span class="token parameter variable">-p</span> s   exclude<span class="token punctuation">(</span>^<span class="token punctuation">)</span><span class="token operator">|</span><span class="token keyword">select</span> PIDs         <span class="token parameter variable">-S</span> <span class="token punctuation">[</span>t<span class="token punctuation">]</span> t second <span class="token function">stat</span> <span class="token function">timeout</span> <span class="token punctuation">(</span><span class="token number">15</span><span class="token punctuation">)</span>
+  <span class="token parameter variable">-T</span> qs TCP/TPI Q,St <span class="token punctuation">(</span>s<span class="token punctuation">)</span> info
+  <span class="token parameter variable">-g</span> <span class="token punctuation">[</span>s<span class="token punctuation">]</span> exclude<span class="token punctuation">(</span>^<span class="token punctuation">)</span><span class="token operator">|</span><span class="token keyword">select</span> and print process group IDs
+  <span class="token parameter variable">-i</span> i   <span class="token keyword">select</span> by IPv<span class="token punctuation">[</span><span class="token number">46</span><span class="token punctuation">]</span> address: <span class="token punctuation">[</span><span class="token number">46</span><span class="token punctuation">]</span><span class="token punctuation">[</span>proto<span class="token punctuation">]</span><span class="token punctuation">[</span>@host<span class="token operator">|</span>addr<span class="token punctuation">]</span><span class="token punctuation">[</span>:svc_list<span class="token operator">|</span>port_list<span class="token punctuation">]</span>
+  +<span class="token operator">|</span>-r <span class="token punctuation">[</span>t<span class="token punctuation">[</span>m<span class="token operator">&lt;</span>fmt<span class="token operator">&gt;</span><span class="token punctuation">]</span><span class="token punctuation">]</span> repeat every t seconds <span class="token punctuation">(</span><span class="token number">15</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  + <span class="token keyword">until</span> no files, - forever.
+       An optional suffix to t is m<span class="token operator">&lt;</span>fmt<span class="token operator">&gt;</span><span class="token punctuation">;</span> m must separate t from <span class="token operator">&lt;</span>fmt<span class="token operator">&gt;</span> and
+      <span class="token operator">&lt;</span>fmt<span class="token operator">&gt;</span> is an strftime<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span> <span class="token function">format</span> <span class="token keyword">for</span> the marker line.
+  <span class="token parameter variable">-s</span> p:s  exclude<span class="token punctuation">(</span>^<span class="token punctuation">)</span><span class="token operator">|</span><span class="token keyword">select</span> protocol <span class="token punctuation">(</span>p <span class="token operator">=</span> TCP<span class="token operator">|</span>UDP<span class="token punctuation">)</span> states by name<span class="token punctuation">(</span>s<span class="token punctuation">)</span>.
+  <span class="token parameter variable">-u</span> s   exclude<span class="token punctuation">(</span>^<span class="token punctuation">)</span><span class="token operator">|</span><span class="token keyword">select</span> login<span class="token operator">|</span><span class="token environment constant">UID</span> <span class="token builtin class-name">set</span> s
+  <span class="token parameter variable">-x</span> <span class="token punctuation">[</span>fl<span class="token punctuation">]</span> cross over +d<span class="token operator">|</span>+D File systems or symbolic Links
+  names  <span class="token keyword">select</span> named files or files on named <span class="token function">file</span> systems
+Anyone can list all files<span class="token punctuation">;</span> /dev warnings disabled<span class="token punctuation">;</span> kernel ID check disabled.
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><p>常用命令：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 列出所有打开的文件</span>
+<span class="token function">lsof</span>
+
+<span class="token comment"># 查看哪些进程正在使用1.txt</span>
+<span class="token function">lsof</span> <span class="token number">1</span>.txt
+
+<span class="token comment"># 递归查看test_dir目录及其文件的信息</span>
+<span class="token function">lsof</span> +D test_dir
+
+<span class="token comment"># 查看java进程打开的文件</span>
+<span class="token function">lsof</span> <span class="token parameter variable">-c</span> mysql
+
+<span class="token comment"># 查看java或mysql打开的文件</span>
+<span class="token function">lsof</span> <span class="token parameter variable">-c</span> <span class="token function">java</span> <span class="token parameter variable">-c</span> mysql
+
+<span class="token comment"># 列出所有的网络连接</span>
+<span class="token function">lsof</span> <span class="token parameter variable">-i</span>
+
+<span class="token comment"># 列出所有tcp连接</span>
+<span class="token function">lsof</span> <span class="token parameter variable">-i</span> tcp
+
+<span class="token comment"># 列出所有udp连接</span>
+<span class="token function">lsof</span> <span class="token parameter variable">-i</span> udp
+
+<span class="token comment"># 列出谁在使用8080端口</span>
+<span class="token function">lsof</span> <span class="token parameter variable">-i:8080</span>
+
+<span class="token comment"># 列出谁在用tcp协议使用8080端口</span>
+<span class="token function">lsof</span> <span class="token parameter variable">-i</span> tcp:8080
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><hr> <h2 id="end"><a href="#end" class="header-anchor">#</a> END</h2></div></div>  <div class="page-edit"><!----> <!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2023/03/27, 09:27:05</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/pages/31ecc1/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">kali</div></a> <a href="/linux/bash/monitoring/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">监控bash</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/pages/31ecc1/" class="prev">kali</a></span> <span class="next"><a href="/linux/bash/monitoring/">监控bash</a>→
+      </span></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/springframework/spring-ai-alibaba/quick-start/"><div>
+            01.Spring Al Alibaba
+            <!----></div></a> <span class="date">04-07</span></dt></dl><dl><dd>02</dd> <dt><a href="/springframework/spring-ai/dify/"><div>
+            07.Dify 使用
+            <!----></div></a> <span class="date">04-06</span></dt></dl><dl><dd>03</dd> <dt><a href="/springframework/spring-ai/mcp-server-dev/"><div>
+            06.Spring AI 开发 MCP 服务
+            <!----></div></a> <span class="date">04-05</span></dt></dl> <dl><dd></dd> <dt><a href="/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><div class="icons"><a href="mailto:niejinking@163.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://music.163.com/#/my/m/music/playlist?id=417262556" title="听音乐" target="_blank" class="iconfont icon-erji"></a></div> 
+     Copyright © 2021-2026
+    <span> willingoxjin.pages.dev/ </span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.89e5ded6.js" defer></script><script src="/assets/js/2.2d0494eb.js" defer></script><script src="/assets/js/12.07b3c24a.js" defer></script><script src="/assets/js/226.fb1f6bcb.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>kali | willingoxjin&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.9.5">
+    <link rel="icon" href="/img/favicon.ico">
+    <meta name="description" content="。">
+    <meta name="keywords" content="willingoxjin,个人技术博客,前端,大数据,web前端,Java,SpringBoot,学习,面试,JavaScript,ES6,vue,python,css3,html5,git,github,markdown">
+    <meta name="theme-color" content="#11a8cd">
+    
+    <link rel="preload" href="/assets/css/0.styles.b6d109e9.css" as="style"><link rel="preload" href="/assets/js/app.89e5ded6.js" as="script"><link rel="preload" href="/assets/js/2.2d0494eb.js" as="script"><link rel="preload" href="/assets/js/12.07b3c24a.js" as="script"><link rel="preload" href="/assets/js/19.db4380a9.js" as="script"><link rel="prefetch" href="/assets/js/10.56322456.js"><link rel="prefetch" href="/assets/js/100.990d4ffc.js"><link rel="prefetch" href="/assets/js/101.16c89efc.js"><link rel="prefetch" href="/assets/js/102.92cac5cb.js"><link rel="prefetch" href="/assets/js/103.d9d7449d.js"><link rel="prefetch" href="/assets/js/104.ff7fc672.js"><link rel="prefetch" href="/assets/js/105.2bbb7afa.js"><link rel="prefetch" href="/assets/js/106.3880bce7.js"><link rel="prefetch" href="/assets/js/107.e1acbe2c.js"><link rel="prefetch" href="/assets/js/108.1e5decd4.js"><link rel="prefetch" href="/assets/js/109.c0cbaff5.js"><link rel="prefetch" href="/assets/js/11.9810d8e6.js"><link rel="prefetch" href="/assets/js/110.f819aed4.js"><link rel="prefetch" href="/assets/js/111.09d1a88b.js"><link rel="prefetch" href="/assets/js/112.bc1119b6.js"><link rel="prefetch" href="/assets/js/113.1d4abb8d.js"><link rel="prefetch" href="/assets/js/114.a3c5f23c.js"><link rel="prefetch" href="/assets/js/115.9e7b8a09.js"><link rel="prefetch" href="/assets/js/116.d442c101.js"><link rel="prefetch" href="/assets/js/117.4754812b.js"><link rel="prefetch" href="/assets/js/118.9d852fa1.js"><link rel="prefetch" href="/assets/js/119.d115c1d0.js"><link rel="prefetch" href="/assets/js/120.c2728aa3.js"><link rel="prefetch" href="/assets/js/121.83ab31ad.js"><link rel="prefetch" href="/assets/js/122.379cf603.js"><link rel="prefetch" href="/assets/js/123.625e6f26.js"><link rel="prefetch" href="/assets/js/124.d32e9094.js"><link rel="prefetch" href="/assets/js/125.b86403c4.js"><link rel="prefetch" href="/assets/js/126.d1933338.js"><link rel="prefetch" href="/assets/js/127.f0358c9c.js"><link rel="prefetch" href="/assets/js/128.419b964c.js"><link rel="prefetch" href="/assets/js/129.70b012a2.js"><link rel="prefetch" href="/assets/js/13.a6ef3d7b.js"><link rel="prefetch" href="/assets/js/130.ef56fada.js"><link rel="prefetch" href="/assets/js/131.46084a98.js"><link rel="prefetch" href="/assets/js/132.834e54fc.js"><link rel="prefetch" href="/assets/js/133.142ed605.js"><link rel="prefetch" href="/assets/js/134.a826ae8e.js"><link rel="prefetch" href="/assets/js/135.40f662f8.js"><link rel="prefetch" href="/assets/js/136.912410ad.js"><link rel="prefetch" href="/assets/js/137.3bb06c92.js"><link rel="prefetch" href="/assets/js/138.8a3a293e.js"><link rel="prefetch" href="/assets/js/139.f7e75d55.js"><link rel="prefetch" href="/assets/js/14.d58bb21f.js"><link rel="prefetch" href="/assets/js/140.04914f84.js"><link rel="prefetch" href="/assets/js/141.fe764f35.js"><link rel="prefetch" href="/assets/js/142.d6bf05fc.js"><link rel="prefetch" href="/assets/js/143.511c7453.js"><link rel="prefetch" href="/assets/js/144.c68fd49d.js"><link rel="prefetch" href="/assets/js/145.c8cb3cc2.js"><link rel="prefetch" href="/assets/js/146.7d71155f.js"><link rel="prefetch" href="/assets/js/147.bf4a5c53.js"><link rel="prefetch" href="/assets/js/148.a4586538.js"><link rel="prefetch" href="/assets/js/149.ad693bbb.js"><link rel="prefetch" href="/assets/js/15.91e80158.js"><link rel="prefetch" href="/assets/js/150.932def84.js"><link rel="prefetch" href="/assets/js/151.817bf081.js"><link rel="prefetch" href="/assets/js/152.cf55bdf2.js"><link rel="prefetch" href="/assets/js/153.e78cd816.js"><link rel="prefetch" href="/assets/js/154.b80c43fa.js"><link rel="prefetch" href="/assets/js/155.68cdaddc.js"><link rel="prefetch" href="/assets/js/156.a469fa52.js"><link rel="prefetch" href="/assets/js/157.bfdfcb38.js"><link rel="prefetch" href="/assets/js/158.53cb7c35.js"><link rel="prefetch" href="/assets/js/159.8eec3bcf.js"><link rel="prefetch" href="/assets/js/16.e042a073.js"><link rel="prefetch" href="/assets/js/160.44d9a23b.js"><link rel="prefetch" href="/assets/js/161.55fb171e.js"><link rel="prefetch" href="/assets/js/162.c3432da9.js"><link rel="prefetch" href="/assets/js/163.518f6059.js"><link rel="prefetch" href="/assets/js/164.bca5bd46.js"><link rel="prefetch" href="/assets/js/165.ee30c5cf.js"><link rel="prefetch" href="/assets/js/166.a9a7d5e2.js"><link rel="prefetch" href="/assets/js/167.d4910b7c.js"><link rel="prefetch" href="/assets/js/168.4d310365.js"><link rel="prefetch" href="/assets/js/169.dc49768c.js"><link rel="prefetch" href="/assets/js/17.08ef3a58.js"><link rel="prefetch" href="/assets/js/170.83eef840.js"><link rel="prefetch" href="/assets/js/171.5e427144.js"><link rel="prefetch" href="/assets/js/172.f600a6b0.js"><link rel="prefetch" href="/assets/js/173.b9fe16bb.js"><link rel="prefetch" href="/assets/js/174.5d1b9991.js"><link rel="prefetch" href="/assets/js/175.c2845e77.js"><link rel="prefetch" href="/assets/js/176.0ba53d88.js"><link rel="prefetch" href="/assets/js/177.7119cb79.js"><link rel="prefetch" href="/assets/js/178.192ce09d.js"><link rel="prefetch" href="/assets/js/179.0730161e.js"><link rel="prefetch" href="/assets/js/18.83466344.js"><link rel="prefetch" href="/assets/js/180.06a89846.js"><link rel="prefetch" href="/assets/js/181.1a0a1d23.js"><link rel="prefetch" href="/assets/js/182.d31eb3c5.js"><link rel="prefetch" href="/assets/js/183.ce10554e.js"><link rel="prefetch" href="/assets/js/184.8d077034.js"><link rel="prefetch" href="/assets/js/185.dd451011.js"><link rel="prefetch" href="/assets/js/186.da118208.js"><link rel="prefetch" href="/assets/js/187.5db16e6b.js"><link rel="prefetch" href="/assets/js/188.3e04e67f.js"><link rel="prefetch" href="/assets/js/189.da47452c.js"><link rel="prefetch" href="/assets/js/190.90b842a8.js"><link rel="prefetch" href="/assets/js/191.030d985e.js"><link rel="prefetch" href="/assets/js/192.2862905c.js"><link rel="prefetch" href="/assets/js/193.91339a7b.js"><link rel="prefetch" href="/assets/js/194.6683373d.js"><link rel="prefetch" href="/assets/js/195.2db546dd.js"><link rel="prefetch" href="/assets/js/196.4610bf34.js"><link rel="prefetch" href="/assets/js/197.ef5a795f.js"><link rel="prefetch" href="/assets/js/198.bd4bbf85.js"><link rel="prefetch" href="/assets/js/199.7f6ffc65.js"><link rel="prefetch" href="/assets/js/20.019b8dda.js"><link rel="prefetch" href="/assets/js/200.221b7f68.js"><link rel="prefetch" href="/assets/js/201.b39a04f1.js"><link rel="prefetch" href="/assets/js/202.84670983.js"><link rel="prefetch" href="/assets/js/203.0232cec1.js"><link rel="prefetch" href="/assets/js/204.3095e3e2.js"><link rel="prefetch" href="/assets/js/205.86b2c0cf.js"><link rel="prefetch" href="/assets/js/206.cd2c0c2f.js"><link rel="prefetch" href="/assets/js/207.6ee507d7.js"><link rel="prefetch" href="/assets/js/208.8177fa62.js"><link rel="prefetch" href="/assets/js/209.2053648d.js"><link rel="prefetch" href="/assets/js/21.1b1e96c3.js"><link rel="prefetch" href="/assets/js/210.19635a47.js"><link rel="prefetch" href="/assets/js/211.c818ed3e.js"><link rel="prefetch" href="/assets/js/212.64180fc4.js"><link rel="prefetch" href="/assets/js/213.23542a26.js"><link rel="prefetch" href="/assets/js/214.d4909424.js"><link rel="prefetch" href="/assets/js/215.86029c87.js"><link rel="prefetch" href="/assets/js/216.6ba2ff74.js"><link rel="prefetch" href="/assets/js/217.2c937765.js"><link rel="prefetch" href="/assets/js/218.390bdd12.js"><link rel="prefetch" href="/assets/js/219.ffa8c2f1.js"><link rel="prefetch" href="/assets/js/22.3b307273.js"><link rel="prefetch" href="/assets/js/220.8c083b6b.js"><link rel="prefetch" href="/assets/js/221.d9f09e68.js"><link rel="prefetch" href="/assets/js/222.002d32f4.js"><link rel="prefetch" href="/assets/js/223.a79f6090.js"><link rel="prefetch" href="/assets/js/224.8d83365d.js"><link rel="prefetch" href="/assets/js/225.1a23cda2.js"><link rel="prefetch" href="/assets/js/226.fb1f6bcb.js"><link rel="prefetch" href="/assets/js/227.d9b01667.js"><link rel="prefetch" href="/assets/js/228.04bac547.js"><link rel="prefetch" href="/assets/js/229.09039436.js"><link rel="prefetch" href="/assets/js/23.626ae5a5.js"><link rel="prefetch" href="/assets/js/230.6cbd8ba0.js"><link rel="prefetch" href="/assets/js/231.6c068b40.js"><link rel="prefetch" href="/assets/js/232.7fc4edfd.js"><link rel="prefetch" href="/assets/js/233.f7d165e5.js"><link rel="prefetch" href="/assets/js/234.d628fdb4.js"><link rel="prefetch" href="/assets/js/235.d79ff42c.js"><link rel="prefetch" href="/assets/js/236.33e5bcf0.js"><link rel="prefetch" href="/assets/js/237.f35ff466.js"><link rel="prefetch" href="/assets/js/238.6150d6c5.js"><link rel="prefetch" href="/assets/js/239.0421cb82.js"><link rel="prefetch" href="/assets/js/24.7fdd991b.js"><link rel="prefetch" href="/assets/js/240.1b080968.js"><link rel="prefetch" href="/assets/js/241.9a57703f.js"><link rel="prefetch" href="/assets/js/242.0fa4e218.js"><link rel="prefetch" href="/assets/js/243.16f89e68.js"><link rel="prefetch" href="/assets/js/244.5abb6b31.js"><link rel="prefetch" href="/assets/js/245.a32b3bd9.js"><link rel="prefetch" href="/assets/js/246.466f423e.js"><link rel="prefetch" href="/assets/js/247.bf6efe78.js"><link rel="prefetch" href="/assets/js/248.98a458f3.js"><link rel="prefetch" href="/assets/js/249.f6324936.js"><link rel="prefetch" href="/assets/js/25.d7e3e6dc.js"><link rel="prefetch" href="/assets/js/250.66606c42.js"><link rel="prefetch" href="/assets/js/251.8f9f0431.js"><link rel="prefetch" href="/assets/js/252.0ffe3d15.js"><link rel="prefetch" href="/assets/js/253.dc166fe3.js"><link rel="prefetch" href="/assets/js/254.35856d11.js"><link rel="prefetch" href="/assets/js/255.712946a3.js"><link rel="prefetch" href="/assets/js/256.8f730cbe.js"><link rel="prefetch" href="/assets/js/257.a714ad48.js"><link rel="prefetch" href="/assets/js/258.d4898f39.js"><link rel="prefetch" href="/assets/js/259.c54b4540.js"><link rel="prefetch" href="/assets/js/26.bbba9fef.js"><link rel="prefetch" href="/assets/js/260.3dfd186a.js"><link rel="prefetch" href="/assets/js/261.e51e03b4.js"><link rel="prefetch" href="/assets/js/262.ee5bb93d.js"><link rel="prefetch" href="/assets/js/263.b1e7af56.js"><link rel="prefetch" href="/assets/js/264.cdbff4c1.js"><link rel="prefetch" href="/assets/js/265.d3ccfd29.js"><link rel="prefetch" href="/assets/js/266.3b690de4.js"><link rel="prefetch" href="/assets/js/267.7571b35c.js"><link rel="prefetch" href="/assets/js/268.497ac797.js"><link rel="prefetch" href="/assets/js/269.b222cdd4.js"><link rel="prefetch" href="/assets/js/27.81c5c9d2.js"><link rel="prefetch" href="/assets/js/270.5f7f91bf.js"><link rel="prefetch" href="/assets/js/271.ec298f24.js"><link rel="prefetch" href="/assets/js/272.33149340.js"><link rel="prefetch" href="/assets/js/273.036753ca.js"><link rel="prefetch" href="/assets/js/274.5aae6795.js"><link rel="prefetch" href="/assets/js/275.893acaad.js"><link rel="prefetch" href="/assets/js/276.b2cc851c.js"><link rel="prefetch" href="/assets/js/277.c71f5654.js"><link rel="prefetch" href="/assets/js/278.1e068a18.js"><link rel="prefetch" href="/assets/js/279.28db05a3.js"><link rel="prefetch" href="/assets/js/28.3b245058.js"><link rel="prefetch" href="/assets/js/280.5d1027b9.js"><link rel="prefetch" href="/assets/js/281.de2662b4.js"><link rel="prefetch" href="/assets/js/282.12b71d99.js"><link rel="prefetch" href="/assets/js/283.08bc6007.js"><link rel="prefetch" href="/assets/js/284.69b4e502.js"><link rel="prefetch" href="/assets/js/285.9cf62d7b.js"><link rel="prefetch" href="/assets/js/286.c38efca6.js"><link rel="prefetch" href="/assets/js/287.e4bd30a1.js"><link rel="prefetch" href="/assets/js/288.90a708c3.js"><link rel="prefetch" href="/assets/js/289.7a604a72.js"><link rel="prefetch" href="/assets/js/29.a68ede14.js"><link rel="prefetch" href="/assets/js/290.1cf1ce40.js"><link rel="prefetch" href="/assets/js/291.01736ad0.js"><link rel="prefetch" href="/assets/js/292.d5bbd31b.js"><link rel="prefetch" href="/assets/js/3.c132a87c.js"><link rel="prefetch" href="/assets/js/30.7c7fe9e8.js"><link rel="prefetch" href="/assets/js/31.bdaece07.js"><link rel="prefetch" href="/assets/js/32.de3807e5.js"><link rel="prefetch" href="/assets/js/33.c63aa30a.js"><link rel="prefetch" href="/assets/js/34.b2ce47e3.js"><link rel="prefetch" href="/assets/js/35.39763777.js"><link rel="prefetch" href="/assets/js/36.49f0cede.js"><link rel="prefetch" href="/assets/js/37.110d3195.js"><link rel="prefetch" href="/assets/js/38.73f5320b.js"><link rel="prefetch" href="/assets/js/39.c4a73374.js"><link rel="prefetch" href="/assets/js/4.46619c11.js"><link rel="prefetch" href="/assets/js/40.5e1c2473.js"><link rel="prefetch" href="/assets/js/41.f43abb3d.js"><link rel="prefetch" href="/assets/js/42.3ebb7d3d.js"><link rel="prefetch" href="/assets/js/43.baf904f3.js"><link rel="prefetch" href="/assets/js/44.33c7fe48.js"><link rel="prefetch" href="/assets/js/45.b4cb7760.js"><link rel="prefetch" href="/assets/js/46.011e5377.js"><link rel="prefetch" href="/assets/js/47.3b36b25b.js"><link rel="prefetch" href="/assets/js/48.903704f2.js"><link rel="prefetch" href="/assets/js/49.632edc9d.js"><link rel="prefetch" href="/assets/js/5.637bfcd3.js"><link rel="prefetch" href="/assets/js/50.4f56cdc3.js"><link rel="prefetch" href="/assets/js/51.c33de2cb.js"><link rel="prefetch" href="/assets/js/52.e3e07adf.js"><link rel="prefetch" href="/assets/js/53.cacb1466.js"><link rel="prefetch" href="/assets/js/54.bf8a31c4.js"><link rel="prefetch" href="/assets/js/55.ea07a25a.js"><link rel="prefetch" href="/assets/js/56.d82d686b.js"><link rel="prefetch" href="/assets/js/57.7f9bfbd0.js"><link rel="prefetch" href="/assets/js/58.2471d274.js"><link rel="prefetch" href="/assets/js/59.9c0c6e85.js"><link rel="prefetch" href="/assets/js/6.134c7c0f.js"><link rel="prefetch" href="/assets/js/60.33e6d7ca.js"><link rel="prefetch" href="/assets/js/61.5d613d86.js"><link rel="prefetch" href="/assets/js/62.4650c42c.js"><link rel="prefetch" href="/assets/js/63.230d5ea1.js"><link rel="prefetch" href="/assets/js/64.d408a866.js"><link rel="prefetch" href="/assets/js/65.043a515d.js"><link rel="prefetch" href="/assets/js/66.b5627c0d.js"><link rel="prefetch" href="/assets/js/67.d3fc6fc4.js"><link rel="prefetch" href="/assets/js/68.cf72b60c.js"><link rel="prefetch" href="/assets/js/69.469b23e0.js"><link rel="prefetch" href="/assets/js/7.08d93cc1.js"><link rel="prefetch" href="/assets/js/70.41922ead.js"><link rel="prefetch" href="/assets/js/71.c4d4719c.js"><link rel="prefetch" href="/assets/js/72.1349370e.js"><link rel="prefetch" href="/assets/js/73.4b0dda46.js"><link rel="prefetch" href="/assets/js/74.6bca0627.js"><link rel="prefetch" href="/assets/js/75.4d8ecf8a.js"><link rel="prefetch" href="/assets/js/76.a6d7f617.js"><link rel="prefetch" href="/assets/js/77.39b4b5bd.js"><link rel="prefetch" href="/assets/js/78.30ea7828.js"><link rel="prefetch" href="/assets/js/79.70093a38.js"><link rel="prefetch" href="/assets/js/8.e243d73e.js"><link rel="prefetch" href="/assets/js/80.a5a94d3a.js"><link rel="prefetch" href="/assets/js/81.fb04b653.js"><link rel="prefetch" href="/assets/js/82.9a1b39e7.js"><link rel="prefetch" href="/assets/js/83.541d1dfd.js"><link rel="prefetch" href="/assets/js/84.ebcdae6d.js"><link rel="prefetch" href="/assets/js/85.6c4e1649.js"><link rel="prefetch" href="/assets/js/86.fa468e8a.js"><link rel="prefetch" href="/assets/js/87.958d3251.js"><link rel="prefetch" href="/assets/js/88.422f50f1.js"><link rel="prefetch" href="/assets/js/89.2d7732e3.js"><link rel="prefetch" href="/assets/js/9.ed005fa6.js"><link rel="prefetch" href="/assets/js/90.55fd94bb.js"><link rel="prefetch" href="/assets/js/91.f7979a48.js"><link rel="prefetch" href="/assets/js/92.39b5b620.js"><link rel="prefetch" href="/assets/js/93.8a19a013.js"><link rel="prefetch" href="/assets/js/94.ff760181.js"><link rel="prefetch" href="/assets/js/95.d2114ad2.js"><link rel="prefetch" href="/assets/js/96.b3f629e0.js"><link rel="prefetch" href="/assets/js/97.07a85239.js"><link rel="prefetch" href="/assets/js/98.f8223232.js"><link rel="prefetch" href="/assets/js/99.e7053972.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b6d109e9.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/logo.png" alt="willingoxjin's blog" class="logo"> <span class="site-name can-hide">willingoxjin's blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/design-pattern/#%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F" class="nav-link">设计模式</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分布式应用" class="dropdown-title"><a href="/distributed/" class="link-title">分布式应用</a> <span class="title" style="display:none;">分布式应用</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/distributed-service/app-architecture/" class="nav-link">单体架构到高可用分布式系统</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/distributed-session-sso/" class="nav-link">分布式session及单点登录</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/distributed-id/" class="nav-link">分布式ID</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/distributed-lock/" class="nav-link">分布式锁</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/distributed-scheduled-task/" class="nav-link">分布式定时任务</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/read-write-separation-library-table/" class="nav-link">读写分离、分库分表</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/distributed-transaction-consistent/" class="nav-link">分布式事务</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/interface-idempotency/" class="nav-link">接口幂等性</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/current-limiting/" class="nav-link">限流</a></li></ul></div></div><div class="nav-item"><a href="/micro-service/" class="nav-link">微服务</a></div><div class="nav-item"><a href="/big-data/" class="nav-link">大数据</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><a href="/categories/?category=%E5%89%8D%E7%AB%AF" class="link-title">前端</a> <span class="title" style="display:none;">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/?category=react-native.html" class="nav-link">React Native</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="/img/avatar.pic.jpg"> <div class="blogger-info"><h3>willingoxjin</h3> <span>爱干饭的Java程序员一枚</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/design-pattern/#%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F" class="nav-link">设计模式</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分布式应用" class="dropdown-title"><a href="/distributed/" class="link-title">分布式应用</a> <span class="title" style="display:none;">分布式应用</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/distributed-service/app-architecture/" class="nav-link">单体架构到高可用分布式系统</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/distributed-session-sso/" class="nav-link">分布式session及单点登录</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/distributed-id/" class="nav-link">分布式ID</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/distributed-lock/" class="nav-link">分布式锁</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/distributed-scheduled-task/" class="nav-link">分布式定时任务</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/read-write-separation-library-table/" class="nav-link">读写分离、分库分表</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/distributed-transaction-consistent/" class="nav-link">分布式事务</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/interface-idempotency/" class="nav-link">接口幂等性</a></li><li class="dropdown-item"><!----> <a href="/distributed-service/current-limiting/" class="nav-link">限流</a></li></ul></div></div><div class="nav-item"><a href="/micro-service/" class="nav-link">微服务</a></div><div class="nav-item"><a href="/big-data/" class="nav-link">大数据</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><a href="/categories/?category=%E5%89%8D%E7%AB%AF" class="link-title">前端</a> <span class="title" style="display:none;">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/?category=react-native.html" class="nav-link">React Native</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>centos7及shell</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>生产服务器常用配置</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>kali</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/31ecc1/" aria-current="page" class="active sidebar-link">kali</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/31ecc1/#一、安装及配置" class="sidebar-link">一、安装及配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/31ecc1/#_1-安装" class="sidebar-link">1.安装</a></li><li class="sidebar-sub-header"><a href="/pages/31ecc1/#_2-初始化配置" class="sidebar-link">2.初始化配置</a></li><li class="sidebar-sub-header"><a href="/pages/31ecc1/#设置apt国内镜像源" class="sidebar-link">设置apt国内镜像源</a></li><li class="sidebar-sub-header"><a href="/pages/31ecc1/#kali的apt源说明" class="sidebar-link">kali的apt源说明</a></li></ul></li><li class="sidebar-sub-header"><a href="/pages/31ecc1/#二、信息收集" class="sidebar-link">二、信息收集</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/31ecc1/#被动信息收集" class="sidebar-link">被动信息收集</a></li><li class="sidebar-sub-header"><a href="/pages/31ecc1/#dns域名解析" class="sidebar-link">DNS域名解析</a></li><li class="sidebar-sub-header"><a href="/pages/31ecc1/#shodan" class="sidebar-link">shodan</a></li><li class="sidebar-sub-header"><a href="/pages/31ecc1/#主动信息收集" class="sidebar-link">主动信息收集</a></li></ul></li><li class="sidebar-sub-header"><a href="/pages/31ecc1/#三、漏洞探测" class="sidebar-link">三、漏洞探测</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/31ecc1/#嗅探工具-wireshark抓包" class="sidebar-link">嗅探工具—WireShark抓包</a></li><li class="sidebar-sub-header"><a href="/pages/31ecc1/#抓包及快速定位数据技巧" class="sidebar-link">抓包及快速定位数据技巧</a></li><li class="sidebar-sub-header"><a href="/pages/31ecc1/#混杂模式与普通模式" class="sidebar-link">混杂模式与普通模式</a></li><li class="sidebar-sub-header"><a href="/pages/31ecc1/#抓包分析" class="sidebar-link">抓包分析</a></li><li class="sidebar-sub-header"><a href="/pages/31ecc1/#wireshark解决服务器被黑无法联网问题" class="sidebar-link">Wireshark解决服务器被黑无法联网问题</a></li></ul></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>常用bash</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-d5e9d2e6><div class="articleInfo" data-v-d5e9d2e6><ul class="breadcrumbs" data-v-d5e9d2e6><li data-v-d5e9d2e6><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-d5e9d2e6></a></li> <li data-v-d5e9d2e6><a href="/operating-system/#操作系统" data-v-d5e9d2e6>操作系统</a></li><li data-v-d5e9d2e6><a href="/operating-system/#kali" data-v-d5e9d2e6>kali</a></li></ul> <div class="info" data-v-d5e9d2e6><div title="作者" class="author iconfont icon-touxiang" data-v-d5e9d2e6><a href="/" target="_blank" title="作者" class="beLink" data-v-d5e9d2e6>willingoxjin</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-d5e9d2e6><a href="javascript:;" data-v-d5e9d2e6>2021-11-12</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABH1JREFUSA3tVl1oHFUUPmdmd2ltklqbpJDiNnXFmgbFktho7YMPNiJSSZM0+CAYSkUELVhM6YuwIPpgoOKDqOBDC0XE2CQoNtQXBUFTTcCi+Wlh1V2TQExsUzcltd3M9Tt3ZjZzZ2fT+OJTL8yeM+eee757fmeJbq//KQL8X3DUSFOcfr7cRsRtxNQMWueeVzOkaITIGqQHNg5y8+jNW9ldM7A6nTpAjuolUikAwq7CE3WcM2RRDz+XGVgN3FptU/aUSlvq9Pa3iZ1+sgAqJyyAFqkipd9dqiwHF3P65YycLWc/6sqGrvoEoIp6DOFaX5h6+dnfjkWprwqsPk0dUGq5vySwDImC10KxFHgGL1SWoc92O3eVht09qdXNH11I2SsTsJYqMWzihqGMi+A+Garf3BAuuLI5oGlULyNfyB/HYNujwktOfRrMr5t77NmevqaUopx0grnKAyvVpmwUDB4x6FPXuGvYLTDwWsejwgtgkYKPqRJg8SV6xaiZ3ZTppGneS4yfH5/66fZSDHv+QZci/+h5c5UHtpy67JUqGppM0sh0Nc1dW6/N1W5Yoqat8/TU/VnadmdeW2PLLSyh0cvxBs3KbqTmwYPpxN4do/mzE8nEpvX/UMu2Wbp74zUAK5q6WkHns7V0eWkdPbPzd3rxkTGybadYySumVzhcaJFbs5UrEkQ/+CK8gF5dnh/6ciIZ73gwQ927L1IitoxKLXYP3SjYdOrHHfTZhRRlFyrorafPk20B3HPD1y2G3qKZME5Jcf3t/HUC13/8tSd++vqFveMUTwAUxSUFI1QekR1+bIze3D9MF2aq6cPvG72CgnldWCFqyRw3lwH8ZMerjTD9ElRO7Gv44wNpC90aASqGfVlz/Rx17srQ57/UU26hkhQqUB7dBR71WmzQhHUnblGmVOEw0jhbV1n9OlXUDCIRGaNV5Jp43N516fN7JmnTHdfp7Hgy0luO4aMhtkLL8Bi3bUWYvzh5Mn1dTxrL6QmGuRhGL/TiTTxRoEdTszSaq9GR0NGA3KdkOz3hqSV3MIDhQ5IVX/Ivx3umBti2es2h4eZby7x8br1rkf7Mo90AqC8aQ3sJeNzqFRu+vSANAQe3PL7l0HGOAdwDCeZYvNKeoZp1Qfs6Aipndh86HmFRi0LAnEO47wsqM6cdfjh3jBPUzhZy7nvlUfFsamED1VQt6aISHVymXZ/B2aCtIG8AI8xfobj2d3en1wWVhOeHELKmLQ1s211s88comkv4UCwWyF787mJdYXtNfhKAXVqnKTq8QZvGAGGOfaTo5pGZ/PwbUCr5+DPr/1J92JNHr9aOl/F3iI5+O1nfybsGxoimvZ3ViWSluDITw3P37mypheDIPY0tw7+O/5ApbkYw+zpfaUVu32Pi98+defdUhEpZkRFq0aqyNh9FuL9hpYbEm6iwi0z2REd09ZmyENEbuhjDWzKvZXTqKYaBIr3tt5kuPtQBZFvEUwHt60vfCNu41XsksH9Ij1BMMz1Y0OOunHNShFIP5868g5zeXmuLwL9T4b6Q2+KejgAAAABJRU5ErkJggg==">kali<!----></h1>  <div class="theme-vdoing-content content__default"><h2 id="一、安装及配置"><a href="#一、安装及配置" class="header-anchor">#</a> 一、安装及配置</h2> <h3 id="_1-安装"><a href="#_1-安装" class="header-anchor">#</a> 1.安装</h3> <p>略（下载镜像后，直接刷入硬盘/sd卡）</p> <h3 id="_2-初始化配置"><a href="#_2-初始化配置" class="header-anchor">#</a> 2.初始化配置</h3> <h3 id="设置apt国内镜像源"><a href="#设置apt国内镜像源" class="header-anchor">#</a> 设置<code>apt</code>国内镜像源</h3> <p>打开终端，修改镜像源配置文件，具体如下：</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 1.打开配置文件 可能需要root权限 </span>
+<span class="token function">vim</span> /etc/apt/sources.list
+
+<span class="token comment"># 2.修改内容：注释默认的镜像源地址</span>
+
+<span class="token comment">#deb http://http.kali.org/kali kali-rolling main contrib non-free</span>
+<span class="token comment">#deb-src http://http.kali.org/kali kali-rolling main contrib non-free</span>
+<span class="token comment"># 阿里云kali镜像</span>
+deb https://mirrors.aliyun.com/kali kali-rolling main non-free contrib
+deb-src https://mirrors.aliyun.com/kali kali-rolling main non-free contrib:
+
+<span class="token comment"># 3.拉取镜像（验证是否配置成功）可能需要root权限</span>
+<span class="token function">apt</span> update
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>看到如下代表配置成功，已经在使用阿里云的镜像源了</p> <p><img src="/assets/img/image-20201223140225083.dc5e52cf.png" alt="image-20201223140225083"></p> <p>升级安装包</p> <h3 id="kali的apt源说明"><a href="#kali的apt源说明" class="header-anchor">#</a> kali的apt源说明</h3> <p>​		<code>kali-rolling</code>是Kali的即时更新版，只要kali中有更新，更新包就会放入kali-rolling中，供下载和使用，它为用户提供稳定更新的版本，同时带有新的安装包，是我们常用的源</p> <p>kali-rolling下有3类软件包：<code>main</code> 、<code>non-free</code>、 <code>contrib</code></p> <table><thead><tr><th>dists区域</th> <th>软件包组件标准</th></tr></thead> <tbody><tr><td>main</td> <td>遵从Debian自由软件指导方针（DFSG），并不依赖于 non-free</td></tr> <tr><td>contrib</td> <td>遵从Debian自由软件指导方针（DFSG），但依赖于non-free</td></tr> <tr><td>non-free</td> <td>不遵从Debian自由软件指导方针（DFSG）</td></tr></tbody></table> <p>​		DFSG是Debian自由软件指导方针（Debian Free Software Guidelines），此方针中</p> <h2 id="二、信息收集"><a href="#二、信息收集" class="header-anchor">#</a> 二、信息收集</h2> <p>​	被动信息收集使用第三方服务对目标进行访问了解，被动信息收集不会和目标主机直接交互不会被发现，如Google搜索</p> <p>​	主动信息收集主动访问目标主机获取信息，如nmap扫描端口</p> <p>信息收集内容：</p> <ul><li>IP</li> <li>域名信息</li> <li>邮件地址</li> <li>文档图片数据</li> <li>公司地址</li> <li>公司组织架构</li> <li>联系电话/传真</li> <li>人员名/职务</li> <li>目标系统使用的技术架构</li> <li>公开的商业信息</li></ul> <p>信息用途：</p> <ul><li>描述目标</li> <li>发现目标</li> <li>社会工程学攻击</li> <li>物理缺口</li></ul> <h3 id="被动信息收集"><a href="#被动信息收集" class="header-anchor">#</a> 被动信息收集</h3> <p>​</p> <h4 id="dns域名解析"><a href="#dns域名解析" class="header-anchor">#</a> DNS域名解析</h4> <h5 id="_1-dns服务器"><a href="#_1-dns服务器" class="header-anchor">#</a> 1.DNS服务器</h5> <p>​		运行DNS服务器程序的计算机，储存DNS数据库信息，DNS服务器分为根域DNS服务器，顶级域名DNS服务器。</p> <p>​		顶级DNS服务器有13个，都存储了全部的顶级 域名服务器所在的地址；顶级域名服务器存储了每位客户注册的主机地址。</p> <h5 id="_2-域名记录-a、cname、ns、mx、ptr"><a href="#_2-域名记录-a、cname、ns、mx、ptr" class="header-anchor">#</a> 2.域名记录：A、Cname、NS、MX、PTR</h5> <ul><li><p>A记录（Address）正向解析</p> <p>A记录是将一个主机名（全称域名FQDN）和一个IP地址关联起来，这也是大多数客户端程序默认的查询类型，例：www.baidu.com -&gt; 14.215.177.39</p></li> <li><p>PTX记录(Point)反向解析
+PTX记录将一个ip地址对应到主机名（全称   FQDN），这些记录保存在in-addr.arpa域中。</p></li> <li><p>CNAME记录（Canonical Name）别名
+别名记录，也称为规范名字。这种记录允许您将多个名字映射到同一台计算机。
+例如：www.baidu.com 对应ip8.8.8.8 ，web.baidu.com 对应ip8.8.8.8</p></li> <li><p>MX记录（Mall eXchange）
+MX记录是邮件交换记录，它指向一个邮件服务器，用于电子邮件系统时根据 收件人的地址后缀定位邮件服务器
+例如： aaa@163.com
+当有多个MX记录（即有多个邮件服务器）时，则需要设置数值来确定其优先级。通过设置优先级数字来指明首选服务器，数字越小表示优先级越高</p></li> <li><p>NS记录（Name Server）
+NS记录是域名服务器记录，也成为授权服务器，用来指定该域名由哪个DNS服务器来进行解析
+即域名和服务器ip地址绑定
+可在https:wanwang.aliyun.com/ 购买域名绑定</p></li> <li><p>DNS缓存服务器
+不负责解析域名，只是用来缓存域名解析结果</p></li></ul> <p>DNS查询方式：递归查询和迭代查询
+一个DNS查询过程，通过8个步骤的解析过程就使得客户端可以顺利访问www.163.com这个域名，但实际应用中，通常这个过程是非常迅速的</p> <p><a href="./imags/dns1.jpg">dns1</a></p> <p><a href="./imags/dns2s.jpg">dns2</a></p> <p>DNS查询过程
+1.浏览器缓存：当用户通过浏览器访问某域名时，浏览器首先会在自己的缓存中查找是否有该域名对应的ip地址
+2.系统缓存：当浏览器缓存中无域名对应的ip则会自动检查用户计算机系统hosts文件DNS缓存是否有该域名对应ip
+3.路由器缓存：当浏览器和系统缓存中都没有域名对应的ip，则会进入路由器缓存中检查
+，以上三步为客户端的DNS缓存
+3.ISP（互联网服务提供商）DNS缓存（一般就是本地DNS服务器）
+当在用户客户端查找不到域名对应ip地址，则将进入ISP DNS缓存中进行查询，比如你用的是电信的网络，则会进入电信的DNS缓存服务器中进行查找
+5.根域名服务器
+当以上步骤均为查询到域名对应的ip，则进入根服务器进行查询。
+全球仅有13台根服务器，1个主根服务器，其余12为辅根域名服务器。
+根域名收到请求后会查看区域文件记录，若无则将其管辖范围内顶级域名（如.com）服务器IP告诉本地DNS服务器
+6.顶级域名服务器
+顶级域名服务器受到请求后查看区域文件记录，若无则将其管辖范围内主域名服务器的IP地址告诉本地DNS服务器
+7.主域名服务器
+主域名服务器接受到请求后查询自己的缓存，如果没有则进入下一级域名服务器进行查找，并重复该步骤直到找到正确记录
+8.保存结果至缓存
+本地域名服务器把返回的结果保存到缓存，以备下一次使用，同时将该结果反馈给客户端，客户端通过这个IP地址与web服务器建立连接</p> <h5 id="dns信息收集"><a href="#dns信息收集" class="header-anchor">#</a> DNS信息收集</h5> <h6 id="nslookup"><a href="#nslookup" class="header-anchor">#</a> nslookup</h6> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ <span class="token function">nslookup</span> www.baidu.com
+Server:         <span class="token number">222.246</span>.129.80  <span class="token comment"># DNS服务器</span>
+Address:        <span class="token number">222.246</span>.129.80<span class="token comment">#53 # DNS服务器地址</span>
+
+Non-authoritative answer:
+www.baidu.com   canonical name <span class="token operator">=</span> www.a.shifen.com. <span class="token comment"># 别名</span>
+Name:   www.a.shifen.com  <span class="token comment"># 域名</span>
+Address: <span class="token number">14.215</span>.177.39   <span class="token comment"># ip</span>
+Name:   www.a.shifen.com
+Address: <span class="token number">14.215</span>.177.38
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h6 id="dig"><a href="#dig" class="header-anchor">#</a> dig</h6> <p><code>@&lt;DNS服务器地址&gt;</code>指定进行域名解析的域名服务器</p> <ul><li><code>any</code> 参数 显示所有类型的域名记录，默认只显示A记录</li> <li><code>-x</code>参数 通过ip反查询域名</li> <li></li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">dig</span> www.baidu.com
+
+<span class="token punctuation">;</span> <span class="token operator">&lt;&lt;</span><span class="token operator">&gt;&gt;</span> DiG <span class="token number">9.16</span>.8-Debian <span class="token operator">&lt;&lt;</span><span class="token operator">&gt;&gt;</span> www.baidu.com
+<span class="token punctuation">;</span><span class="token punctuation">;</span> global options: +cmd
+<span class="token punctuation">;</span><span class="token punctuation">;</span> Got answer:
+<span class="token punctuation">;</span><span class="token punctuation">;</span> -<span class="token operator">&gt;&gt;</span>HEADER<span class="token operator">&lt;&lt;-</span> opcode: QUERY, status: NOERROR, id: <span class="token number">53508</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> flags: qr rd ra<span class="token punctuation">;</span> QUERY: <span class="token number">1</span>, ANSWER: <span class="token number">3</span>, AUTHORITY: <span class="token number">0</span>, ADDITIONAL: <span class="token number">1</span>
+
+<span class="token punctuation">;</span><span class="token punctuation">;</span> OPT PSEUDOSECTION:
+<span class="token punctuation">;</span> EDNS: version: <span class="token number">0</span>, flags:<span class="token punctuation">;</span> udp: <span class="token number">1280</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> QUESTION SECTION:
+<span class="token punctuation">;</span>www.baidu.com.                 IN      A
+
+<span class="token punctuation">;</span><span class="token punctuation">;</span> ANSWER SECTION:
+www.baidu.com.          <span class="token number">548</span>     IN      CNAME   www.a.shifen.com.
+www.a.shifen.com.       <span class="token number">8</span>       IN      A       <span class="token number">14.215</span>.177.39
+www.a.shifen.com.       <span class="token number">8</span>       IN      A       <span class="token number">14.215</span>.177.38
+
+<span class="token punctuation">;</span><span class="token punctuation">;</span> Query time: <span class="token number">3</span> msec
+<span class="token punctuation">;</span><span class="token punctuation">;</span> SERVER: <span class="token number">222.246</span>.129.80<span class="token comment">#53(222.246.129.80)</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> WHEN: 二 <span class="token number">1</span>月 <span class="token number">12</span> <span class="token number">15</span>:16:56 CST <span class="token number">2021</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> MSG SIZE  rcvd: <span class="token number">104</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ <span class="token function">dig</span> @114.114.114.114 www.baidu.com
+
+<span class="token punctuation">;</span> <span class="token operator">&lt;&lt;</span><span class="token operator">&gt;&gt;</span> DiG <span class="token number">9.16</span>.8-Debian <span class="token operator">&lt;&lt;</span><span class="token operator">&gt;&gt;</span> @114.114.114.114 www.baidu.com
+<span class="token punctuation">;</span> <span class="token punctuation">(</span><span class="token number">1</span> server found<span class="token punctuation">)</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> global options: +cmd
+<span class="token punctuation">;</span><span class="token punctuation">;</span> Got answer:
+<span class="token punctuation">;</span><span class="token punctuation">;</span> -<span class="token operator">&gt;&gt;</span>HEADER<span class="token operator">&lt;&lt;-</span> opcode: QUERY, status: NOERROR, id: <span class="token number">6589</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> flags: qr rd ra<span class="token punctuation">;</span> QUERY: <span class="token number">1</span>, ANSWER: <span class="token number">3</span>, AUTHORITY: <span class="token number">0</span>, ADDITIONAL: <span class="token number">1</span>
+
+<span class="token punctuation">;</span><span class="token punctuation">;</span> OPT PSEUDOSECTION:
+<span class="token punctuation">;</span> EDNS: version: <span class="token number">0</span>, flags:<span class="token punctuation">;</span> udp: <span class="token number">1280</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> QUESTION SECTION:
+<span class="token punctuation">;</span>www.baidu.com.                 IN      A
+
+<span class="token punctuation">;</span><span class="token punctuation">;</span> ANSWER SECTION:
+www.baidu.com.          <span class="token number">579</span>     IN      CNAME   www.a.shifen.com.
+www.a.shifen.com.       <span class="token number">203</span>     IN      A       <span class="token number">14.215</span>.177.38
+www.a.shifen.com.       <span class="token number">203</span>     IN      A       <span class="token number">14.215</span>.177.39
+
+<span class="token punctuation">;</span><span class="token punctuation">;</span> Query time: <span class="token number">0</span> msec
+<span class="token punctuation">;</span><span class="token punctuation">;</span> SERVER: <span class="token number">114.114</span>.114.114<span class="token comment">#53(114.114.114.114)</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> WHEN: 二 <span class="token number">1</span>月 <span class="token number">12</span> <span class="token number">15</span>:18:40 CST <span class="token number">2021</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> MSG SIZE  rcvd: <span class="token number">104</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ <span class="token function">dig</span> @114.114.114.114 www.baidu.com any
+
+<span class="token punctuation">;</span> <span class="token operator">&lt;&lt;</span><span class="token operator">&gt;&gt;</span> DiG <span class="token number">9.16</span>.8-Debian <span class="token operator">&lt;&lt;</span><span class="token operator">&gt;&gt;</span> @114.114.114.114 www.baidu.com any
+<span class="token punctuation">;</span> <span class="token punctuation">(</span><span class="token number">1</span> server found<span class="token punctuation">)</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> global options: +cmd
+<span class="token punctuation">;</span><span class="token punctuation">;</span> Got answer:
+<span class="token punctuation">;</span><span class="token punctuation">;</span> -<span class="token operator">&gt;&gt;</span>HEADER<span class="token operator">&lt;&lt;-</span> opcode: QUERY, status: NOERROR, id: <span class="token number">60563</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> flags: qr rd ra<span class="token punctuation">;</span> QUERY: <span class="token number">1</span>, ANSWER: <span class="token number">1</span>, AUTHORITY: <span class="token number">0</span>, ADDITIONAL: <span class="token number">1</span>
+
+<span class="token punctuation">;</span><span class="token punctuation">;</span> OPT PSEUDOSECTION:
+<span class="token punctuation">;</span> EDNS: version: <span class="token number">0</span>, flags:<span class="token punctuation">;</span> udp: <span class="token number">512</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> QUESTION SECTION:
+<span class="token punctuation">;</span>www.baidu.com.                 IN      ANY
+
+<span class="token punctuation">;</span><span class="token punctuation">;</span> ANSWER SECTION:
+www.baidu.com.          <span class="token number">920</span>     IN      CNAME   www.a.shifen.com.
+
+<span class="token punctuation">;</span><span class="token punctuation">;</span> Query time: <span class="token number">227</span> msec
+<span class="token punctuation">;</span><span class="token punctuation">;</span> SERVER: <span class="token number">114.114</span>.114.114<span class="token comment">#53(114.114.114.114)</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> WHEN: 二 <span class="token number">1</span>月 <span class="token number">12</span> <span class="token number">15</span>:20:00 CST <span class="token number">2021</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> MSG SIZE  rcvd: <span class="token number">69</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ <span class="token function">dig</span> @114.114.114.114 www.baidu.com any
+
+<span class="token punctuation">;</span> <span class="token operator">&lt;&lt;</span><span class="token operator">&gt;&gt;</span> DiG <span class="token number">9.16</span>.8-Debian <span class="token operator">&lt;&lt;</span><span class="token operator">&gt;&gt;</span> @114.114.114.114 www.baidu.com any
+<span class="token punctuation">;</span> <span class="token punctuation">(</span><span class="token number">1</span> server found<span class="token punctuation">)</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> global options: +cmd
+<span class="token punctuation">;</span><span class="token punctuation">;</span> Got answer:
+<span class="token punctuation">;</span><span class="token punctuation">;</span> -<span class="token operator">&gt;&gt;</span>HEADER<span class="token operator">&lt;&lt;-</span> opcode: QUERY, status: NOERROR, id: <span class="token number">60563</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> flags: qr rd ra<span class="token punctuation">;</span> QUERY: <span class="token number">1</span>, ANSWER: <span class="token number">1</span>, AUTHORITY: <span class="token number">0</span>, ADDITIONAL: <span class="token number">1</span>
+
+<span class="token punctuation">;</span><span class="token punctuation">;</span> OPT PSEUDOSECTION:
+<span class="token punctuation">;</span> EDNS: version: <span class="token number">0</span>, flags:<span class="token punctuation">;</span> udp: <span class="token number">512</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> QUESTION SECTION:
+<span class="token punctuation">;</span>www.baidu.com.                 IN      ANY
+
+<span class="token punctuation">;</span><span class="token punctuation">;</span> ANSWER SECTION:
+www.baidu.com.          <span class="token number">920</span>     IN      CNAME   www.a.shifen.com.
+
+<span class="token punctuation">;</span><span class="token punctuation">;</span> Query time: <span class="token number">227</span> msec
+<span class="token punctuation">;</span><span class="token punctuation">;</span> SERVER: <span class="token number">114.114</span>.114.114<span class="token comment">#53(114.114.114.114)</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> WHEN: 二 <span class="token number">1</span>月 <span class="token number">12</span> <span class="token number">15</span>:20:00 CST <span class="token number">2021</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> MSG SIZE  rcvd: <span class="token number">69</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p><strong>查询DNS服务器bind版本信息</strong>
+可以通过版本信息来查找相关版本漏洞的利用方式</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>dig txt chaos VERSION.BIND @&lt;...&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token variable">$dig</span> txt chaos VERSION.BIND @dns3.dnsv4.com
+
+<span class="token punctuation">;</span> <span class="token operator">&lt;&lt;</span><span class="token operator">&gt;&gt;</span> DiG <span class="token number">9.16</span>.8-Debian <span class="token operator">&lt;&lt;</span><span class="token operator">&gt;&gt;</span> txt chaos VERSION.BIND @dns3.dnsv4.com
+<span class="token punctuation">;</span><span class="token punctuation">;</span> global options: +cmd
+<span class="token punctuation">;</span><span class="token punctuation">;</span> Got answer:
+<span class="token punctuation">;</span><span class="token punctuation">;</span> -<span class="token operator">&gt;&gt;</span>HEADER<span class="token operator">&lt;&lt;-</span> opcode: QUERY, status: NOERROR, id: <span class="token number">43143</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> flags: qr aa rd ra ad<span class="token punctuation">;</span> QUERY: <span class="token number">1</span>, ANSWER: <span class="token number">1</span>, AUTHORITY: <span class="token number">0</span>, ADDITIONAL: <span class="token number">1</span>
+
+<span class="token punctuation">;</span><span class="token punctuation">;</span> OPT PSEUDOSECTION:
+<span class="token punctuation">;</span> EDNS: version: <span class="token number">0</span>, flags:<span class="token punctuation">;</span> udp: <span class="token number">1280</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> QUESTION SECTION:
+<span class="token punctuation">;</span>VERSION.BIND.                  CH      TXT
+
+<span class="token punctuation">;</span><span class="token punctuation">;</span> ANSWER SECTION:
+VERSION.BIND.           <span class="token number">0</span>       CH      TXT     <span class="token string">&quot;dnsmasq-2.73&quot;</span>
+
+<span class="token punctuation">;</span><span class="token punctuation">;</span> Query time: <span class="token number">0</span> msec
+<span class="token punctuation">;</span><span class="token punctuation">;</span> SERVER: <span class="token number">113.96</span>.208.81<span class="token comment">#53(113.96.208.81)</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> WHEN: 二 <span class="token number">1</span>月 <span class="token number">12</span> <span class="token number">15</span>:40:00 CST <span class="token number">2021</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> MSG SIZE  rcvd: <span class="token number">66</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h5 id="查询网站的域名注册信息"><a href="#查询网站的域名注册信息" class="header-anchor">#</a> <strong>查询网站的域名注册信息</strong></h5> <p>Web接口和Whois命令查询</p> <h6 id="web接口"><a href="#web接口" class="header-anchor">#</a> <strong>web接口</strong></h6> <p>https://whois.aliyun.com
+站长之家：http://whois.chinaz.com
+......</p> <h6 id="whois命令"><a href="#whois命令" class="header-anchor">#</a> Whois命令</h6> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>whois <span class="token operator">&lt;</span>域名<span class="token operator">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language-shell line-numbers-mode"><pre class="language-shell"><code>whois baidu.com
+   Domain Name: BAIDU.COM
+   Registry Domain ID: 11181110_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: whois.markmonitor.com
+   Registrar URL: http://www.markmonitor.com
+   Updated Date: <span class="token number">2020</span>-12-09T04:04:41Z
+   Creation Date: <span class="token number">1999</span>-10-11T11:05:17Z
+   Registry Expiry Date: <span class="token number">2026</span>-10-11T11:05:17Z
+   Registrar: MarkMonitor Inc.
+   Registrar IANA ID: <span class="token number">292</span>
+   Registrar Abuse Contact Email: abusecomplaints@markmonitor.com
+   Registrar Abuse Contact Phone: +1.2083895740
+   Domain Status: clientDeleteProhibited https://icann.org/epp<span class="token comment">#clientDeleteProhibited</span>
+   Domain Status: clientTransferProhibited https://icann.org/epp<span class="token comment">#clientTransferProhibited</span>
+   Domain Status: clientUpdateProhibited https://icann.org/epp<span class="token comment">#clientUpdateProhibited</span>
+   Domain Status: serverDeleteProhibited https://icann.org/epp<span class="token comment">#serverDeleteProhibited</span>
+   Domain Status: serverTransferProhibited https://icann.org/epp<span class="token comment">#serverTransferProhibited</span>
+   Domain Status: serverUpdateProhibited https://icann.org/epp<span class="token comment">#serverUpdateProhibited</span>
+   Name Server: NS1.BAIDU.COM
+   Name Server: NS2.BAIDU.COM
+   Name Server: NS3.BAIDU.COM
+   Name Server: NS4.BAIDU.COM
+   Name Server: NS7.BAIDU.COM
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> Last update of whois database: <span class="token number">2021</span>-01-12T07:50:59Z <span class="token operator">&lt;&lt;&lt;</span>
+
+For <span class="token function">more</span> information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration <span class="token function">date</span> displayed <span class="token keyword">in</span> this record is the <span class="token function">date</span> the
+registrar<span class="token string">'s sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant'</span>s agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar<span class="token string">'s Whois database to
+view the registrar'</span>s reported <span class="token function">date</span> of expiration <span class="token keyword">for</span> this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations<span class="token punctuation">;</span> the Data <span class="token keyword">in</span> VeriSign Global Registry
+Services' <span class="token punctuation">(</span><span class="token string">&quot;VeriSign&quot;</span><span class="token punctuation">)</span> Whois database is provided by VeriSign <span class="token keyword">for</span>
+information purposes only, and to assist persons <span class="token keyword">in</span> obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+<span class="token keyword">for</span> lawful purposes and that under no circumstances will you use this Data
+to: <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> allow, enable, or otherwise support the transmission of mass
+unsolicited, commercial advertising or solicitations via e-mail, telephone,
+or facsimile<span class="token punctuation">;</span> or <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token builtin class-name">enable</span> high volume, automated, electronic processes
+that apply to VeriSign <span class="token punctuation">(</span>or its computer systems<span class="token punctuation">)</span>. The compilation,
+repackaging, dissemination or other use of this Data is expressly
+prohibited without the prior written consent of VeriSign. You agree not to
+use electronic processes that are automated and high-volume to access or
+query the Whois database except as reasonably necessary to register
+domain names or modify existing registrations. VeriSign reserves the right
+to restrict your access to the Whois database <span class="token keyword">in</span> its sole discretion to ensure
+operational stability.  VeriSign may restrict or terminate your access to the
+Whois database <span class="token keyword">for</span> failure to abide by these terms of use. VeriSign
+reserves the right to modify these terms at any time.
+
+The Registry database contains ONLY .COM, .NET, .EDU domains and
+Registrars.
+Domain Name: baidu.com
+Registry Domain ID: 11181110_DOMAIN_COM-VRSN
+Registrar WHOIS Server: whois.markmonitor.com
+Registrar URL: http://www.markmonitor.com
+Updated Date: <span class="token number">2020</span>-12-08T19:39:35-0800
+Creation Date: <span class="token number">1999</span>-10-11T04:05:17-0700
+Registrar Registration Expiration Date: <span class="token number">2026</span>-10-11T00:00:00-0700
+Registrar: MarkMonitor, Inc.
+Registrar IANA ID: <span class="token number">292</span>
+Registrar Abuse Contact Email: abusecomplaints@markmonitor.com
+Registrar Abuse Contact Phone: +1.2083895770
+Domain Status: clientUpdateProhibited <span class="token punctuation">(</span>https://www.icann.org/epp<span class="token comment">#clientUpdateProhibited)</span>
+Domain Status: clientTransferProhibited <span class="token punctuation">(</span>https://www.icann.org/epp<span class="token comment">#clientTransferProhibited)</span>
+Domain Status: clientDeleteProhibited <span class="token punctuation">(</span>https://www.icann.org/epp<span class="token comment">#clientDeleteProhibited)</span>
+Registrant Organization: Beijing Baidu Netcom Science Technology Co., Ltd.
+Registrant State/Province: Beijing
+Registrant Country: CN
+Registrant Email: Select Request Email Form at https://domains.markmonitor.com/whois/baidu.com
+Admin Organization: Beijing Baidu Netcom Science Technology Co., Ltd.
+Admin State/Province: Beijing
+Admin Country: CN
+Admin Email: Select Request Email Form at https://domains.markmonitor.com/whois/baidu.com
+Tech Organization: Beijing Baidu Netcom Science Technology Co., Ltd.
+Tech State/Province: Beijing
+Tech Country: CN
+Tech Email: Select Request Email Form at https://domains.markmonitor.com/whois/baidu.com
+Name Server: ns4.baidu.com
+Name Server: ns1.baidu.com
+Name Server: ns7.baidu.com
+Name Server: ns3.baidu.com
+Name Server: ns2.baidu.com
+DNSSEC: unsigned
+URL of the ICANN WHOIS Data Problem Reporting System: http://wdprs.internic.net/
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> Last update of WHOIS database: <span class="token number">2021</span>-01-11T23:46:54-0800 <span class="token operator">&lt;&lt;&lt;</span>
+
+For <span class="token function">more</span> information on WHOIS status codes, please visit:
+  https://www.icann.org/resources/pages/epp-status-codes
+
+If you wish to contact this domain’s Registrant, Administrative, or Technical
+contact, and such email address is not visible above, you may <span class="token keyword">do</span> so via our web
+form, pursuant to ICANN’s Temporary Specification. To verify that you are not a
+robot, please enter your email address to receive a <span class="token function">link</span> to a page that
+facilitates email communication with the relevant contact<span class="token punctuation">(</span>s<span class="token punctuation">)</span>.
+
+Web-based WHOIS:
+  https://domains.markmonitor.com/whois
+
+If you have a legitimate interest <span class="token keyword">in</span> viewing the non-public WHOIS details, send
+your request and the reasons <span class="token keyword">for</span> your request to whoisrequest@markmonitor.com
+and specify the domain name <span class="token keyword">in</span> the subject line. We will review that request and
+may ask <span class="token keyword">for</span> supporting documentation and explanation.
+
+The data <span class="token keyword">in</span> MarkMonitor’s WHOIS database is provided <span class="token keyword">for</span> information purposes,
+and to assist persons <span class="token keyword">in</span> obtaining information about or related to a domain
+name’s registration record. While MarkMonitor believes the data to be accurate,
+the data is provided <span class="token string">&quot;as is&quot;</span> with no guarantee or warranties regarding its
+accuracy.
+
+By submitting a WHOIS query, you agree that you will use this data only <span class="token keyword">for</span>
+lawful purposes and that, under no circumstances will you use this data to:
+  <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> allow, enable, or otherwise support the transmission by email, telephone,
+or facsimile of mass, unsolicited, commercial advertising, or spam<span class="token punctuation">;</span> or
+  <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token builtin class-name">enable</span> high volume, automated, or electronic processes that send queries,
+data, or email to MarkMonitor <span class="token punctuation">(</span>or its systems<span class="token punctuation">)</span> or the domain name contacts <span class="token punctuation">(</span>or
+its systems<span class="token punctuation">)</span>.
+
+MarkMonitor reserves the right to modify these terms at any time.
+
+By submitting this query, you agree to abide by this policy.
+
+MarkMonitor Domain Management<span class="token punctuation">(</span>TM<span class="token punctuation">)</span>
+Protecting companies and consumers <span class="token keyword">in</span> a digital world.
+
+Visit MarkMonitor at https://www.markmonitor.com
+Contact us at +1.8007459229
+In Europe, at +44.02032062220
+--
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br></div></div><h5 id="备案信息查询"><a href="#备案信息查询" class="header-anchor">#</a> 备案信息查询</h5> <p>web接口</p> <ul><li>查询网址：http://beianbeian.com</li> <li>天眼查：https://www.tianyancha.com</li></ul> <h5 id="域名信息收集"><a href="#域名信息收集" class="header-anchor">#</a> 域名信息收集</h5> <blockquote><p><strong>顶级域名</strong></p> <p>顶级域名的最后一个部分，即是域名最后一点之后的字母，
+如 http://www.baidu.com中，顶级域名：.com（.COM），大小写视为相同</p> <p>常见顶级域名</p> <ul><li><p>通用顶级类别域名</p> <ul><li>.ac 科研</li> <li>.com 工商金融企业</li> <li>.edu 教育机构</li> <li>.gov 政府</li> <li>.net 互联网信息和运行</li> <li>.org 非盈利组织</li></ul></li> <li><p>国家地区顶级域名</p> <ul><li>.cn 中国</li> <li>.uk 英国
+......</li></ul></li></ul> <p><strong>子域名（Subdomain Name）</strong>
+顶级域名前的前缀都是该顶级域名的子域名
+子域名又分为二级子域名，三级子域名，多级子域名</p> <p>主域名的防守严密，可通过攻击子域名无限靠近主域名</p></blockquote> <h6 id="子域名挖掘工具maltego"><a href="#子域名挖掘工具maltego" class="header-anchor">#</a> 子域名挖掘工具Maltego</h6> <p>使用Maltego CE进行子域名挖掘
+先翻墙注册：
+官方网站：https://www.paterva.com/web7/buy/maltego-clients/maltego-ce.php
+注册帐号：https://www.paterva.com/web7/community/community.php</p> <h6 id="搜索引擎-goodle-site-qq-com"><a href="#搜索引擎-goodle-site-qq-com" class="header-anchor">#</a> 搜索引擎 Goodle： site:qq.com</h6> <h6 id="第三方网站"><a href="#第三方网站" class="header-anchor">#</a> 第三方网站</h6> <p>http://tool.chinaz.com/subdomain
+https://dnsdumpster.com</p> <p>证书透明度公开日志枚举
+https://crt.sh
+http://censys.io</p> <p>其他
+https://phpinfo.me/domain
+http://dns.aizhan.com</p> <h4 id="shodan"><a href="#shodan" class="header-anchor">#</a> shodan</h4> <p>地址：www.shodan.io</p> <h5 id="搜索方式"><a href="#搜索方式" class="header-anchor">#</a> 搜索方式</h5> <blockquote><ul><li>hostname：搜索指定的主机或域名。例如，hostname:&quot;google&quot;</li> <li>port：搜索指定的端口或服务。例如， port:&quot;21&quot;</li> <li>country：搜索指定的国家。例如， country:&quot;CN&quot;</li> <li>city：搜索指定的城市。例如，city:&quot;Hefei&quot;</li> <li>org：搜索指定的组织或公司。例如，org:&quot;google&quot;</li> <li>isp：搜索指定的ISP供应商。例如， isp:&quot;China Telecom&quot;</li> <li>product：搜索指定的操作系统/软件/平台。例如， product:&quot;Apache httpd&quot;</li> <li>version：搜索指定的软件版本。例如， version:&quot;1.6.2&quot;</li> <li>geo：搜索指定的地理位置，参数为经纬度。例如， geo:&quot;31.8639,117.2808&quot;</li> <li>before/after：搜索指定收录时间前后的数据，格式为 dd-mm-yy。例如， before:&quot;11-09-19&quot;</li> <li>net：搜索指定的IP地址或子网。例如，net:&quot;210.45.240.0/24&quot;</li></ul></blockquote> <ul><li><p>摄像头</p> <ul><li><p><code>webcam</code></p></li> <li><p>根据城市搜索  例：<code>city:beijing webcam</code></p></li> <li><p>查找国内的 海康威视网络摄像头</p> <p>Server: Hikvision-Webs country:&quot;CN&quot;</p></li> <li><p>查找SQ-WEBCAM摄像头</p> <p>Server: SQ-WEBCAM</p></li></ul></li> <li><p>ip搜索</p> <ul><li>net:&lt;ip地址&gt; 例：<code>net:192.168.32.22</code>  (搜索ip为192.168.32.22的服务器)</li></ul></li> <li><p>端口号</p> <ul><li>port:&lt;端口号&gt; 例：<code>port:80</code> (搜索开放80端口的服务)
+<ul><li>9200 ELK日志分析相关信息</li> <li>3000 服务器监控平台登录账号</li> <li>22 ssh</li> <li>80 web服务器</li></ul></li> <li>带城市搜索 port:&lt;端口号&gt; city:&lt;城市&gt; 如：<code>port:80 beijing</code></li></ul></li> <li><p>服务器</p> <ul><li><p>查找位于合肥的Apache服务器</p> <p>apache city:&quot;Hefei&quot;</p></li> <li><p>查找位于国内的Nginx服务器</p> <p>nginx country:&quot;CN&quot;</p></li> <li><p>查找GWS（Gogle Web Server）服务器</p> <p>server: gws hostname:&quot;google&quot;</p></li> <li><p>查找指定网段华为设备</p> <p>huawei net:&quot;64.191.146.0/24&quot;</p></li></ul></li></ul> <h5 id="kali使用shodan"><a href="#kali使用shodan" class="header-anchor">#</a> kali使用shodan</h5> <p><em>kali安装shodan命令行</em></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>git clone https://github.com/achillean/shodan-python.git
+cd shodan-python
+python setup.py install
+shodan
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>Shodan初始化命名令行</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>shodan init  API Key码
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>查看shodan中存储Apache服务器信息的数量</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>shodan count Apache
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>Shodan获取指定IP信息</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>shodan host 59.110.244.199
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>Shodan查看自身账户信息</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>shodan info
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>Shodan获取自身外部IP地址</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>shodan myip
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>Shodan检测是否有蜜罐</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>shodan honeyscore 59.110.244.199
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>python-shodan使用</p> <p>python-shodan初始化API Key</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>ipython
+In [1]: import shodan
+
+In [2]: SHODAN_API_KEY=&quot;Bf2tmVcN29A1s5flbbHBJMnPDSLz8ApS&quot;
+
+In [3]: api=shodan.Shodan(SHODAN_API_KEY)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>Python-shodan search方法
+查询IP信息，打印IP所在位置</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>In [17]: result = api.host('59.110.244.199')
+
+In [18]: print(result['country_name'])
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>利用Python-shodan编写基础查询脚本
+网址：https://developer.shodan.io/api</p> <hr> <hr> <h3 id="主动信息收集"><a href="#主动信息收集" class="header-anchor">#</a> 主动信息收集</h3> <h5 id="主动信息收集原理"><a href="#主动信息收集原理" class="header-anchor">#</a> 主动信息收集原理</h5> <p>特点</p> <ul><li>直接与目标系统交互通信</li> <li>无法避免留下访问痕迹</li> <li>使用受控的第三方电脑进行探测（跳板机器，肉机），使用代理或已经被控制的机器，做好被封杀的准备</li> <li>扫描发送不同的探测，根据返回结果判断目标状态</li></ul> <p>发现目标主机</p> <ol><li>识别存活主机，发现潜在的被攻击目标</li> <li>输出一个IP地址列表，比如IP地址段、IP地址范围</li> <li>使用二三四层()进行探测发现</li></ol> <p>OSI七层模型和TCP/IP五层模型</p> <table><thead><tr><th>OSI参考模型</th> <th>解释</th></tr></thead> <tbody><tr><td>应用层</td> <td>为应用程序提供服务</td></tr> <tr><td>表示层</td> <td>数据格式转化，数据加密</td></tr> <tr><td>会话层</td> <td>建立、管理、维护会话</td></tr> <tr><td>传输层</td> <td>建立、管理、维护端到端的连接</td></tr> <tr><td>网络层</td> <td>IP选址及路由选择</td></tr> <tr><td>数据链路层</td> <td>提供介质访问和链路管理</td></tr> <tr><td>物理层</td> <td>物理层</td></tr></tbody></table> <p>第七层：应用层</p> <p>​		OSI中的最高层，为特定类型的网络应用提供了访问OSI环境的手段，应用层确定进程之间通信的性质，以满足用户的需要。应用层不仅要提供进程所需要的信息交换和远程操作，而且还要作为应用进程的用户代理，来完成医学为进行信息交换所必须的功能，它包括：文件传送访问和管理FTAM、虚拟终端VT、事务处理TP、远程数据库访问RDA、制造报文规范MMS、目录服务DS等协议：应用层能与应用程序界面沟通，已达到展示给用户的目的。在此参考的常见协议：<code>HTTP、HTTPS、FTP、TELNET、SSH、SMTP、POP3</code>等。</p> <p>第六层：表示层</p> <p>​		主要是用于处理两个通信系统中交换信息的表示方式，为上层用户解决用户信息的语法问题。它包括数据格式交换、数据加密和解密、数据压缩与终端类型的转换</p> <p>第五层：会话层</p> <p>​		在两个节点中建立端连接，为端系统的应用程序之间提供了对话控制机制。此服务包括建立连接是以全双工还是以半双工的方式进行设置，尽管可以在层4中处理双工方式；会话层管理登入和注销过程，它具体管理两个用户和进程之间的对话。如果在某一时刻只允许一个用户执行一项特定的操作，会话层协议就会管理这些操作，如阻止两个用户同时更新数据库中的同一组数据。</p> <p>第四层：传输层</p> <p>​		传输层建立了主机端口到端口的链接，传输层的作用是为上层协议（上层会话层）提供端口到端口的可靠和透明的数据传输服务，包括处理差错控制和流量控制等问题。该层向高层屏蔽了下层数据通信的细节，使高层用户看到的只是在两个传输实体间的一条主机到主机的、可由用户控制和设定的、可靠的数据通路。我们通常说的，TCP UDP就是在这一层。</p> <p>第三层：网络层</p> <p>​		本层通过IP寻址来建立两个节点之间的连接，为源端的运输层送过来的分组，选择合适的路由和焦化节点，正确无误的按照地址传送给目的端的运输层。就是通常说的IP层。这一层就是我们经常说的IP协议层。IP协议是Internet的基础</p> <p>第二层：数据链路层</p> <p>​		将比特组合或字节，再将字节组合成帧，使用链路层地址（以太网使用MAC地址）来访问介质，并进行差错检测</p> <p>第一层：物理层</p> <p>​		处于OSI参考模型的最底层。物理层的主要功能是利用物理传输介质为数据链路层提供物理连接，以便透明的传送比特流，常用设备有（各种物理设备）网卡、集线器、中继器、调制调解器、网线、双绞线、同轴电缆。</p> <hr> <img src="images/image-20210115131715963.png" alt="image-20210115131715963" style="zoom:50%;"> <p><img src="/assets/img/image-20210115131857233.9138f820.png" alt="image-20210115131857233"></p> <p>基于OSI模型进行扫描的优缺点</p> <ul><li><p>二层：数据链路层</p> <ul><li>优点：扫描速度快，可靠</li> <li>缺点：不可路由</li></ul></li> <li><p>三层：网络层</p> <ul><li>优点：可路由，速度较快</li> <li>缺点：速度比二层慢，经常被边界防火墙过滤</li> <li>如<code>ping命令</code>基于IP ICMP</li></ul></li> <li><p>四层：传输层</p> <ul><li>优点
+<ul><li>可路由且结果可靠</li> <li>不太可能被防火墙过滤</li> <li>可以发现所有端口都被过滤的主机</li></ul></li> <li>缺点
+<ul><li>基于状态过滤的防火墙可能被过滤</li> <li>全端口扫描速度慢</li></ul></li> <li>如<code>Namp</code></li></ul></li></ul> <hr> <h5 id="ping-命令探测"><a href="#ping-命令探测" class="header-anchor">#</a> ping 命令探测</h5> <p>一般用来判断主机网络是否畅通，是否存活</p> <ul><li><code>-c</code>访问到多少个数据包后停止</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">sudo</span> <span class="token function">ping</span> www.baidu.com
+
+<span class="token function">sudo</span> <span class="token function">ping</span> www.baidu.com <span class="token parameter variable">-c1</span>
+PING www.a.shifen.com <span class="token punctuation">(</span><span class="token number">14.215</span>.177.38<span class="token punctuation">)</span>: <span class="token number">56</span> data bytes
+<span class="token number">64</span> bytes from <span class="token number">14.215</span>.177.38: <span class="token assign-left variable">icmp_seq</span><span class="token operator">=</span><span class="token number">0</span> <span class="token assign-left variable">ttl</span><span class="token operator">=</span><span class="token number">55</span> <span class="token assign-left variable">time</span><span class="token operator">=</span><span class="token number">25.879</span> ms
+
+--- www.a.shifen.com <span class="token function">ping</span> statistics ---
+<span class="token number">1</span> packets transmitted, <span class="token number">1</span> packets received, <span class="token number">0.0</span>% packet loss
+round-trip min/avg/max/stddev <span class="token operator">=</span> <span class="token number">25.879</span>/25.879/25.879/0.000 ms
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>我们可以使用<code>traceroute</code>命令跟踪路由ip的情况</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 安装traceroute</span>
+<span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> <span class="token function">traceroute</span>
+
+<span class="token comment"># 使用</span>
+<span class="token function">traceroute</span> IP/网址
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>traceroute www.baidu.com
+traceroute to www.baidu.com (14.215.177.38), 30 hops max, 60 byte packets
+ 1  192.168.1.1 (192.168.1.1)  0.402 ms  0.588 ms  0.518 ms
+ 2  100.84.64.1 (100.84.64.1)  1.886 ms  2.161 ms  2.137 ms
+ 3  61.187.29.241 (61.187.29.241)  7.346 ms  7.313 ms *
+ 4  61.137.10.221 (61.137.10.221)  3.481 ms * *
+ 5  * * 202.97.96.21 (202.97.96.21)  29.287 ms
+ 6  * 113.96.4.126 (113.96.4.126)  35.587 ms *
+ 7  * 113.96.11.78 (113.96.11.78)  32.578 ms  33.054 ms
+ 8  * 98.96.135.219.broad.fs.gd.dynamic.163data.com.cn (219.135.96.98)  23.781 ms 14.215.32.118 (14.215.32.118)  30.655 ms
+ 9  * * *
+10  * * *
+30  * * *
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p><code>ping</code>命令的延伸 如<code>arping</code> <code>fping</code> <code>hping</code>等</p> <h6 id="arping"><a href="#arping" class="header-anchor">#</a> <code>arping</code></h6> <p>​		ARP协议是&quot;Address Resolution Protocol&quot;(地址解析协议)的缩写。计算机通过ARP 协议将IP地址转换成MAC地址。</p> <p>​		ARP协议工作原理：</p> <img src="images/image-20210115134112760.png" alt="image-20210115134112760" style="zoom:50%;"> <p>使用<code>arping</code> 命令查看局域网中的IP地址是否有冲突</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ <span class="token function">sudo</span> arping <span class="token number">192.168</span>.10.1 <span class="token parameter variable">-c1</span>
+ARPING <span class="token number">192.168</span>.10.1
+<span class="token number">60</span> bytes from 00:5e:0c:ac:10:b1 <span class="token punctuation">(</span><span class="token number">192.168</span>.10.1<span class="token punctuation">)</span>: <span class="token assign-left variable">index</span><span class="token operator">=</span><span class="token number">0</span> <span class="token assign-left variable">time</span><span class="token operator">=</span><span class="token number">11.547</span> msec
+
+--- <span class="token number">192.168</span>.10.1 statistics ---
+<span class="token number">1</span> packets transmitted, <span class="token number">1</span> packets received,   <span class="token number">0</span>% unanswered <span class="token punctuation">(</span><span class="token number">0</span> extra<span class="token punctuation">)</span>
+rtt min/avg/max/std-dev <span class="token operator">=</span> <span class="token number">11.547</span>/11.547/11.547/0.000 ms
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>上面的<code>00:5e:0c:ac:10:b1</code>为网关的MAC地址</p> <p>可以使用以下命令筛选出来IP地址</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>sudo arping 192.168.10.1 -c 1 | grep &quot;bytes from&quot; | cut -d&quot; &quot; -f 5 | cut -d &quot;(&quot; -f 2 | cut -d&quot;)&quot; -f 1 
+192.168.10.1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token shebang important">#!/bin/bash</span>
+
+<span class="token comment"># 判断用户是否输入了至少一个参数，如果没有输入参数输出提示信息并退出</span>
+<span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">$#</span>&quot;</span> <span class="token parameter variable">-ne</span> <span class="token number">1</span> <span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">then</span> 
+    <span class="token builtin class-name">echo</span> <span class="token string">&quot;Usage - ./arping.sh [interface]&quot;</span>
+    <span class="token builtin class-name">echo</span> <span class="token string">&quot;Excample - ./arping.sh eth0&quot;</span>
+    <span class="token builtin class-name">echo</span> <span class="token string">&quot;Example will perform an ARP scan of the local subnet to which eth0 is assigned&quot;</span>
+	<span class="token builtin class-name">exit</span>
+<span class="token keyword">fi</span>
+
+<span class="token assign-left variable">interface</span><span class="token operator">=</span><span class="token variable">$1</span> <span class="token comment"># 将用户输入的参数传递给interface变量</span>
+<span class="token assign-left variable">prefix</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">ifconfig</span> $interface <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">&quot;inet &quot;</span> <span class="token operator">|</span> <span class="token function">cut</span> <span class="token parameter variable">-d</span> <span class="token string">'t'</span> <span class="token parameter variable">-f</span> <span class="token number">2</span> <span class="token operator">|</span> <span class="token function">cut</span> <span class="token parameter variable">-d</span> <span class="token string">'.'</span> <span class="token parameter variable">-f</span> <span class="token number">1</span>-3<span class="token variable">)</span></span> <span class="token comment"># 获取本机I</span>
+P地址网段192.168.1
+<span class="token comment"># 对整个网段进行arping</span>
+<span class="token keyword">for</span> <span class="token for-or-select variable">addr</span> <span class="token keyword">in</span> <span class="token variable"><span class="token variable">$(</span><span class="token function">seq</span> <span class="token number">1</span> <span class="token number">254</span><span class="token variable">)</span></span><span class="token punctuation">;</span><span class="token keyword">do</span>
+	arping <span class="token parameter variable">-c</span> <span class="token number">1</span> <span class="token variable">$prefix</span><span class="token builtin class-name">.</span><span class="token variable">$addr</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">&quot;bytes from&quot;</span> <span class="token operator">|</span> <span class="token function">cut</span> -d<span class="token string">&quot; &quot;</span> <span class="token parameter variable">-f</span> <span class="token number">5</span> <span class="token operator">|</span> <span class="token function">cut</span> <span class="token parameter variable">-d</span> <span class="token string">&quot;(&quot;</span> <span class="token parameter variable">-f</span> <span class="token number">2</span> <span class="token operator">|</span> <span class="token function">cut</span>
+ -d<span class="token string">&quot;)&quot;</span> <span class="token parameter variable">-f</span> <span class="token number">1</span>
+<span class="token keyword">done</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p>为脚本增加权限</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">chmod</span> +x arping1.sh
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>运行脚本</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">sudo</span> ./arping1.sh eth0
+<span class="token function">sudo</span> ./arping1.sh wlan0
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>得到的结果</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>192.168.1.1
+192.168.1.23
+192.168.1.57
+192.168.1.59
+192.168.1.77
+192.168.1.99
+192.168.1.224
+192.168.1.225
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>使用<code>Netdiscover</code>进行被动方式探测局域网中存活的机器</p> <p><code>Netdiscover</code>是一个主动/被动的ARP侦查工具。使用Netdiscover工具可以在网络上扫描IP地址，检查在线主机或搜索为它们发送的ARP请求</p> <p>​		主动模式：主动扫描</p> <table><thead><tr><th>参数</th> <th>意义</th></tr></thead> <tbody><tr><td>-i：网卡</td> <td>选择你监控的网卡。比如eth0</td></tr> <tr><td>-r：range</td> <td>指定IP段。比如192.168.0.0/24</td></tr> <tr><td>-l：filename</td> <td>从文件读取range列表</td></tr> <tr><td>-p</td> <td>被动模式。默默的侦听指定的网卡以发现别的二层主机</td></tr> <tr><td>-t</td> <td>ARP包发送间隔。单位毫秒。这个可以用来规避检测系统的告警。</td></tr> <tr><td>-c</td> <td>发包数量</td></tr></tbody></table> <div class="language- line-numbers-mode"><pre class="language-text"><code>netdiscover -i wlan0 -r 192.168.10.1/254
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>​		结果：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>68 Captured ARP Req/Rep packets, from 11 hosts.   Total size: 4080                          
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.237   d4:5d:64:49:5d:b7     11     660  ASUSTek COMPUTER INC.                     
+ 192.168.1.101   00:30:67:fc:1c:0e     12     720  BIOSTAR Microtech Int'l Corp.             
+ 192.168.1.205   00:e0:66:b5:34:c8      3     180  ProMax Systems, Inc.                      
+ 192.168.1.1     00:5e:0c:ac:10:b0      2     120  HMD Global Oy                             
+ 192.168.1.248   bc:ee:7b:9b:ba:cd     21    1260  ASUSTek COMPUTER INC.                     
+ 192.168.1.250   00:e0:70:3b:b6:e2      4     240  DH TECHNOLOGY                             
+ 192.168.1.232   00:e0:4c:13:7e:1a      3     180  REALTEK SEMICONDUCTOR CORP.               
+ 192.168.1.59    74:46:a0:94:d5:75      2     120  Hewlett Packard                           
+ 192.168.1.224   74:46:a0:95:14:95      2     120  Hewlett Packard                           
+ 192.168.1.242   00:e0:6b:68:05:8f      2     120  W&amp;G SPECIAL PRODUCTS                      
+ 192.168.1.235   38:c9:86:48:a0:82      6     360  Apple, Inc.
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>​		被动模式：当有数据包发送的时候就进行捕捉</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>netdiscover -p
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><hr> <h6 id="hping3"><a href="#hping3" class="header-anchor">#</a> <code>hping3</code></h6> <p>HPING3是一个命令行下使用TCP/IP数据包组装/分析工具，通常web服务会用来做压力测试使用，也可以进行DOS攻击的实验。同样Hping只能每次扫描一个目标。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>用法: hping3 host [options]
+  -h  --help      显示帮助
+  -v  --version   显示版本
+  -c  --count     发送数据包的数目
+  -i  --interval  发送数据包间隔的时间 (uX即X微秒, 例如： -i u1000)
+      --fast      等同 -i u10000 (每秒10个包)
+      --faster    等同 -i u1000 (每秒100个包)
+      --flood	  尽最快发送数据包，不显示回复。
+  -n  --numeric   数字化输出，象征性输出主机地址。
+  -q  --quiet     安静模式
+  -I  --interface 网卡接口 (默认路由接口)
+  -V  --verbose   详细模式
+  -D  --debug     调试信息
+  -z  --bind      绑定ctrl+z到ttl(默认为目的端口)
+  -Z  --unbind    取消绑定ctrl+z键
+      --beep      对于接收到的每个匹配数据包蜂鸣声提示
+
+模式选择
+  default mode     TCP   // 默认模式是 TCP
+  -0  --rawip      RAWIP模式，原始IP模式。在此模式下HPING会发送带数据的IP头。即裸IP方式。使用RAWSOCKET方式。
+  -1  --icmp       ICMP模式，此模式下HPING会发送IGMP应答报，你可以用--ICMPTYPE --ICMPCODE选项发送其他类型/模式的ICMP报文。
+  -2  --udp        UDP 模式，缺省下，HPING会发送UDP报文到主机的0端口，你可以用--baseport --destport --keep选项指定其模式。
+  -8  --scan       SCAN mode. //扫描模式 指定扫描对应的端口。
+                   Example: hping --scan 1-30,70-90 -S www.target.host    // 扫描
+  -9  --listen     listen mode  // 监听模式
+  
+IP 模式
+  -a  --spoof      spoof source address  //源地址欺骗。伪造IP攻击，防火墙就不会记录你的真实IP了，当然回应的包你也接收不到了。
+  --rand-dest      random destionation address mode. see the man. // 随机目的地址模式。详细使用 man 命令
+  --rand-source    random source address mode. see the man.       // 随机源地址模式。详细使用 man 命令
+  -t  --ttl        ttl (默认 64)  //修改 ttl 值
+  -N  --id         id (默认 随机)  // hping 中的 ID 值，缺省为随机值
+  -W  --winid      使用win* id字节顺序  //使用winid模式，针对不同的操作系统。UNIX ,WINDIWS的id回应不同的，这选项可以让你的ID回应和WINDOWS一样。
+  -r  --rel        相对id字段(估计主机流量)  //更改ID的，可以让ID曾递减输出，详见HPING-HOWTO。
+  -f  --frag       拆分数据包更多的frag.  (may pass weak acl)   //分段，可以测试对方或者交换机碎片处理能力，缺省16字节。
+  -x  --morefrag   设置更多的分段标志    // 大量碎片，泪滴攻击。
+  -y  --dontfrag   设置不分段标志    // 发送不可恢复的IP碎片，这可以让你了解更多的MTU PATH DISCOVERY。
+  -g  --fragoff    set the fragment offset    // 设置断偏移。
+  -m  --mtu        设置虚拟最大传输单元, implies --frag if packet size &gt; mtu    // 设置虚拟MTU值，当大于mtu的时候分段。
+  -o  --tos        type of service (default 0x00), try --tos help          // tos字段，缺省0x00，尽力而为？
+  -G  --rroute     includes RECORD_ROUTE option and display the route buffer    // 记录IP路由，并显示路由缓冲。
+  --lsrr           松散源路由并记录路由        // 松散源路由
+  --ssrr           严格源路由并记录路由      // 严格源路由
+  -H  --ipproto    设置IP协议字段，仅在RAW IP模式下使用   //在RAW IP模式里选择IP协议。设置ip协议域，仅在RAW ip模式使用。
+
+ICMP 模式
+  -C  --icmptype   icmp类型(默认echo请求)    // ICMP类型，缺省回显请求。
+  -K  --icmpcode   icmp代号(默认0)     // ICMP代码。
+      --force-icmp 发送所有icmp类型(默认仅发送支持的类型)    // 强制ICMP类型。
+      --icmp-gw    设置ICMP重定向网关地址(默认0.0.0.0)    // ICMP重定向
+      --icmp-ts    等同 --icmp --icmptype 13 (ICMP 时间戳)            // icmp时间戳
+      --icmp-addr  等同 --icmp --icmptype 17 (ICMP 地址子网掩码)  // icmp子网地址
+      --icmp-help  显示其他icmp选项帮助      // ICMP帮助
+
+UDP/TCP 模式
+  -s  --baseport   base source port             (default random)              // 缺省随机源端口
+  -p  --destport   [+][+]&lt;port&gt; destination port(default 0) ctrl+z inc/dec    // 缺省随机源端口
+  -k  --keep       keep still source port      // 保持源端口
+  -w  --win        winsize (default 64)        // win的滑动窗口。windows发送字节(默认64)
+  -O  --tcpoff     set fake tcp data offset     (instead of tcphdrlen / 4)    // 设置伪造tcp数据偏移量(取代tcp地址长度除4)
+  -Q  --seqnum     shows only tcp sequence number        // 仅显示tcp序列号
+  -b  --badcksum   (尝试)发送具有错误IP校验和数据包。许多系统将修复发送数据包的IP校验和。所以你会得到错误UDP/TCP校验和。
+  -M  --setseq     设置TCP序列号 
+  -L  --setack     设置TCP的ack   ------------------------------------- (不是 TCP 的 ACK 标志位)
+  -F  --fin        set FIN flag
+  -S  --syn        set SYN flag
+  -R  --rst        set RST flag
+  -P  --push       set PUSH flag
+  -A  --ack        set ACK flag   ------------------------------------- （设置 TCP 的 ACK 标志 位）
+  -U  --urg        set URG flag      // 一大堆IP抱头的设置。
+  -X  --xmas       set X unused flag (0x40)
+  -Y  --ymas       set Y unused flag (0x80)
+  --tcpexitcode    使用last tcp-&gt; th_flags作为退出码
+  --tcp-mss        启用具有给定值的TCP MSS选项
+  --tcp-timestamp  启用TCP时间戳选项来猜测HZ/uptime
+
+Common //通用设置
+  -d  --data       data size    (default is 0)    // 发送数据包大小，缺省是0。
+  -E  --file       文件数据
+  -e  --sign       添加“签名”
+  -j  --dump       转储为十六进制数据包
+  -J  --print      转储为可打印字符
+  -B  --safe       启用“安全”协议
+  -u  --end        告诉你什么时候--file达到EOF并防止倒回
+  -T  --traceroute traceroute模式(等同使用 --bind 且--ttl 1)
+  --tr-stop        在traceroute模式下收到第一个不是ICMP时退出
+  --tr-keep-ttl    保持源TTL固定，仅用于监视一跳
+  --tr-no-rtt	   不要在跟踪路由模式下计算/显示RTT信息 ARS包描述（新增功能，不稳定）
+ARS packet description (new, unstable)
+  --apd-send       发送APD描述数据包(参见docs / APD.txt)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br></div></div><p>使用HPing进行压力测试</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>hping3 <span class="token parameter variable">-c</span> <span class="token number">1000</span> <span class="token parameter variable">-d</span> <span class="token number">120</span> <span class="token parameter variable">-S</span> <span class="token parameter variable">-w</span> <span class="token number">64</span> <span class="token parameter variable">-p</span> <span class="token number">8086</span> <span class="token parameter variable">--flood</span> --rand-source localhost:8086/stu/test
+<span class="token comment"># -c  --count     发送数据包的数目</span>
+<span class="token comment"># -d 每个数据包大小</span>
+<span class="token comment"># -S 连接</span>
+<span class="token comment"># -w tcp的流量</span>
+<span class="token comment"># -p 端口</span>
+<span class="token comment"># --flood 洪水式攻击</span>
+<span class="token comment"># 随机ip地址（仅支持局域网内）--rand-source </span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h6 id="fping"><a href="#fping" class="header-anchor">#</a> <code>fping</code></h6> <p>​		fping 是一个将 ICMP echo 探测器发送到网络主机的程序，类似于 ping，可以看作是 ping 的增强版。但是 fping 在 ping多个主机时性能更好。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage: fping [options] [targets...]
+   -a         显示存活目标，即可ping通的目标
+   -A         将目标以ip地址的形式显示
+   -b n       ping 数据包的大小。（默认为56）
+   -B f       set exponential backoff factor to f
+   -c n       ping每个目标的次数 (默认为1)
+   -C n       同-c, 返回的结果为冗长格式
+   -D         每个输出行打印时间戳
+   -e         显示返回数据包所费时间
+   -f file    从文件获取目标列表( - 表示从标准输入)(不能与 -g 同时使用)
+   -g         生成目标列表(不能与 -f 同时使用)
+				(可指定目标的开始和结束IP， 或者提供ip的子网掩码)
+                (例：fping -g 192.168.1.0 192.168.1.255 或 fping -g 192.168.1.0/24)                
+   -H n       设置ip的TTL值 (生存时间)
+   -i n       ping包之间的间隔(单位：毫秒)(默认25)
+   -I if      绑定到特定的接口
+   -l         循环发送ping
+   -m         ping目标主机的多个网口
+   -M         设置不分段标记
+   -n         将目标以主机名或域名显示(等价于 -d )
+   -N         输出兼容netdata (-l -Q are required)
+   -o         显示累计中断时间 (lost packets * packet interval)
+   -O n       在ICMP包中设置服务的类型(tos)标志
+   -p n       对同一个目标的ping包间隔(毫秒)
+                 (在循环和统计模式中，默认为1000)
+   -q         安静模式(不显示每个目标或每个ping的结果)
+   -Q n       同-q, 但是每n秒显示信息概要
+   -r n       当ping失败时，最大重试次数(默认为3次)
+   -R         random packet data (to foil link data compression)
+   -s         打印最后的统计数据
+   -S addr    设置源ip地址
+   -t n       单个目标的超时时间(毫秒)(默认500)
+   -T n       请忽略(为兼容fping 2.4)
+   -u         显示不可到达的目标
+   -v         显示版本号
+   targets    需要ping的目标列表(不能和 -f 同时使用)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br></div></div><p>示例</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 查看局域网中运行的机器,并将结果输出到文件fping_result.txt中</span>
+ <span class="token function">sudo</span> fping <span class="token parameter variable">-g</span> <span class="token number">192.168</span>.1.0/24 <span class="token parameter variable">-c</span> <span class="token number">1</span> <span class="token operator">&gt;</span> fping_result.txt
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><hr> <h5 id="namp扫描"><a href="#namp扫描" class="header-anchor">#</a> Namp扫描</h5> <h6 id="nmap介绍"><a href="#nmap介绍" class="header-anchor">#</a> nmap介绍</h6> <p>Namp，也就是Network Mapper，最早是Linux下的网络扫描和嗅探工具包</p> <p>namp可用于：</p> <ul><li>发现主机</li> <li>校测主机的开放端口</li> <li>检测到相应的端口（服务发现）的软件和版本</li> <li>检测操作系统、硬件地址、以及软件版本</li> <li>检测脆弱的漏洞（Namp的脚本）</li></ul> <p>namp端口状态解析</p> <ul><li>open：应用程序在该端口接收TCP连接或UDP报文</li> <li>closed：关闭的端口对于nmap也是可访问的，它接收nmap探测报文并作出响应。但没有应用程序在其上监听。</li> <li>filtered：由于包过滤阻止探测报文到达端口，nmap无法确定该端口是否开放过。过滤可能来自专业的防火墙设备，路由规则或者主机上的软件防火墙。filtered状态的端口可能是开放的也可能是关闭的</li> <li>unfiltered：未被过滤状态意味着端口可访问，但是nmap无法确定它是开放还是关闭。只有用于映射防火墙规则集的ACK扫描才会把端口分类到这个状态。</li> <li>open|filtered：无法确定端口是开放还是被过滤，如开放的端口不响应，可能意味着报文过滤器丢弃了探测报文或者它引发的任何反应，UDP，IP，FIN，Null等扫描会引起</li> <li>close|filtered：无法确定端口是关闭或被过滤</li></ul> <p>nmap扫描主要有<code>TCP</code>的全连接扫描（会被扫描机器留下记录），半连接扫描（不会留下记录）</p> <p><img src="/assets/img/image-20210118095359711.682a8d23.png" alt="image-20210118095359711"></p> <blockquote><p>TCP三次握手：</p> <p><img src="/assets/img/838ba61ea8d3fd1f488fcc3a6790dd1a94ca5f0b.185269ec.jpeg" alt="img"></p> <p>四次挥手：</p> <p><img src="/assets/img/caef76094b36acaf042ba27e2f07751503e99c48.fec549b2.jpeg" alt="img"></p> <p><strong>为什么“握手”是三次，“挥手”却要四次</strong>：在第二次&quot;握手&quot;过程中，服务器端发送给客户端的TCP报文是以SYN与ACK作为标志位的。SYN是请求连接标志，表示服务器端同意建立连接；ACK是确认报文，表示告诉客户端，服务器端收到了它的请求报文。</p> <ul><li><p>URG：紧急指针（urgent pointer）有效。</p></li> <li><p>ACK：确认序号有效。</p></li> <li><p>PSH：接收方应该尽快将这个报文交给应用层。</p></li> <li><p>RST：重置连接。</p></li> <li><p>SYN：发起一个新连接。</p></li> <li><p>FIN：释放一个连接。</p></li></ul></blockquote> <p>使用Kali进行半连接扫描：服务器端口开放如图一，服务器端口关闭如图二</p> <p><img src="/assets/img/image-20210127102356865.0f9c850f.png" alt="image-20210127102356865"></p> <h6 id="nmap语法示例"><a href="#nmap语法示例" class="header-anchor">#</a> nmap语法示例</h6> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code>nmap 扫描类型 参数 
+
+<span class="token comment"># 基本示例：扫描端口状态</span>
+nmap <span class="token number">192.168</span>.1.235
+
+<span class="token comment"># ****************************************** -v 详细情况</span>
+
+<span class="token comment"># </span>
+nmap <span class="token parameter variable">-v</span> <span class="token number">192.168</span>.1.235
+
+<span class="token comment"># -vv =切换以激活日志所需的非常详细的设置</span>
+nmap <span class="token parameter variable">-vv</span> <span class="token number">10.1</span>.1.254 
+
+<span class="token comment"># ****************************************** 端口</span>
+
+<span class="token comment"># 指定端口范围扫描</span>
+nmap <span class="token parameter variable">-p</span> <span class="token number">1</span>-10000 <span class="token number">192.168</span>.1.235
+
+<span class="token comment"># 指定端口扫描</span>
+nmap <span class="token parameter variable">-p</span> <span class="token number">80,3306</span> <span class="token number">192.168</span>.1.235
+
+<span class="token comment"># 指定端口范围和端口扫描 </span>
+nmap <span class="token parameter variable">-p</span> <span class="token number">80,3306</span>,4000-4500 <span class="token number">192.168</span>.1.235
+
+<span class="token comment"># ****************************************** -O 查看机型</span>
+
+<span class="token comment"># 半连接扫描开放端口及主机 -sS 半连接  -O 查看机型</span>
+nmap <span class="token parameter variable">-sS</span> <span class="token parameter variable">-O</span> <span class="token number">192.168</span>.1.235
+
+<span class="token comment"># 半连接扫描局域网内主机端口开放状态及获取机型</span>
+nmap <span class="token parameter variable">-sS</span> <span class="token parameter variable">-O</span> <span class="token number">192.168</span>.1.0/24
+
+<span class="token comment"># ****************************************** 混合</span>
+
+<span class="token comment"># 扫描192.168.1.56-100 的80端口状态 更详细的</span>
+nmap <span class="token parameter variable">-v</span> <span class="token parameter variable">-p</span> <span class="token number">80</span> <span class="token number">192.168</span>.1.56-100
+
+<span class="token comment"># ****************************************** 更隐藏的扫描：随机+延时</span>
+<span class="token comment"># 频繁扫描会被屏蔽或列入黑名单</span>
+<span class="token comment"># --randomize_hosts 随机扫描</span>
+<span class="token comment"># --scan-delay xxxxms 延时扫描，默认单位秒。调整探针之间的延迟</span>
+
+nmap <span class="token parameter variable">-v</span> --randomize-hosts --scan-delay 3000ms <span class="token parameter variable">-p</span> <span class="token number">80</span> <span class="token number">192.168</span>.1.100-254 
+
+<span class="token comment"># ****************************************** 使用通配符扫描ip地址</span>
+* <span class="token number">1</span>-254
+nmap <span class="token parameter variable">-v</span> --randomize-hosts --scan-delay <span class="token number">30</span> <span class="token parameter variable">-p</span> <span class="token number">80</span> <span class="token number">192</span>.*.*.1-100
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br></div></div><blockquote><p>参数说明</p> <ul><li><code>-sn</code> 表示只进行ping扫描，不进行端口扫描</li> <li><code>-sS</code>半连接扫描，不加<code>-sS</code>则默认为全连接扫描</li> <li><code>-O</code>查看机型(大写O)</li></ul></blockquote> <h6 id="全连接扫描"><a href="#全连接扫描" class="header-anchor">#</a> 全连接扫描</h6> <p>命令</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>nmap <span class="token parameter variable">-sn</span> <span class="token number">192.168</span>.10.0/24
+
+<span class="token comment"># 或</span>
+nmap <span class="token parameter variable">-sn</span> <span class="token number">192.168</span>.1.1-254 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>查看当前内网中的主机存活</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ nmap <span class="token parameter variable">-sn</span> <span class="token number">192.168</span>.10.0/24 
+Starting Nmap <span class="token number">7.91</span> <span class="token punctuation">(</span> https://nmap.org <span class="token punctuation">)</span> at <span class="token number">2021</span>-01-18 09:45 CST
+Host is up <span class="token punctuation">(</span><span class="token number">0</span>.17s latency<span class="token punctuation">)</span>.
+Nmap scan report <span class="token keyword">for</span> <span class="token number">192.168</span>.10.225
+Host is up <span class="token punctuation">(</span><span class="token number">0</span>.93s latency<span class="token punctuation">)</span>.
+Nmap scan report <span class="token keyword">for</span> <span class="token number">192.168</span>.10.226
+Host is up <span class="token punctuation">(</span><span class="token number">0</span>.75s latency<span class="token punctuation">)</span>.
+Nmap scan report <span class="token keyword">for</span> <span class="token number">192.168</span>.10.231
+Host is up <span class="token punctuation">(</span><span class="token number">0</span>.74s latency<span class="token punctuation">)</span>.
+Nmap done: <span class="token number">256</span> IP addresses <span class="token punctuation">(</span><span class="token number">29</span> hosts up<span class="token punctuation">)</span> scanned <span class="token keyword">in</span> <span class="token number">28.56</span> seconds
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h6 id="半连接扫描"><a href="#半连接扫描" class="header-anchor">#</a> 半连接扫描</h6> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code> nmap <span class="token parameter variable">-sS</span> <span class="token number">101.200</span>.128.35 <span class="token parameter variable">-p</span> <span class="token number">80,81</span>,21,25,3306,300-350
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>扫描结果</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ <span class="token function">sudo</span> nmap <span class="token parameter variable">-sS</span> <span class="token number">101.200</span>.128.35 <span class="token parameter variable">-p</span> <span class="token number">80,81</span>,21,25,3306,310-350
+Starting Nmap <span class="token number">7.91</span> <span class="token punctuation">(</span> https://nmap.org <span class="token punctuation">)</span> at <span class="token number">2021</span>-01-18 <span class="token number">10</span>:07 CST
+Nmap scan report <span class="token keyword">for</span> <span class="token number">101.200</span>.128.35
+Host is up <span class="token punctuation">(</span><span class="token number">0</span>.00053s latency<span class="token punctuation">)</span>.
+
+PORT     STATE SERVICE
+<span class="token number">21</span>/tcp   <span class="token function">open</span>  <span class="token function">ftp</span>
+<span class="token number">344</span>/tcp  <span class="token function">open</span>  pdap
+<span class="token number">345</span>/tcp  <span class="token function">open</span>  pawserv
+<span class="token number">346</span>/tcp  <span class="token function">open</span>  zserv
+<span class="token number">347</span>/tcp  <span class="token function">open</span>  fatserv
+<span class="token number">348</span>/tcp  <span class="token function">open</span>  csi-sgwp
+<span class="token number">349</span>/tcp  <span class="token function">open</span>  mftp
+<span class="token number">350</span>/tcp  <span class="token function">open</span>  matip-type-a
+<span class="token number">3306</span>/tcp <span class="token function">open</span>  mysql
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><hr> <p>lsof查看端口占用的进程</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># 查看22端口占用的进程</span>
+<span class="token function">lsof</span> <span class="token parameter variable">-i:22</span>
+
+<span class="token comment"># 查看进程642</span>
+<span class="token function">ps</span> <span class="token parameter variable">-aux</span> <span class="token operator">|</span><span class="token function">grep</span> <span class="token number">642</span>
+
+<span class="token comment"># 查找文件。</span>
+<span class="token function">which</span> <span class="token function">vim</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><hr> <h6 id="图形化界面zenmap"><a href="#图形化界面zenmap" class="header-anchor">#</a> 图形化界面zenmap</h6> <p>扫描方式：</p> <ul><li>Intense scan
+<ul><li>命令：<code>nmap -T4 -A -v</code> <ul><li><code>-A</code> 对操作系统和软件版本进行检测，并对目标主机traceroute路由探测，-O 参数仅识别目标操作系统，并不做软件版本检测和路由探测</li> <li><code>-T4</code> 指定扫描过程使用的时序（Timing），总有6个级别（0-5），级别越高，扫描速度越快，但也容易被防火墙或IDS检测并屏蔽掉，在网络通讯状况良好的情况下推荐使用T4</li> <li><code>-v</code> 表示显示冗余（verbosity）信息，在扫描过程中显示扫描的细节，从而让用户了解当前的扫描状态。</li></ul></li></ul></li> <li>Intense scan plus UDP
+<ul><li>命令：<code>nmap -sS -sU -T4 -A -v</code></li> <li>UDP扫描
+<ul><li><code>-sS</code> TCP SYN扫描（半连接扫描）</li> <li><code>-sU</code> UDP 扫描</li></ul></li></ul></li> <li>Intense scan,all TCP ports
+<ul><li>命令：<code>nmap -p 1-65535 -T4 -A -v</code> <ul><li>扫描所有TCP端口，范围在1-65535，试着扫描所有端口的开放情况，速度较慢</li> <li><code>-p</code>指定端口扫描范围</li></ul></li></ul></li> <li>Intense scan,no ping
+<ul><li>命令：<code>nmap -T4 -A -v -Pn</code> <ul><li><code>-Pn</code> 非ping扫描</li></ul></li></ul></li> <li>Ping san
+<ul><li>命令：<code>nmap -sn</code> <ul><li><code>-sn</code> ping扫描，速度快，容易被防火墙屏蔽，导致扫描结果无效</li></ul></li></ul></li> <li>Quick scan
+<ul><li>命令：<code>nmap -T4 -F</code></li> <li>快速扫描</li> <li><code>-F</code>快速扫描</li></ul></li> <li>Quick scan plus
+<ul><li>命令：<code>nmap -sV -T4 -O -F --version-light</code></li> <li>快速扫描加强模式
+<ul><li><code>-sV</code> 探测端口及版本服务信息</li> <li><code>-O</code>开启OS检测，操作系统检测</li> <li><code>--version-light</code> 设定侦测等级为2</li></ul></li></ul></li> <li>Quick traceroute
+<ul><li>命令：<code>nmap -sn -traceroute</code></li> <li>路由跟踪</li> <li><code>-sn</code> ping扫描，关闭端口扫描</li> <li><code>-traceroute</code> 显示本机到目标的路由跃点</li></ul></li> <li>Regular scan
+<ul><li>命令：<code>namp ip地址</code></li> <li>常规扫描</li></ul></li> <li>Slow comprehensive scan
+<ul><li>命令： <code>nmap -sS -Su -T4 -A -v -PE -PP -PS80,443,-PA3389,PU40125 -PY -g 53 --script all</code></li> <li>慢速全面扫描</li></ul></li></ul> <hr> <h5 id="实战-dnmap-分布式集群执行大量扫描任务"><a href="#实战-dnmap-分布式集群执行大量扫描任务" class="header-anchor">#</a> 实战：dnmap 分布式集群执行大量扫描任务</h5> <p>dnmap是一个用python写的进行分布式扫描的nmap扫描框架，我可以用dnmap来通过多台机器发起一个大规模的扫描，dnmap采用C/S架构，执行大量扫描任务时非常便捷</p> <hr> <h5 id="nc扫描"><a href="#nc扫描" class="header-anchor">#</a> nc扫描</h5> <p>nc是<code>netcat</code>的简写，有着网络界的瑞士军刀美誉，因为他短小精悍，功能实用，是一个简单可靠的网络工具。</p> <p>nc的作用</p> <ul><li>实现任意TCP/UDP端口的侦听，nc可以作为<code>server</code>以TCP或UDP方式侦听指定端口</li> <li>端口的扫描，作为client发起TCP/UDP连接</li> <li>机器之间传输文件</li> <li>机器之间网络测速</li></ul> <p>nc参数</p> <ul><li><code>-nv</code> 表示我们扫描的目标是个IP地址不做域名解析</li> <li><code>-w</code>表示超时时间</li> <li><code>-z</code>表示进行端口扫描</li></ul> <p>示例</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># 扫描网关192.168.1.1 1-254的端口</span>
+<span class="token function">nc</span> <span class="token parameter variable">-nv</span> <span class="token parameter variable">-w</span> <span class="token number">1</span> <span class="token parameter variable">-z</span> <span class="token number">192.168</span>.1.1 <span class="token number">1</span>-254
+<span class="token punctuation">(</span>UNKNOWN<span class="token punctuation">)</span> <span class="token punctuation">[</span><span class="token number">192.168</span>.1.1<span class="token punctuation">]</span> <span class="token number">80</span> <span class="token punctuation">(</span>http<span class="token punctuation">)</span> <span class="token function">open</span>
+<span class="token punctuation">(</span>UNKNOWN<span class="token punctuation">)</span> <span class="token punctuation">[</span><span class="token number">192.168</span>.1.1<span class="token punctuation">]</span> <span class="token number">54</span> <span class="token punctuation">(</span>?<span class="token punctuation">)</span> <span class="token function">open</span>
+<span class="token punctuation">(</span>UNKNOWN<span class="token punctuation">)</span> <span class="token punctuation">[</span><span class="token number">192.168</span>.1.1<span class="token punctuation">]</span> <span class="token number">53</span> <span class="token punctuation">(</span>domain<span class="token punctuation">)</span> <span class="token function">open</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><hr> <hr> <h5 id="使用scapy定制数据包进行高级扫描"><a href="#使用scapy定制数据包进行高级扫描" class="header-anchor">#</a> 使用scapy定制数据包进行高级扫描</h5> <p>Scapy是一个可以让用户发送、侦听和解析并伪装网络报文的Python程序。这些功能可以用于制作侦测、扫描和攻击网络的工具。</p> <p>使用Scapy需要先进入Scapy程序:</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">sudo</span> scapy
+
+<span class="token comment"># 退出 同python命令行退出命令</span>
+exit<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h6 id="使用scapy定制arp协议"><a href="#使用scapy定制arp协议" class="header-anchor">#</a> 使用Scapy定制ARP协议</h6> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token comment"># 查看ARP函数的参数</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> ARP<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>display<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">###[ ARP ]### </span>
+  hwtype<span class="token operator">=</span> <span class="token number">0x1</span>   <span class="token comment"># 硬件类型</span>
+  ptype<span class="token operator">=</span> IPv4   <span class="token comment"># 协议类型</span>
+  hwlen<span class="token operator">=</span> <span class="token boolean">None</span>   <span class="token comment"># 硬件地址长度（MAC）</span>
+  plen<span class="token operator">=</span> <span class="token boolean">None</span>    <span class="token comment"># 协议地址长度</span>
+  op<span class="token operator">=</span> who<span class="token operator">-</span>has   <span class="token comment"># who-has查询</span>
+  hwsrc<span class="token operator">=</span> dc<span class="token punctuation">:</span>a6<span class="token punctuation">:</span><span class="token number">32</span><span class="token punctuation">:</span><span class="token number">83</span><span class="token punctuation">:</span>5c<span class="token punctuation">:</span>1e  <span class="token comment"># 源MAC地址</span>
+  psrc<span class="token operator">=</span> <span class="token number">192.168</span><span class="token number">.1</span><span class="token number">.207</span>		<span class="token comment"># 源IP地址</span>
+  hwdst<span class="token operator">=</span> <span class="token number">00</span><span class="token punctuation">:</span><span class="token number">00</span><span class="token punctuation">:</span><span class="token number">00</span><span class="token punctuation">:</span><span class="token number">00</span><span class="token punctuation">:</span><span class="token number">00</span><span class="token punctuation">:</span><span class="token number">00</span>
+  pdst<span class="token operator">=</span> <span class="token number">0.0</span><span class="token number">.0</span><span class="token number">.0</span>				<span class="token comment"># 向谁发送请求</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>例</p> <p>sr1函数：包含了发送数据包和接收数据包的功能</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token comment"># 向192.168.1.1发送ARP请求的数据包</span>
+sr1<span class="token punctuation">(</span>ARP<span class="token punctuation">(</span>pdst<span class="token operator">=</span><span class="token string">&quot;192.168.1.1&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+Begin emission<span class="token punctuation">:</span>
+Finished sending <span class="token number">1</span> packets<span class="token punctuation">.</span>
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token operator">*</span>
+Received <span class="token number">3</span> packets<span class="token punctuation">,</span> got <span class="token number">1</span> answers<span class="token punctuation">,</span> remaining <span class="token number">0</span> packets
+<span class="token operator">&lt;</span>ARP  hwtype<span class="token operator">=</span><span class="token number">0x1</span> ptype<span class="token operator">=</span>IPv4 hwlen<span class="token operator">=</span><span class="token number">6</span> plen<span class="token operator">=</span><span class="token number">4</span> op<span class="token operator">=</span><span class="token keyword">is</span><span class="token operator">-</span>at hwsrc<span class="token operator">=</span><span class="token number">00</span><span class="token punctuation">:</span>5e<span class="token punctuation">:</span>0c<span class="token punctuation">:</span>ac<span class="token punctuation">:</span><span class="token number">10</span><span class="token punctuation">:</span>b0 psrc<span class="token operator">=</span><span class="token number">192.168</span><span class="token number">.1</span><span class="token number">.1</span> hwdst<span class="token operator">=</span>dc<span class="token punctuation">:</span>a6<span class="token punctuation">:</span><span class="token number">32</span><span class="token punctuation">:</span><span class="token number">83</span><span class="token punctuation">:</span>5c<span class="token punctuation">:</span>1e pdst<span class="token operator">=</span><span class="token number">192.168</span><span class="token number">.1</span><span class="token number">.207</span> <span class="token operator">|</span><span class="token operator">&lt;</span>Padding  load<span class="token operator">=</span><span class="token string">'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'</span> <span class="token operator">|</span><span class="token operator">&gt;&gt;</span>
+                                        
+<span class="token comment"># 查询192.168.1.101 的mac地址</span>
+<span class="token comment"># psrc是源主机，发送给pdst目标主机</span>
+<span class="token comment"># 本kali的ip为192.168.1.207</span>
+ sr1<span class="token punctuation">(</span>ARP<span class="token punctuation">(</span>pdst<span class="token operator">=</span><span class="token string">&quot;192.168.1.101&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+Begin emission<span class="token punctuation">:</span>
+Finished sending <span class="token number">1</span> packets<span class="token punctuation">.</span>
+<span class="token punctuation">.</span><span class="token operator">*</span>
+Received <span class="token number">2</span> packets<span class="token punctuation">,</span> got <span class="token number">1</span> answers<span class="token punctuation">,</span> remaining <span class="token number">0</span> packets
+<span class="token operator">&lt;</span>ARP  hwtype<span class="token operator">=</span><span class="token number">0x1</span> ptype<span class="token operator">=</span>IPv4 hwlen<span class="token operator">=</span><span class="token number">6</span> plen<span class="token operator">=</span><span class="token number">4</span> op<span class="token operator">=</span><span class="token keyword">is</span><span class="token operator">-</span>at 
+hwsrc<span class="token operator">=</span><span class="token number">00</span><span class="token punctuation">:</span><span class="token number">30</span><span class="token punctuation">:</span><span class="token number">67</span><span class="token punctuation">:</span>fc<span class="token punctuation">:</span>1c<span class="token punctuation">:</span>0e psrc<span class="token operator">=</span><span class="token number">192.168</span><span class="token number">.1</span><span class="token number">.101</span> hwdst<span class="token operator">=</span>dc<span class="token punctuation">:</span>a6<span class="token punctuation">:</span><span class="token number">32</span><span class="token punctuation">:</span><span class="token number">83</span><span class="token punctuation">:</span>5c<span class="token punctuation">:</span>1e 
+pdst<span class="token operator">=</span><span class="token number">192.168</span><span class="token number">.1</span><span class="token number">.207</span> <span class="token operator">|</span><span class="token operator">&lt;</span>Padding  load<span class="token operator">=</span><span class="token string">'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'</span> <span class="token operator">|</span><span class="token operator">&gt;&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><h6 id="scapy定制ping包"><a href="#scapy定制ping包" class="header-anchor">#</a> scapy定制ping包</h6> <p>IP()生成ping包的源IP和目标IP，ICMP()生成ping包的类型。 两个函数结合生成ping包，进行探测</p> <p><code>IP()</code>函数</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> IP<span class="token punctuation">(</span><span class="token punctuation">)</span>.display<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">###[ IP ]### </span>
+  <span class="token assign-left variable">version</span><span class="token operator">=</span> <span class="token number">4</span>    <span class="token comment"># ip版本，4 即IPv4</span>
+  <span class="token assign-left variable">ihl</span><span class="token operator">=</span> None		<span class="token comment"># 首部长度</span>
+  <span class="token assign-left variable">tos</span><span class="token operator">=</span> 0x0		<span class="token comment"># 服务</span>
+  <span class="token assign-left variable">len</span><span class="token operator">=</span> None		<span class="token comment"># 总长度</span>
+  <span class="token assign-left variable">id</span><span class="token operator">=</span> <span class="token number">1</span>			<span class="token comment"># 标识</span>
+  <span class="token assign-left variable">flags</span><span class="token operator">=</span> 		<span class="token comment"># </span>
+  <span class="token assign-left variable">frag</span><span class="token operator">=</span> <span class="token number">0</span>		<span class="token comment"># 标志</span>
+  <span class="token assign-left variable">ttl</span><span class="token operator">=</span> <span class="token number">64</span>		<span class="token comment"># 生存时间</span>
+  <span class="token assign-left variable">proto</span><span class="token operator">=</span> hopopt	<span class="token comment"># 传输控制协议 IPv6逐跳选项</span>
+  <span class="token assign-left variable">chksum</span><span class="token operator">=</span> None	<span class="token comment"># 首部校检</span>
+  <span class="token assign-left variable">src</span><span class="token operator">=</span> <span class="token number">127.0</span>.0.1	<span class="token comment"># 源地址  </span>
+  <span class="token assign-left variable">dst</span><span class="token operator">=</span> <span class="token number">127.0</span>.0.1	<span class="token comment"># 目标地址</span>
+  <span class="token punctuation">\</span>options<span class="token punctuation">\</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p><code>ICMP()</code>函数</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> ICMP<span class="token punctuation">(</span><span class="token punctuation">)</span>.display<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">###[ ICMP ]### </span>
+  <span class="token assign-left variable">type</span><span class="token operator">=</span> echo-request	<span class="token comment"># 类型，标识ICMP报文的类型</span>
+  <span class="token assign-left variable">code</span><span class="token operator">=</span> <span class="token number">0</span>				<span class="token comment"># 代码</span>
+  <span class="token assign-left variable">chksum</span><span class="token operator">=</span> None			<span class="token comment"># 校检和</span>
+  <span class="token assign-left variable">id</span><span class="token operator">=</span> 0x0				<span class="token comment"># 标识</span>
+  <span class="token assign-left variable">seq</span><span class="token operator">=</span> 0x0				<span class="token comment"># </span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>例</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 模拟ping包</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> sr1<span class="token punctuation">(</span>IP<span class="token punctuation">(</span>dst<span class="token operator">=</span><span class="token string">&quot;192.168.1.1&quot;</span><span class="token punctuation">)</span>/ICMP<span class="token punctuation">(</span><span class="token punctuation">)</span>,timeout<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+Begin emission:
+Finished sending <span class="token number">1</span> packets.
+<span class="token punctuation">..</span>.*
+Received <span class="token number">4</span> packets, got <span class="token number">1</span> answers, remaining <span class="token number">0</span> packets
+<span class="token operator">&lt;</span>IP  <span class="token assign-left variable">version</span><span class="token operator">=</span><span class="token number">4</span> <span class="token assign-left variable">ihl</span><span class="token operator">=</span><span class="token number">5</span> <span class="token assign-left variable">tos</span><span class="token operator">=</span>0x0 <span class="token assign-left variable">len</span><span class="token operator">=</span><span class="token number">28</span> <span class="token assign-left variable">id</span><span class="token operator">=</span><span class="token number">51940</span> <span class="token assign-left variable">flags</span><span class="token operator">=</span> <span class="token assign-left variable">frag</span><span class="token operator">=</span><span class="token number">0</span> <span class="token assign-left variable">ttl</span><span class="token operator">=</span><span class="token number">64</span> <span class="token assign-left variable">proto</span><span class="token operator">=</span>icmp 
+<span class="token assign-left variable">chksum</span><span class="token operator">=</span>0x2bdc <span class="token assign-left variable">src</span><span class="token operator">=</span><span class="token number">192.168</span>.1.1 <span class="token assign-left variable">dst</span><span class="token operator">=</span><span class="token number">192.168</span>.1.207 <span class="token operator">|</span><span class="token operator">&lt;</span>ICMP  <span class="token assign-left variable">type</span><span class="token operator">=</span>echo-reply 
+<span class="token assign-left variable">code</span><span class="token operator">=</span><span class="token number">0</span> <span class="token assign-left variable">chksum</span><span class="token operator">=</span>0xffff <span class="token assign-left variable">id</span><span class="token operator">=</span>0x0 <span class="token assign-left variable">seq</span><span class="token operator">=</span>0x0 <span class="token operator">|</span><span class="token operator">&lt;</span>Padding  <span class="token assign-left variable">load</span><span class="token operator">=</span><span class="token string">'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'</span> <span class="token operator">|</span><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h6 id="scapy定制tcp协议的syn请求"><a href="#scapy定制tcp协议的syn请求" class="header-anchor">#</a> scapy定制TCP协议的SYN请求</h6> <p><code>TCP()</code>参数</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> TCP<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>display<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">###[ TCP ]### </span>
+  sport<span class="token operator">=</span> ftp_data	<span class="token comment"># TCP原端口</span>
+  dport<span class="token operator">=</span> http		<span class="token comment"># TCP目的端口</span>
+  seq<span class="token operator">=</span> <span class="token number">0</span>			<span class="token comment"># 32位序号</span>
+  ack<span class="token operator">=</span> <span class="token number">0</span>			<span class="token comment"># 32位确认序号</span>
+  dataofs<span class="token operator">=</span> <span class="token boolean">None</span>		<span class="token comment"># 4为首部长度</span>
+  reserved<span class="token operator">=</span> <span class="token number">0</span>		<span class="token comment"># 保留6位</span>
+  flags<span class="token operator">=</span> S			<span class="token triple-quoted-string string">'''标志域，紧急标志、有意义的应答标志、推、重置连接标志、同步序列号标志、
+    				  完成发送数据标志。	按照顺序排列是：URG、ACK PSH RST SYN FIN
+    				'''</span>
+  window<span class="token operator">=</span> <span class="token number">8192</span>		<span class="token comment"># 窗口大小</span>
+  chksum<span class="token operator">=</span> <span class="token boolean">None</span>		<span class="token comment"># 16位校检和</span>
+  urgptr<span class="token operator">=</span> <span class="token number">0</span>			<span class="token comment"># 优先指针</span>
+  options<span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>		<span class="token comment"># 选项</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>例</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token comment"># 定制TCP协议的SYN请求(收到syn+ack回复)</span>
+<span class="token comment"># dst目标主机地址，flags=&quot;S&quot; 表示SYN数据包，flags=SA表示SYN+ACK数据包，dport目标端口80</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> sr1<span class="token punctuation">(</span>IP<span class="token punctuation">(</span>dst<span class="token operator">=</span><span class="token string">&quot;192.168.1.1&quot;</span><span class="token punctuation">)</span><span class="token operator">/</span>TCP<span class="token punctuation">(</span>flags<span class="token operator">=</span><span class="token string">&quot;S&quot;</span><span class="token punctuation">,</span>dport<span class="token operator">=</span><span class="token number">80</span><span class="token punctuation">)</span><span class="token punctuation">,</span>timeout<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+Begin emission<span class="token punctuation">:</span>
+Finished sending <span class="token number">1</span> packets<span class="token punctuation">.</span>
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token operator">*</span>
+Received <span class="token number">3</span> packets<span class="token punctuation">,</span> got <span class="token number">1</span> answers<span class="token punctuation">,</span> remaining <span class="token number">0</span> packets
+<span class="token operator">&lt;</span>IP  version<span class="token operator">=</span><span class="token number">4</span> ihl<span class="token operator">=</span><span class="token number">5</span> tos<span class="token operator">=</span><span class="token number">0x0</span> <span class="token builtin">len</span><span class="token operator">=</span><span class="token number">44</span> <span class="token builtin">id</span><span class="token operator">=</span><span class="token number">0</span> flags<span class="token operator">=</span>DF frag<span class="token operator">=</span><span class="token number">0</span> ttl<span class="token operator">=</span><span class="token number">64</span> proto<span class="token operator">=</span>tcp 
+chksum<span class="token operator">=</span><span class="token number">0xb6ab</span> src<span class="token operator">=</span><span class="token number">192.168</span><span class="token number">.1</span><span class="token number">.1</span> dst<span class="token operator">=</span><span class="token number">192.168</span><span class="token number">.1</span><span class="token number">.207</span> <span class="token operator">|</span>
+<span class="token operator">&lt;</span>TCP  sport<span class="token operator">=</span>http dport<span class="token operator">=</span>ftp_data seq<span class="token operator">=</span><span class="token number">3930347155</span> ack<span class="token operator">=</span><span class="token number">1</span> dataofs<span class="token operator">=</span><span class="token number">6</span> reserved<span class="token operator">=</span><span class="token number">0</span> 
+flags<span class="token operator">=</span>SA window<span class="token operator">=</span><span class="token number">14600</span> chksum<span class="token operator">=</span><span class="token number">0x99b0</span> urgptr<span class="token operator">=</span><span class="token number">0</span> options<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token string">'MSS'</span><span class="token punctuation">,</span> <span class="token number">1460</span><span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">|</span>
+<span class="token operator">&lt;</span>Padding  load<span class="token operator">=</span><span class="token string">'\x00\x00'</span> <span class="token operator">|</span><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>注：此种基于TCP方式的半连接扫描更加隐秘，更不容易被发现</p> <hr> <h5 id="僵尸扫描"><a href="#僵尸扫描" class="header-anchor">#</a> 僵尸扫描</h5> <p>做渗透最重要的是思维，僵尸扫描的实用性不大，但是思维重要</p> <p>僵尸主机，僵尸主机是指感染僵尸程序病毒，从而被黑客程序控制的计算机设备，但是僵尸扫描中的僵尸主机指的是一个闲置的操作系统（这里的闲置是指主机不会主动和任何人通信），且此系统中IP数据包中ID是递增的</p> <p>僵尸扫描拥有极高的隐蔽特性，但是实施条件苛刻：</p> <p>​	1.目标网络可伪造源地址进行访问</p> <p>​	2.选择僵尸机，僵尸机需要在互联网上是一个闲置的操作系统，需要系统使用递增的IPID（如XP系统）</p> <p>我们可以使用一台/多台其他的代理、肉机、作为跳板机扫描探测目标主机。</p> <p>僵尸扫描可以不拿到肉机权限，只要对方的IPID是自增长的就可以。</p> <p>僵尸扫描原理：</p> <p>1.端口开放状态扫描</p> <p>​		TCP三次握手发包过程中，SYN/ACK是第二次包。若没有收到数据包则端口是关闭的</p> <ul><li>第一步，我们向僵尸机发送SYN/ACK数据包，僵尸主机会拒绝连接，并回复RST数据，其中带着IPID</li> <li>第二步，我们模拟僵尸机(IPSRC=僵尸机)向目标主机发送SYN数据包，目标主机就会向僵尸机发送SYN/ACK数据包，回复RST数据，其中带着IPID（此时IPID加一）</li> <li>第三步骤，我们重复第一步，
+<ul><li>若最后得到的僵尸机的IPID比我们第一步得到的IPID增长了<strong>2</strong>，就说明目标主机的端口是开放的</li> <li>若最后得到的僵尸机的IPID比我们第一步得到的IPID增长了1，就说明目标主机的端口是开放的</li></ul></li></ul> <p><img src="/assets/img/image-20210119163449271.75e1ddcc.png" alt="image-20210119163449271"></p> <p><img src="/assets/img/image-20210119163605028.666fd3e0.png" alt="image-20210119163605028"></p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token comment"># 使用sacpy</span>
+<span class="token comment"># 发送</span>
+<span class="token comment"># 1.向僵尸主机发送</span>
+rz1 <span class="token operator">=</span> sr1<span class="token punctuation">(</span>IP<span class="token punctuation">(</span>dst<span class="token operator">=</span><span class="token string">&quot;192.168.1.54&quot;</span><span class="token punctuation">)</span><span class="token operator">/</span>TCP<span class="token punctuation">(</span>dport<span class="token operator">=</span><span class="token number">445</span><span class="token punctuation">,</span> flags<span class="token operator">=</span><span class="token string">&quot;SA&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 2.模拟僵尸主机向目标主机发送</span>
+rt <span class="token operator">=</span> sr1<span class="token punctuation">(</span>IP<span class="token punctuation">(</span>dst<span class="token operator">=</span><span class="token string">&quot;192.168.1.54&quot;</span><span class="token punctuation">,</span>dst<span class="token operator">=</span><span class="token string">&quot;192.168.1.63&quot;</span><span class="token punctuation">)</span><span class="token operator">/</span>TCP<span class="token punctuation">(</span>dport<span class="token operator">=</span><span class="token number">22</span><span class="token punctuation">)</span><span class="token punctuation">,</span>timeout<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 3.向僵尸主机发送</span>
+rz2 <span class="token operator">=</span> sr1<span class="token punctuation">(</span>IP<span class="token punctuation">(</span>dst<span class="token operator">=</span><span class="token string">&quot;192.168.1.54&quot;</span><span class="token punctuation">)</span><span class="token operator">/</span>TCP<span class="token punctuation">(</span>dport<span class="token operator">=</span><span class="token number">445</span><span class="token punctuation">,</span> flags<span class="token operator">=</span><span class="token string">&quot;SA&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+
+<span class="token comment"># 查看</span>
+rz1<span class="token punctuation">.</span>display<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+rz2<span class="token punctuation">.</span>display<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 使用nmap判断是否能作为僵尸主机</span>
+nmap <span class="token number">192.168</span>.1.0/254 -p1-1024 <span class="token parameter variable">--script</span><span class="token operator">=</span>ipidseq.nse <span class="token operator">&gt;</span> a.txt
+<span class="token comment"># 结果中ipidseq为 Incremental则适合作为目标主机</span>
+Host script results:
+<span class="token operator">|</span>_ipidseq: Incremental<span class="token operator">!</span>
+
+<span class="token comment"># 使用僵尸主机192.168.1.251扫描192.168.1.248的端口</span>
+$ <span class="token function">sudo</span> nmap <span class="token number">192.168</span>.1.248 <span class="token parameter variable">-sI</span> <span class="token number">192.168</span>.1.251 -p1-400
+WARNING: Many people use <span class="token parameter variable">-Pn</span> w/Idlescan to prevent pings from their <span class="token boolean">true</span> IP.  On the other hand, timing info Nmap gains from pings can allow <span class="token keyword">for</span> faster, <span class="token function">more</span> reliable scans.
+Starting Nmap <span class="token number">7.91</span> <span class="token punctuation">(</span> https://nmap.org <span class="token punctuation">)</span> at <span class="token number">2021</span>-01-19 <span class="token number">17</span>:02 CST
+Idle scan using zombie <span class="token number">192.168</span>.1.251 <span class="token punctuation">(</span><span class="token number">192.168</span>.1.251:443<span class="token punctuation">)</span><span class="token punctuation">;</span> Class: Incremental
+Nmap scan report <span class="token keyword">for</span> <span class="token number">192.168</span>.1.248
+Host is up <span class="token punctuation">(</span><span class="token number">0</span>.028s latency<span class="token punctuation">)</span>.
+Not shown: <span class="token number">393</span> closed<span class="token operator">|</span>filtered ports
+PORT    STATE SERVICE
+<span class="token number">41</span>/tcp  <span class="token function">open</span>  graphics
+<span class="token number">176</span>/tcp <span class="token function">open</span>  genrad-mux
+<span class="token number">214</span>/tcp <span class="token function">open</span>  vmpwscs
+<span class="token number">314</span>/tcp <span class="token function">open</span>  opalis-robot
+<span class="token number">331</span>/tcp <span class="token function">open</span>  unknown
+<span class="token number">333</span>/tcp <span class="token function">open</span>  texar
+<span class="token number">348</span>/tcp <span class="token function">open</span>  csi-sgwp
+MAC Address: BC:EE:7B:9B:BA:CD <span class="token punctuation">(</span>Asustek Computer<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><h2 id="三、漏洞探测"><a href="#三、漏洞探测" class="header-anchor">#</a> 三、漏洞探测</h2> <hr> <h3 id="嗅探工具-wireshark抓包"><a href="#嗅探工具-wireshark抓包" class="header-anchor">#</a> 嗅探工具—WireShark抓包</h3> <p>Wireshark是一个网络封包分析软件。网络封包分析软件的功能是截取网络封包，并尽可能显示出最为详细的网络封包资料。Wireshark使用WinPCAP作为借口，直接与网卡进行数据报文交换。</p> <p>检测网络问题，检查资讯安全相关问题，为新的通讯协议除错，寻找敏感信息</p> <p>http是明文传输</p> <p>WireShark快速分析数据包技巧</p> <ul><li>确定物理位置（选择网卡位置）</li> <li>选择捕获接口。一般选择连接Internet网络的接口，这样才可以不会到与网络连接相关的数据</li> <li>使用捕获过滤器。避免产生过大的捕获数据。根据协议筛选</li> <li>使用显示过滤器。使用捕获过滤器后，还可以使用显示过滤器进行筛选</li> <li>使用着色规则。可以更加突出的显示某些数据</li> <li>构建图标。</li> <li>数据重组。当传输较大的文件或图片，需要将信息分布在多个数据包中，就需要使用重组数据的方法抓取完整数据。Wireshark可以重组一个会话中不同数据包的信息，或重组一个完整的文件或图片</li></ul> <h4 id="抓包及快速定位数据技巧"><a href="#抓包及快速定位数据技巧" class="header-anchor">#</a> 抓包及快速定位数据技巧</h4> <p>主要分析以下协议类型</p> <ul><li>ARP</li> <li>ICMP</li> <li>TCP</li> <li>UDP
+<ul><li>oicq,dns都是基于udp的传输协议之上的协议，筛选udp的时候会携带其他协议的包</li> <li>客户端向DNS服务器查询域名，一般返回的内容都不超多512字节。用UDP传输即可。不用经过三次握手，这样DNS服务器负载更低，响应更快。理论上客户端也可以指定向DNS服务器查询时使用TCP，但事实上很多DNS服务器进行配置的时候仅支持UDP查询</li></ul></li> <li>DNS</li> <li>HTTP</li> <li>FTP</li></ul> <h4 id="混杂模式与普通模式"><a href="#混杂模式与普通模式" class="header-anchor">#</a> 混杂模式与普通模式</h4> <p>混杂模式是指接收所有经过网卡的数据包，包括不是发给本机的包，即不验证MAC地址</p> <p>普通模式下网卡只接收发给本机的包（包括广播包）传输给上层程序，其他包一律丢弃</p> <p>一般混杂模式不会影响网卡的正常工作，多在网络监听工具上使用</p> <p>可以在<code>捕获-选项</code>中修改混杂模式和普通模式</p> <img src="images/image-20210119172808796.png" alt="image-20210119172808796" style="zoom:33%;"> <p>进行过滤</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># 筛选出ip地址为220.181.38.148</span>
+ip.addr <span class="token operator">==</span> <span class="token number">220.181</span>.38.148
+<span class="token comment"># 筛选ip协议</span>
+<span class="token function">ip</span>
+<span class="token comment"># 筛选arp协议</span>
+arp	
+<span class="token comment"># 筛选udp协议</span>
+udp
+<span class="token comment"># 筛选dns协议</span>
+dns
+<span class="token comment"># 筛选出本机向网关发送的数据包</span>
+ip.src_host <span class="token operator">==</span> <span class="token number">192.168</span>.1.235  
+<span class="token comment"># 筛选出百度发送过来的数据包</span>
+ip.dst_host <span class="token operator">==</span> <span class="token number">39.156</span>.69.79
+<span class="token comment"># 筛选出本机向百度发送的数据包（baidu.com=39.156.69.79）</span>
+ip.src_host <span class="token operator">==</span> <span class="token number">192.168</span>.1.235 and ip.dst_host <span class="token operator">==</span> <span class="token number">39.156</span>.69.79
+<span class="token comment"># 筛选ip或tcp协议包</span>
+<span class="token function">ip</span> or tcp
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p><img src="/assets/img/image-20210119173805083.8fb0a151.png" alt="image-20210119173805083"></p> <hr> <h4 id="抓包分析"><a href="#抓包分析" class="header-anchor">#</a> 抓包分析</h4> <p>协议分析时需要关比混杂模式，避免干扰数据</p> <h5 id="arp协议分析"><a href="#arp协议分析" class="header-anchor">#</a> ARP协议分析</h5> <p>​		地址解析协议（Addr Resolution Protocol）是一个通过解析网络层地址来寻找数据链路层地址的网络传输协议，它在IPV4中及其重要。ARP是通过网络地址来定位MAC地址</p> <p>看下面的例子</p> <p>​		IP=192.168.1.253发送广播：谁有192.168.1.253的mac地址</p> <p>​		IP=192.168.1.235回复：我有，MAC地址是xx:xx:xx:xx:xx:xx</p> <p>请求：</p> <p><img src="/assets/img/image-20210120104352951.c593390a.png" alt="image-20210120104352951"></p> <p>回复：</p> <p><img src="/assets/img/image-20210120105419676.b7da0a6d.png" alt="image-20210120105419676"></p> <hr> <h5 id="icmp协议分析"><a href="#icmp协议分析" class="header-anchor">#</a> ICMP协议分析</h5> <p>先使用ping命令</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>% <span class="token function">ping</span> baidu.com <span class="token parameter variable">-c</span> <span class="token number">1</span>
+PING baidu.com <span class="token punctuation">(</span><span class="token number">39.156</span>.69.79<span class="token punctuation">)</span>: <span class="token number">56</span> data bytes
+<span class="token number">64</span> bytes from <span class="token number">39.156</span>.69.79: <span class="token assign-left variable">icmp_seq</span><span class="token operator">=</span><span class="token number">0</span> <span class="token assign-left variable">ttl</span><span class="token operator">=</span><span class="token number">48</span> <span class="token assign-left variable">time</span><span class="token operator">=</span><span class="token number">31.723</span> ms
+
+--- baidu.com <span class="token function">ping</span> statistics ---
+<span class="token number">1</span> packets transmitted, <span class="token number">1</span> packets received, <span class="token number">0.0</span>% packet loss
+round-trip min/avg/max/stddev <span class="token operator">=</span> <span class="token number">31.723</span>/31.723/31.723/0.000 ms
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>请求包：</p> <p><img src="/assets/img/image-20210120110214447.b31d725d.png" alt="image-20210120110214447"></p> <p>回复包：</p> <p><img src="/assets/img/image-20210120111555874.6ca7100a.png" alt="image-20210120111555874"></p> <hr> <h5 id="tcp协议分析"><a href="#tcp协议分析" class="header-anchor">#</a> TCP协议分析</h5> <p>进行ssh连接时抓包：</p> <p><img src="/assets/img/image-20210120132921855.5596d4eb.png" alt="image-20210120132921855"></p> <p>打开 <code>统计—流量图</code> 查看TCP握手</p> <p><img src="/assets/img/image-20210120113234914.4d207434.png" alt="image-20210120113234914"></p> <p>断开ssh连接：发现第二个数据包，ack增加了1，代表确认断开+请求断开，也就是说TCP四次挥手中的第二第三次被合并为一次。</p> <p><img src="/assets/img/image-20210120140028485.75b67b39.png" alt="image-20210120140028485"></p> <hr> <h5 id="http协议分析"><a href="#http协议分析" class="header-anchor">#</a> HTTP协议分析</h5> <p>http是建立在tcp协议之上的，我在再抓取tcp协议数据包的时候其实就会抓取http数据包</p> <p>先发送模拟请求</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ <span class="token function">curl</span> <span class="token parameter variable">-I</span> baidu.cn
+HTTP/1.1 <span class="token number">200</span> OK
+Date: Wed, <span class="token number">20</span> Jan <span class="token number">2021</span> 06:16:55 GMT
+Server: Apache
+Last-Modified: Tue, <span class="token number">12</span> Jan <span class="token number">2010</span> <span class="token number">13</span>:48:00 GMT
+ETag: <span class="token string">&quot;51-47cf7e6ee8400&quot;</span>
+Accept-Ranges: bytes
+Content-Length: <span class="token number">81</span>
+Cache-Control: max-age<span class="token operator">=</span><span class="token number">86400</span>
+Expires: Thu, <span class="token number">21</span> Jan <span class="token number">2021</span> 06:16:55 GMT
+Connection: Keep-Alive
+Content-Type: text/html
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>抓取：</p> <p><img src="/assets/img/image-20210120142336480.0fdb1c22.png" alt="image-20210120142336480"></p> <p>点击HTTP请求数据包——右键——追踪流——TCP流</p> <img src="images/image-20210120142511232.png" alt="image-20210120142511232" style="zoom:50%;"> <hr> <h4 id="wireshark解决服务器被黑无法联网问题"><a href="#wireshark解决服务器被黑无法联网问题" class="header-anchor">#</a> Wireshark解决服务器被黑无法联网问题</h4> <p>场景：服务器被黑无法联网，但是可以ping同网关，不能上网</p> <p>模拟场景</p> <p>修改主机TTL值为1，下面的方式使我们临时的修改的内核参数</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token builtin class-name">echo</span> <span class="token string">&quot;1&quot;</span> <span class="token operator">&gt;</span> /proc/sys/net/ipv4/ip_default_ttl
+
+<span class="token comment"># 若权限不够</span>
+<span class="token function">sudo</span> <span class="token function">tee</span> /proc/sys/net/ipv4/ip_default_ttl <span class="token operator">&lt;&lt;&lt;</span> <span class="token string">&quot;1&quot;</span>
+
+<span class="token comment"># 测试完后记得修改回默认的ttl</span>
+<span class="token function">sudo</span> <span class="token function">tee</span> /proc/sys/net/ipv4/ip_default_ttl <span class="token operator">&lt;&lt;&lt;</span> <span class="token string">&quot;64&quot;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><blockquote><p>TTL：数据报文的生存周期</p> <p>TTL从初始化开始每经过一个网关就会减少1，若为0则就不再向上级网关发送请求</p> <p>默认linux操作系统值：64，每经过一个路由节点，TTL值减1。TTL值为0时，说明目标地址不可达并返回：Time to live exceeded</p> <p>作用：防止数据包在公网中转发</p> <p>设置为1后，当经过本地路由节点就会为0，再向上级路由节点请求的时候，就会出现不可达的问题</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>ping 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></blockquote> <hr> <h5 id="mtr"><a href="#mtr" class="header-anchor">#</a> mtr</h5> <p>用来查看到达目标所经过的所有的dns及其网络质量</p> <p>安装</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> <span class="token parameter variable">-y</span> <span class="token function">mtr</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>使用</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token function">mtr</span> <span class="token number">8.8</span>.8.8
+<span class="token function">mtr</span> baidu.com
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div></div></div>  <div class="page-edit"><!----> <div class="tags"><a href="/tags/?tag=kali" title="标签">#kali</a><a href="/tags/?tag=%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F" title="标签">#操作系统</a></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2022/03/15, 09:17:21</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/pages/d1a95e/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">生产服务器常用配置</div></a> <a href="/linux/bash/common/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">Linux 入门命令</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/pages/d1a95e/" class="prev">生产服务器常用配置</a></span> <span class="next"><a href="/linux/bash/common/">Linux 入门命令</a>→
+      </span></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/springframework/spring-ai-alibaba/quick-start/"><div>
+            01.Spring Al Alibaba
+            <!----></div></a> <span class="date">04-07</span></dt></dl><dl><dd>02</dd> <dt><a href="/springframework/spring-ai/dify/"><div>
+            07.Dify 使用
+            <!----></div></a> <span class="date">04-06</span></dt></dl><dl><dd>03</dd> <dt><a href="/springframework/spring-ai/mcp-server-dev/"><div>
+            06.Spring AI 开发 MCP 服务
+            <!----></div></a> <span class="date">04-05</span></dt></dl> <dl><dd></dd> <dt><a href="/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><div class="icons"><a href="mailto:niejinking@163.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://music.163.com/#/my/m/music/playlist?id=417262556" title="听音乐" target="_blank" class="iconfont icon-erji"></a></div> 
+     Copyright © 2021-2026
+    <span> willingoxjin.pages.dev/ </span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.89e5ded6.js" defer></script><script src="/assets/js/2.2d0494eb.js" defer></script><script src="/assets/js/12.07b3c24a.js" defer></script><script src="/assets/js/19.db4380a9.js" defer></script>
+  </body>
+</html>
